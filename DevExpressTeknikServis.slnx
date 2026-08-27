@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="TeknikServis.Windows/TeknikServis.Windows.csproj" />
+</Solution>
