@@ -16,5 +16,12 @@ namespace TeknikServis.Windows
         {
             InitializeComponent();
         }
+
+        private void BarBtnProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmProductList fr = new Forms.FrmProductList();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
