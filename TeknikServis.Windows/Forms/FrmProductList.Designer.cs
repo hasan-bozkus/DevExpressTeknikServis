@@ -28,94 +28,287 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductList));
+            this.GrdProducts = new DevExpress.XtraGrid.GridControl();
+            this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.GrpCtrlProductProcess = new DevExpress.XtraEditors.GroupControl();
+            this.LkUpCategory = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtStock = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtSalePrice = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtPurchasePrice = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtBrand = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtProductName = new DevExpress.XtraEditors.TextEdit();
+            this.LblTextProductName = new DevExpress.XtraEditors.LabelControl();
+            this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnRemove = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnList = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtProductId = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdProducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlProductProcess)).BeginInit();
+            this.GrpCtrlProductProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpCategory.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtStock.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSalePrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPurchasePrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBrand.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtProductName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
+            // GrdProducts
             // 
-            this.gridControl1.Location = new System.Drawing.Point(1, -3);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1009, 550);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.GrdProducts.Location = new System.Drawing.Point(1, -3);
+            this.GrdProducts.MainView = this.GrdViewItems;
+            this.GrdProducts.Name = "GrdProducts";
+            this.GrdProducts.Size = new System.Drawing.Size(1009, 550);
+            this.GrdProducts.TabIndex = 0;
+            this.GrdProducts.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GrdViewItems});
             // 
-            // gridView1
+            // GrdViewItems
             // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.GrdViewItems.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(156)))), ((int)(((byte)(218)))));
+            this.GrdViewItems.Appearance.Row.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.GrdViewItems.Appearance.Row.Options.UseBackColor = true;
+            this.GrdViewItems.Appearance.Row.Options.UseBorderColor = true;
+            this.GrdViewItems.GridControl = this.GrdProducts;
+            this.GrdViewItems.Name = "GrdViewItems";
+            this.GrdViewItems.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.GrdViewItems_FocusedRowChanged);
             // 
-            // button1
+            // GrpCtrlProductProcess
             // 
-            this.button1.Location = new System.Drawing.Point(1016, 188);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 255);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.GrpCtrlProductProcess.Controls.Add(this.TxtProductId);
+            this.GrpCtrlProductProcess.Controls.Add(this.labelControl6);
+            this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnList);
+            this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnUpdate);
+            this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnRemove);
+            this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnSave);
+            this.GrpCtrlProductProcess.Controls.Add(this.LkUpCategory);
+            this.GrpCtrlProductProcess.Controls.Add(this.labelControl5);
+            this.GrpCtrlProductProcess.Controls.Add(this.TxtStock);
+            this.GrpCtrlProductProcess.Controls.Add(this.labelControl4);
+            this.GrpCtrlProductProcess.Controls.Add(this.TxtSalePrice);
+            this.GrpCtrlProductProcess.Controls.Add(this.labelControl3);
+            this.GrpCtrlProductProcess.Controls.Add(this.TxtPurchasePrice);
+            this.GrpCtrlProductProcess.Controls.Add(this.labelControl2);
+            this.GrpCtrlProductProcess.Controls.Add(this.TxtBrand);
+            this.GrpCtrlProductProcess.Controls.Add(this.labelControl1);
+            this.GrpCtrlProductProcess.Controls.Add(this.TxtProductName);
+            this.GrpCtrlProductProcess.Controls.Add(this.LblTextProductName);
+            this.GrpCtrlProductProcess.Location = new System.Drawing.Point(1007, -3);
+            this.GrpCtrlProductProcess.Name = "GrpCtrlProductProcess";
+            this.GrpCtrlProductProcess.Size = new System.Drawing.Size(358, 537);
+            this.GrpCtrlProductProcess.TabIndex = 1;
+            this.GrpCtrlProductProcess.Text = "ÜRÜN İŞLEMLERİ";
             // 
-            // button2
+            // LkUpCategory
             // 
-            this.button2.Location = new System.Drawing.Point(1295, 188);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 255);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.LkUpCategory.Location = new System.Drawing.Point(99, 285);
+            this.LkUpCategory.Name = "LkUpCategory";
+            this.LkUpCategory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpCategory.Properties.DisplayMember = "CategoryName";
+            this.LkUpCategory.Properties.ValueMember = "CategoryId";
+            this.LkUpCategory.Size = new System.Drawing.Size(171, 22);
+            this.LkUpCategory.TabIndex = 14;
             // 
-            // button3
+            // labelControl5
             // 
-            this.button3.Location = new System.Drawing.Point(1062, -3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(272, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(25, 291);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(68, 16);
+            this.labelControl5.TabIndex = 13;
+            this.labelControl5.Text = "KATEGORİ: ";
             // 
-            // button4
+            // TxtStock
             // 
-            this.button4.Location = new System.Drawing.Point(1062, 508);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(272, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.TxtStock.Location = new System.Drawing.Point(99, 246);
+            this.TxtStock.Name = "TxtStock";
+            this.TxtStock.Size = new System.Drawing.Size(171, 22);
+            this.TxtStock.TabIndex = 12;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(52, 249);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(41, 16);
+            this.labelControl4.TabIndex = 11;
+            this.labelControl4.Text = "STOK: ";
+            // 
+            // TxtSalePrice
+            // 
+            this.TxtSalePrice.Location = new System.Drawing.Point(99, 204);
+            this.TxtSalePrice.Name = "TxtSalePrice";
+            this.TxtSalePrice.Size = new System.Drawing.Size(171, 22);
+            this.TxtSalePrice.TabIndex = 10;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(6, 207);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(87, 16);
+            this.labelControl3.TabIndex = 9;
+            this.labelControl3.Text = "SATIŞ FİYATI: ";
+            // 
+            // TxtPurchasePrice
+            // 
+            this.TxtPurchasePrice.Location = new System.Drawing.Point(99, 162);
+            this.TxtPurchasePrice.Name = "TxtPurchasePrice";
+            this.TxtPurchasePrice.Size = new System.Drawing.Size(171, 22);
+            this.TxtPurchasePrice.TabIndex = 8;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(16, 165);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(77, 16);
+            this.labelControl2.TabIndex = 7;
+            this.labelControl2.Text = "ALIŞ FİYATI: ";
+            // 
+            // TxtBrand
+            // 
+            this.TxtBrand.Location = new System.Drawing.Point(99, 124);
+            this.TxtBrand.Name = "TxtBrand";
+            this.TxtBrand.Size = new System.Drawing.Size(171, 22);
+            this.TxtBrand.TabIndex = 6;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(43, 127);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(50, 16);
+            this.labelControl1.TabIndex = 5;
+            this.labelControl1.Text = "MARKA: ";
+            // 
+            // TxtProductName
+            // 
+            this.TxtProductName.Location = new System.Drawing.Point(99, 85);
+            this.TxtProductName.Name = "TxtProductName";
+            this.TxtProductName.Size = new System.Drawing.Size(171, 22);
+            this.TxtProductName.TabIndex = 4;
+            // 
+            // LblTextProductName
+            // 
+            this.LblTextProductName.Location = new System.Drawing.Point(28, 88);
+            this.LblTextProductName.Name = "LblTextProductName";
+            this.LblTextProductName.Size = new System.Drawing.Size(65, 16);
+            this.LblTextProductName.TabIndex = 3;
+            this.LblTextProductName.Text = "ÜRÜN ADI: ";
+            // 
+            // SmpBtnSave
+            // 
+            this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnSave.ImageOptions.Image")));
+            this.SmpBtnSave.Location = new System.Drawing.Point(99, 340);
+            this.SmpBtnSave.Name = "SmpBtnSave";
+            this.SmpBtnSave.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnSave.TabIndex = 15;
+            this.SmpBtnSave.Text = "KAYDET";
+            this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
+            // 
+            // SmpBtnUpdate
+            // 
+            this.SmpBtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.SmpBtnUpdate.Location = new System.Drawing.Point(99, 416);
+            this.SmpBtnUpdate.Name = "SmpBtnUpdate";
+            this.SmpBtnUpdate.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnUpdate.TabIndex = 17;
+            this.SmpBtnUpdate.Text = "GÜNCELLE";
+            this.SmpBtnUpdate.Click += new System.EventHandler(this.SmpBtnUpdate_Click);
+            // 
+            // SmpBtnRemove
+            // 
+            this.SmpBtnRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnRemove.ImageOptions.Image")));
+            this.SmpBtnRemove.Location = new System.Drawing.Point(99, 378);
+            this.SmpBtnRemove.Name = "SmpBtnRemove";
+            this.SmpBtnRemove.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnRemove.TabIndex = 16;
+            this.SmpBtnRemove.Text = "SİL";
+            this.SmpBtnRemove.Click += new System.EventHandler(this.SmpBtnRemove_Click);
+            // 
+            // SmpBtnList
+            // 
+            this.SmpBtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.SmpBtnList.Location = new System.Drawing.Point(99, 454);
+            this.SmpBtnList.Name = "SmpBtnList";
+            this.SmpBtnList.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnList.TabIndex = 18;
+            this.SmpBtnList.Text = "LİSTELE";
+            this.SmpBtnList.Click += new System.EventHandler(this.SmpBtnList_Click);
+            // 
+            // TxtProductId
+            // 
+            this.TxtProductId.Enabled = false;
+            this.TxtProductId.Location = new System.Drawing.Point(99, 48);
+            this.TxtProductId.Name = "TxtProductId";
+            this.TxtProductId.Size = new System.Drawing.Size(171, 22);
+            this.TxtProductId.TabIndex = 20;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(28, 51);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(57, 16);
+            this.labelControl6.TabIndex = 19;
+            this.labelControl6.Text = "ÜRÜN ID: ";
             // 
             // FrmProductList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Coral;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1368, 533);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.GrpCtrlProductProcess);
+            this.Controls.Add(this.GrdProducts);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FrmProductList";
             this.Text = "FrmProductList";
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmProductList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GrdProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlProductProcess)).EndInit();
+            this.GrpCtrlProductProcess.ResumeLayout(false);
+            this.GrpCtrlProductProcess.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpCategory.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtStock.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSalePrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPurchasePrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBrand.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtProductName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private DevExpress.XtraGrid.GridControl GrdProducts;
+        private DevExpress.XtraGrid.Views.Grid.GridView GrdViewItems;
+        private DevExpress.XtraEditors.GroupControl GrpCtrlProductProcess;
+        private DevExpress.XtraEditors.TextEdit TxtStock;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.TextEdit TxtSalePrice;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.TextEdit TxtPurchasePrice;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.TextEdit TxtBrand;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.TextEdit TxtProductName;
+        private DevExpress.XtraEditors.LabelControl LblTextProductName;
+        private DevExpress.XtraEditors.LookUpEdit LkUpCategory;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.SimpleButton SmpBtnSave;
+        private DevExpress.XtraEditors.SimpleButton SmpBtnUpdate;
+        private DevExpress.XtraEditors.SimpleButton SmpBtnRemove;
+        private DevExpress.XtraEditors.SimpleButton SmpBtnList;
+        private DevExpress.XtraEditors.TextEdit TxtProductId;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }

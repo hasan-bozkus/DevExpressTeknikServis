@@ -43,35 +43,11 @@
             this.BarBtnFaultProductDescription = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewQRCode = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewBarcode = new DevExpress.XtraBars.BarButtonItem();
-            this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.RbnPageGroupCategory = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.RbnPageGroupProduct = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.RbnPageGroupStatistics = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.RbnPageGroupFault = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.RbnPageGroupQrAndBarcode = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.BarBtnNewCurrent = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnCurrentList = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnCityStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnCurrentMovenets = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnEmpoleyeeMovements = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.BarBtnNewInvoice = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewInvoiceItem = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnDetailedBllInquiry = new DevExpress.XtraBars.BarButtonItem();
@@ -80,7 +56,6 @@
             this.BarBtnGuide = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnEmployeeList = new DevExpress.XtraBars.BarButtonItem();
             this.BtnBtnNewEmployee = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.BarBtnDepartmentList = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewDepartment = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnCalculator = new DevExpress.XtraBars.BarButtonItem();
@@ -94,7 +69,32 @@
             this.BarBtnEmailBox = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewEmail = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnSmsSend = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnCards = new DevExpress.XtraBars.BarButtonItem();
+            this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.RbnPageGroupCategory = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.RbnPageGroupProduct = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.RbnPageGroupStatistics = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.RbnPageGroupFault = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.RbnPageGroupQrAndBarcode = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -142,7 +142,7 @@
             this.BarBtnEmailBox,
             this.BarBtnNewEmail,
             this.BarBtnSmsSend,
-            this.barButtonItem20});
+            this.BarBtnCards});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 40;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -190,6 +190,7 @@
             this.BarBtnNewProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewProduct.ImageOptions.Image")));
             this.BarBtnNewProduct.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewProduct.ImageOptions.LargeImage")));
             this.BarBtnNewProduct.Name = "BarBtnNewProduct";
+            this.BarBtnNewProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewProduct_ItemClick);
             // 
             // BarBtnSearchProdct
             // 
@@ -219,24 +220,24 @@
             // 
             this.BarBtnFaultProductList.Caption = "Arızalı Ürün Listesi";
             this.BarBtnFaultProductList.Id = 8;
-            this.BarBtnFaultProductList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.BarBtnFaultProductList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.BarBtnFaultProductList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductList.ImageOptions.Image")));
+            this.BarBtnFaultProductList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductList.ImageOptions.LargeImage")));
             this.BarBtnFaultProductList.Name = "BarBtnFaultProductList";
             // 
             // BarBtnNewFaultProduct
             // 
             this.BarBtnNewFaultProduct.Caption = "Yeni Arızalı Ürün Kaydı";
             this.BarBtnNewFaultProduct.Id = 9;
-            this.BarBtnNewFaultProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.BarBtnNewFaultProduct.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.BarBtnNewFaultProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewFaultProduct.ImageOptions.Image")));
+            this.BarBtnNewFaultProduct.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewFaultProduct.ImageOptions.LargeImage")));
             this.BarBtnNewFaultProduct.Name = "BarBtnNewFaultProduct";
             // 
             // BarBtnFaultProductDescription
             // 
             this.BarBtnFaultProductDescription.Caption = "Arızalı Ürün Açıklama";
             this.BarBtnFaultProductDescription.Id = 10;
-            this.BarBtnFaultProductDescription.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.BarBtnFaultProductDescription.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.BarBtnFaultProductDescription.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductDescription.ImageOptions.Image")));
+            this.BarBtnFaultProductDescription.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductDescription.ImageOptions.LargeImage")));
             this.BarBtnFaultProductDescription.Name = "BarBtnFaultProductDescription";
             // 
             // BarBtnNewQRCode
@@ -254,6 +255,222 @@
             this.BarBtnNewBarcode.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewBarcode.ImageOptions.Image")));
             this.BarBtnNewBarcode.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewBarcode.ImageOptions.LargeImage")));
             this.BarBtnNewBarcode.Name = "BarBtnNewBarcode";
+            // 
+            // BarBtnNewCurrent
+            // 
+            this.BarBtnNewCurrent.Caption = "Yeni Cari";
+            this.BarBtnNewCurrent.Id = 13;
+            this.BarBtnNewCurrent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCurrent.ImageOptions.Image")));
+            this.BarBtnNewCurrent.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCurrent.ImageOptions.LargeImage")));
+            this.BarBtnNewCurrent.Name = "BarBtnNewCurrent";
+            // 
+            // BarBtnCurrentList
+            // 
+            this.BarBtnCurrentList.Caption = "Cari Listesi";
+            this.BarBtnCurrentList.Id = 14;
+            this.BarBtnCurrentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentList.ImageOptions.Image")));
+            this.BarBtnCurrentList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentList.ImageOptions.LargeImage")));
+            this.BarBtnCurrentList.Name = "BarBtnCurrentList";
+            // 
+            // BarBtnCityStatistics
+            // 
+            this.BarBtnCityStatistics.Caption = "Cari İl İstatistiği";
+            this.BarBtnCityStatistics.Id = 15;
+            this.BarBtnCityStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCityStatistics.ImageOptions.Image")));
+            this.BarBtnCityStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCityStatistics.ImageOptions.LargeImage")));
+            this.BarBtnCityStatistics.Name = "BarBtnCityStatistics";
+            // 
+            // BarBtnCurrentMovenets
+            // 
+            this.BarBtnCurrentMovenets.Caption = "Cari Hareketleri";
+            this.BarBtnCurrentMovenets.Id = 16;
+            this.BarBtnCurrentMovenets.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentMovenets.ImageOptions.Image")));
+            this.BarBtnCurrentMovenets.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentMovenets.ImageOptions.LargeImage")));
+            this.BarBtnCurrentMovenets.Name = "BarBtnCurrentMovenets";
+            // 
+            // BarBtnEmpoleyeeMovements
+            // 
+            this.BarBtnEmpoleyeeMovements.Caption = "Personel Hareketleri";
+            this.BarBtnEmpoleyeeMovements.Id = 17;
+            this.BarBtnEmpoleyeeMovements.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnEmpoleyeeMovements.ImageOptions.Image")));
+            this.BarBtnEmpoleyeeMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnEmpoleyeeMovements.ImageOptions.LargeImage")));
+            this.BarBtnEmpoleyeeMovements.Name = "BarBtnEmpoleyeeMovements";
+            // 
+            // BarBtnNewInvoice
+            // 
+            this.BarBtnNewInvoice.Caption = "Yeni Fatura Girişi";
+            this.BarBtnNewInvoice.Id = 18;
+            this.BarBtnNewInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoice.ImageOptions.Image")));
+            this.BarBtnNewInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoice.ImageOptions.LargeImage")));
+            this.BarBtnNewInvoice.Name = "BarBtnNewInvoice";
+            // 
+            // BarBtnNewInvoiceItem
+            // 
+            this.BarBtnNewInvoiceItem.Caption = "Faturaya Kalem Girişi";
+            this.BarBtnNewInvoiceItem.Id = 19;
+            this.BarBtnNewInvoiceItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoiceItem.ImageOptions.Image")));
+            this.BarBtnNewInvoiceItem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoiceItem.ImageOptions.LargeImage")));
+            this.BarBtnNewInvoiceItem.Name = "BarBtnNewInvoiceItem";
+            // 
+            // BarBtnDetailedBllInquiry
+            // 
+            this.BarBtnDetailedBllInquiry.Caption = "Detaylı Fatura Sorgulama";
+            this.BarBtnDetailedBllInquiry.Id = 20;
+            this.BarBtnDetailedBllInquiry.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnDetailedBllInquiry.ImageOptions.Image")));
+            this.BarBtnDetailedBllInquiry.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnDetailedBllInquiry.ImageOptions.LargeImage")));
+            this.BarBtnDetailedBllInquiry.Name = "BarBtnDetailedBllInquiry";
+            // 
+            // BarBtnInvoicePdf
+            // 
+            this.BarBtnInvoicePdf.Caption = "Fatura Pdf";
+            this.BarBtnInvoicePdf.Id = 21;
+            this.BarBtnInvoicePdf.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnInvoicePdf.ImageOptions.Image")));
+            this.BarBtnInvoicePdf.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnInvoicePdf.ImageOptions.LargeImage")));
+            this.BarBtnInvoicePdf.Name = "BarBtnInvoicePdf";
+            // 
+            // BarBtnPassiveInvoices
+            // 
+            this.BarBtnPassiveInvoices.Caption = "Pasif Faturalar";
+            this.BarBtnPassiveInvoices.Id = 22;
+            this.BarBtnPassiveInvoices.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnPassiveInvoices.ImageOptions.Image")));
+            this.BarBtnPassiveInvoices.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnPassiveInvoices.ImageOptions.LargeImage")));
+            this.BarBtnPassiveInvoices.Name = "BarBtnPassiveInvoices";
+            // 
+            // BarBtnGuide
+            // 
+            this.BarBtnGuide.Caption = "Rehber";
+            this.BarBtnGuide.Id = 23;
+            this.BarBtnGuide.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnGuide.ImageOptions.Image")));
+            this.BarBtnGuide.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnGuide.ImageOptions.LargeImage")));
+            this.BarBtnGuide.Name = "BarBtnGuide";
+            // 
+            // BarBtnEmployeeList
+            // 
+            this.BarBtnEmployeeList.Caption = "Personel Listesi";
+            this.BarBtnEmployeeList.Id = 24;
+            this.BarBtnEmployeeList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnEmployeeList.ImageOptions.Image")));
+            this.BarBtnEmployeeList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnEmployeeList.ImageOptions.LargeImage")));
+            this.BarBtnEmployeeList.Name = "BarBtnEmployeeList";
+            // 
+            // BtnBtnNewEmployee
+            // 
+            this.BtnBtnNewEmployee.Caption = "Yeni Personel";
+            this.BtnBtnNewEmployee.Id = 25;
+            this.BtnBtnNewEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnBtnNewEmployee.ImageOptions.Image")));
+            this.BtnBtnNewEmployee.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnBtnNewEmployee.ImageOptions.LargeImage")));
+            this.BtnBtnNewEmployee.Name = "BtnBtnNewEmployee";
+            // 
+            // BarBtnDepartmentList
+            // 
+            this.BarBtnDepartmentList.Caption = "Departman Listesi";
+            this.BarBtnDepartmentList.Id = 26;
+            this.BarBtnDepartmentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnDepartmentList.ImageOptions.Image")));
+            this.BarBtnDepartmentList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnDepartmentList.ImageOptions.LargeImage")));
+            this.BarBtnDepartmentList.Name = "BarBtnDepartmentList";
+            // 
+            // BarBtnNewDepartment
+            // 
+            this.BarBtnNewDepartment.Caption = "Yeni Deaprtman";
+            this.BarBtnNewDepartment.Id = 27;
+            this.BarBtnNewDepartment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewDepartment.ImageOptions.Image")));
+            this.BarBtnNewDepartment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewDepartment.ImageOptions.LargeImage")));
+            this.BarBtnNewDepartment.Name = "BarBtnNewDepartment";
+            // 
+            // BarBtnCalculator
+            // 
+            this.BarBtnCalculator.Caption = "Hesap Makinesi";
+            this.BarBtnCalculator.Id = 28;
+            this.BarBtnCalculator.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCalculator.ImageOptions.Image")));
+            this.BarBtnCalculator.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCalculator.ImageOptions.LargeImage")));
+            this.BarBtnCalculator.Name = "BarBtnCalculator";
+            // 
+            // BarBtnNewNote
+            // 
+            this.BarBtnNewNote.Caption = "Yeni Not";
+            this.BarBtnNewNote.Id = 29;
+            this.BarBtnNewNote.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewNote.ImageOptions.Image")));
+            this.BarBtnNewNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewNote.ImageOptions.LargeImage")));
+            this.BarBtnNewNote.Name = "BarBtnNewNote";
+            // 
+            // BarBtnExchangeRates
+            // 
+            this.BarBtnExchangeRates.Caption = "Döviz Kurları";
+            this.BarBtnExchangeRates.Id = 30;
+            this.BarBtnExchangeRates.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnExchangeRates.ImageOptions.Image")));
+            this.BarBtnExchangeRates.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnExchangeRates.ImageOptions.LargeImage")));
+            this.BarBtnExchangeRates.Name = "BarBtnExchangeRates";
+            // 
+            // BarBtnNews
+            // 
+            this.BarBtnNews.Caption = "Haberler";
+            this.BarBtnNews.Id = 31;
+            this.BarBtnNews.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNews.ImageOptions.Image")));
+            this.BarBtnNews.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNews.ImageOptions.LargeImage")));
+            this.BarBtnNews.Name = "BarBtnNews";
+            // 
+            // BarBtnForeignCurrencyTransactions
+            // 
+            this.BarBtnForeignCurrencyTransactions.Caption = "Döviz İşlemleri";
+            this.BarBtnForeignCurrencyTransactions.Id = 32;
+            this.BarBtnForeignCurrencyTransactions.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnForeignCurrencyTransactions.ImageOptions.Image")));
+            this.BarBtnForeignCurrencyTransactions.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnForeignCurrencyTransactions.ImageOptions.LargeImage")));
+            this.BarBtnForeignCurrencyTransactions.Name = "BarBtnForeignCurrencyTransactions";
+            // 
+            // BarBtnOfficeWord
+            // 
+            this.BarBtnOfficeWord.Caption = "Word";
+            this.BarBtnOfficeWord.Id = 33;
+            this.BarBtnOfficeWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeWord.ImageOptions.Image")));
+            this.BarBtnOfficeWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeWord.ImageOptions.LargeImage")));
+            this.BarBtnOfficeWord.Name = "BarBtnOfficeWord";
+            // 
+            // BarBtnOfficeExcel
+            // 
+            this.BarBtnOfficeExcel.Caption = "Excel";
+            this.BarBtnOfficeExcel.Id = 34;
+            this.BarBtnOfficeExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeExcel.ImageOptions.Image")));
+            this.BarBtnOfficeExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeExcel.ImageOptions.LargeImage")));
+            this.BarBtnOfficeExcel.Name = "BarBtnOfficeExcel";
+            // 
+            // BarBtnHelp
+            // 
+            this.BarBtnHelp.Caption = "Yardım";
+            this.BarBtnHelp.Id = 35;
+            this.BarBtnHelp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnHelp.ImageOptions.Image")));
+            this.BarBtnHelp.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnHelp.ImageOptions.LargeImage")));
+            this.BarBtnHelp.Name = "BarBtnHelp";
+            // 
+            // BarBtnEmailBox
+            // 
+            this.BarBtnEmailBox.Caption = "E-Posta Kutusu";
+            this.BarBtnEmailBox.Id = 36;
+            this.BarBtnEmailBox.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnEmailBox.ImageOptions.Image")));
+            this.BarBtnEmailBox.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnEmailBox.ImageOptions.LargeImage")));
+            this.BarBtnEmailBox.Name = "BarBtnEmailBox";
+            // 
+            // BarBtnNewEmail
+            // 
+            this.BarBtnNewEmail.Caption = "Yeni E-Posta ";
+            this.BarBtnNewEmail.Id = 37;
+            this.BarBtnNewEmail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewEmail.ImageOptions.Image")));
+            this.BarBtnNewEmail.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewEmail.ImageOptions.LargeImage")));
+            this.BarBtnNewEmail.Name = "BarBtnNewEmail";
+            // 
+            // BarBtnSmsSend
+            // 
+            this.BarBtnSmsSend.Caption = "Sms Gönder";
+            this.BarBtnSmsSend.Id = 38;
+            this.BarBtnSmsSend.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnSmsSend.ImageOptions.Image")));
+            this.BarBtnSmsSend.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnSmsSend.ImageOptions.LargeImage")));
+            this.BarBtnSmsSend.Name = "BarBtnSmsSend";
+            // 
+            // BarBtnCards
+            // 
+            this.BarBtnCards.Caption = "Kartlar";
+            this.BarBtnCards.Id = 39;
+            this.BarBtnCards.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCards.ImageOptions.Image")));
+            this.BarBtnCards.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCards.ImageOptions.LargeImage")));
+            this.BarBtnCards.Name = "BarBtnCards";
             // 
             // RbnHomePage
             // 
@@ -345,6 +562,13 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "ribbonPageGroup4";
             // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.BarBtnDepartmentList);
+            this.ribbonPageGroup10.ItemLinks.Add(this.BarBtnNewDepartment);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
+            // 
             // ribbonPage4
             // 
             this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -359,6 +583,16 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.BarBtnEmpoleyeeMovements);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "ribbonPageGroup5";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnNewInvoice);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnNewInvoiceItem);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnDetailedBllInquiry);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnInvoicePdf);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnPassiveInvoices);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
             // ribbonPage5
             // 
@@ -417,246 +651,13 @@
             // 
             // ribbonPageGroup9
             // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem20);
+            this.ribbonPageGroup9.ItemLinks.Add(this.BarBtnCards);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "ribbonPageGroup9";
             // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // BarBtnNewCurrent
-            // 
-            this.BarBtnNewCurrent.Caption = "Yeni Cari";
-            this.BarBtnNewCurrent.Id = 13;
-            this.BarBtnNewCurrent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCurrent.ImageOptions.Image")));
-            this.BarBtnNewCurrent.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCurrent.ImageOptions.LargeImage")));
-            this.BarBtnNewCurrent.Name = "BarBtnNewCurrent";
-            // 
-            // BarBtnCurrentList
-            // 
-            this.BarBtnCurrentList.Caption = "Cari Listesi";
-            this.BarBtnCurrentList.Id = 14;
-            this.BarBtnCurrentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentList.ImageOptions.Image")));
-            this.BarBtnCurrentList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentList.ImageOptions.LargeImage")));
-            this.BarBtnCurrentList.Name = "BarBtnCurrentList";
-            // 
-            // BarBtnCityStatistics
-            // 
-            this.BarBtnCityStatistics.Caption = "Cari İl İstatistiği";
-            this.BarBtnCityStatistics.Id = 15;
-            this.BarBtnCityStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCityStatistics.ImageOptions.Image")));
-            this.BarBtnCityStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCityStatistics.ImageOptions.LargeImage")));
-            this.BarBtnCityStatistics.Name = "BarBtnCityStatistics";
-            // 
-            // BarBtnCurrentMovenets
-            // 
-            this.BarBtnCurrentMovenets.Caption = "Cari Hareketleri";
-            this.BarBtnCurrentMovenets.Id = 16;
-            this.BarBtnCurrentMovenets.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentMovenets.ImageOptions.Image")));
-            this.BarBtnCurrentMovenets.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentMovenets.ImageOptions.LargeImage")));
-            this.BarBtnCurrentMovenets.Name = "BarBtnCurrentMovenets";
-            // 
-            // BarBtnEmpoleyeeMovements
-            // 
-            this.BarBtnEmpoleyeeMovements.Caption = "Personel Hareketleri";
-            this.BarBtnEmpoleyeeMovements.Id = 17;
-            this.BarBtnEmpoleyeeMovements.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnEmpoleyeeMovements.ImageOptions.Image")));
-            this.BarBtnEmpoleyeeMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnEmpoleyeeMovements.ImageOptions.LargeImage")));
-            this.BarBtnEmpoleyeeMovements.Name = "BarBtnEmpoleyeeMovements";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnNewInvoice);
-            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnNewInvoiceItem);
-            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnDetailedBllInquiry);
-            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnInvoicePdf);
-            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnPassiveInvoices);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // BarBtnNewInvoice
-            // 
-            this.BarBtnNewInvoice.Caption = "Yeni Fatura Girişi";
-            this.BarBtnNewInvoice.Id = 18;
-            this.BarBtnNewInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoice.ImageOptions.Image")));
-            this.BarBtnNewInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoice.ImageOptions.LargeImage")));
-            this.BarBtnNewInvoice.Name = "BarBtnNewInvoice";
-            // 
-            // BarBtnNewInvoiceItem
-            // 
-            this.BarBtnNewInvoiceItem.Caption = "Faturaya Kalem Girişi";
-            this.BarBtnNewInvoiceItem.Id = 19;
-            this.BarBtnNewInvoiceItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoiceItem.ImageOptions.Image")));
-            this.BarBtnNewInvoiceItem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoiceItem.ImageOptions.LargeImage")));
-            this.BarBtnNewInvoiceItem.Name = "BarBtnNewInvoiceItem";
-            // 
-            // BarBtnDetailedBllInquiry
-            // 
-            this.BarBtnDetailedBllInquiry.Caption = "Detaylı Fatura Sorgulama";
-            this.BarBtnDetailedBllInquiry.Id = 20;
-            this.BarBtnDetailedBllInquiry.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnDetailedBllInquiry.ImageOptions.Image")));
-            this.BarBtnDetailedBllInquiry.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnDetailedBllInquiry.ImageOptions.LargeImage")));
-            this.BarBtnDetailedBllInquiry.Name = "BarBtnDetailedBllInquiry";
-            // 
-            // BarBtnInvoicePdf
-            // 
-            this.BarBtnInvoicePdf.Caption = "Fatura Pdf";
-            this.BarBtnInvoicePdf.Id = 21;
-            this.BarBtnInvoicePdf.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnInvoicePdf.ImageOptions.Image")));
-            this.BarBtnInvoicePdf.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnInvoicePdf.ImageOptions.LargeImage")));
-            this.BarBtnInvoicePdf.Name = "BarBtnInvoicePdf";
-            // 
-            // BarBtnPassiveInvoices
-            // 
-            this.BarBtnPassiveInvoices.Caption = "Pasif Faturalar";
-            this.BarBtnPassiveInvoices.Id = 22;
-            this.BarBtnPassiveInvoices.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnPassiveInvoices.ImageOptions.Image")));
-            this.BarBtnPassiveInvoices.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnPassiveInvoices.ImageOptions.LargeImage")));
-            this.BarBtnPassiveInvoices.Name = "BarBtnPassiveInvoices";
-            // 
-            // BarBtnGuide
-            // 
-            this.BarBtnGuide.Caption = "Rehber";
-            this.BarBtnGuide.Id = 23;
-            this.BarBtnGuide.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.BarBtnGuide.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.BarBtnGuide.Name = "BarBtnGuide";
-            // 
-            // BarBtnEmployeeList
-            // 
-            this.BarBtnEmployeeList.Caption = "Personel Listesi";
-            this.BarBtnEmployeeList.Id = 24;
-            this.BarBtnEmployeeList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BarBtnEmployeeList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.BarBtnEmployeeList.Name = "BarBtnEmployeeList";
-            // 
-            // BtnBtnNewEmployee
-            // 
-            this.BtnBtnNewEmployee.Caption = "Yeni Personel";
-            this.BtnBtnNewEmployee.Id = 25;
-            this.BtnBtnNewEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.BtnBtnNewEmployee.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.BtnBtnNewEmployee.Name = "BtnBtnNewEmployee";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.ItemLinks.Add(this.BarBtnDepartmentList);
-            this.ribbonPageGroup10.ItemLinks.Add(this.BarBtnNewDepartment);
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
-            // 
-            // BarBtnDepartmentList
-            // 
-            this.BarBtnDepartmentList.Caption = "Departman Listesi";
-            this.BarBtnDepartmentList.Id = 26;
-            this.BarBtnDepartmentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.BarBtnDepartmentList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.BarBtnDepartmentList.Name = "BarBtnDepartmentList";
-            // 
-            // BarBtnNewDepartment
-            // 
-            this.BarBtnNewDepartment.Caption = "Yeni Deaprtman";
-            this.BarBtnNewDepartment.Id = 27;
-            this.BarBtnNewDepartment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.BarBtnNewDepartment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
-            this.BarBtnNewDepartment.Name = "BarBtnNewDepartment";
-            // 
-            // BarBtnCalculator
-            // 
-            this.BarBtnCalculator.Caption = "Hesap Makinesi";
-            this.BarBtnCalculator.Id = 28;
-            this.BarBtnCalculator.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.BarBtnCalculator.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.BarBtnCalculator.Name = "BarBtnCalculator";
-            // 
-            // BarBtnNewNote
-            // 
-            this.BarBtnNewNote.Caption = "Yeni Not";
-            this.BarBtnNewNote.Id = 29;
-            this.BarBtnNewNote.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.BarBtnNewNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
-            this.BarBtnNewNote.Name = "BarBtnNewNote";
-            // 
-            // BarBtnExchangeRates
-            // 
-            this.BarBtnExchangeRates.Caption = "Döviz Kurları";
-            this.BarBtnExchangeRates.Id = 30;
-            this.BarBtnExchangeRates.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.BarBtnExchangeRates.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.BarBtnExchangeRates.Name = "BarBtnExchangeRates";
-            // 
-            // BarBtnNews
-            // 
-            this.BarBtnNews.Caption = "Haberler";
-            this.BarBtnNews.Id = 31;
-            this.BarBtnNews.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.BarBtnNews.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
-            this.BarBtnNews.Name = "BarBtnNews";
-            // 
-            // BarBtnForeignCurrencyTransactions
-            // 
-            this.BarBtnForeignCurrencyTransactions.Caption = "Döviz İşlemleri";
-            this.BarBtnForeignCurrencyTransactions.Id = 32;
-            this.BarBtnForeignCurrencyTransactions.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.BarBtnForeignCurrencyTransactions.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
-            this.BarBtnForeignCurrencyTransactions.Name = "BarBtnForeignCurrencyTransactions";
-            // 
-            // BarBtnOfficeWord
-            // 
-            this.BarBtnOfficeWord.Caption = "Word";
-            this.BarBtnOfficeWord.Id = 33;
-            this.BarBtnOfficeWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
-            this.BarBtnOfficeWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
-            this.BarBtnOfficeWord.Name = "BarBtnOfficeWord";
-            // 
-            // BarBtnOfficeExcel
-            // 
-            this.BarBtnOfficeExcel.Caption = "Excel";
-            this.BarBtnOfficeExcel.Id = 34;
-            this.BarBtnOfficeExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.Image")));
-            this.BarBtnOfficeExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.LargeImage")));
-            this.BarBtnOfficeExcel.Name = "BarBtnOfficeExcel";
-            // 
-            // BarBtnHelp
-            // 
-            this.BarBtnHelp.Caption = "Yardım";
-            this.BarBtnHelp.Id = 35;
-            this.BarBtnHelp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.Image")));
-            this.BarBtnHelp.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.LargeImage")));
-            this.BarBtnHelp.Name = "BarBtnHelp";
-            // 
-            // BarBtnEmailBox
-            // 
-            this.BarBtnEmailBox.Caption = "E-Posta Kutusu";
-            this.BarBtnEmailBox.Id = 36;
-            this.BarBtnEmailBox.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.Image")));
-            this.BarBtnEmailBox.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.LargeImage")));
-            this.BarBtnEmailBox.Name = "BarBtnEmailBox";
-            // 
-            // BarBtnNewEmail
-            // 
-            this.BarBtnNewEmail.Caption = "Yeni E-Posta ";
-            this.BarBtnNewEmail.Id = 37;
-            this.BarBtnNewEmail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
-            this.BarBtnNewEmail.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
-            this.BarBtnNewEmail.Name = "BarBtnNewEmail";
-            // 
-            // BarBtnSmsSend
-            // 
-            this.BarBtnSmsSend.Caption = "Sms Gönder";
-            this.BarBtnSmsSend.Id = 38;
-            this.BarBtnSmsSend.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.Image")));
-            this.BarBtnSmsSend.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.LargeImage")));
-            this.BarBtnSmsSend.Name = "BarBtnSmsSend";
-            // 
-            // barButtonItem20
-            // 
-            this.barButtonItem20.Caption = "Kartlar";
-            this.barButtonItem20.Id = 39;
-            this.barButtonItem20.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.Image")));
-            this.barButtonItem20.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.LargeImage")));
-            this.barButtonItem20.Name = "barButtonItem20";
             // 
             // Form1
             // 
@@ -741,7 +742,7 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnEmailBox;
         private DevExpress.XtraBars.BarButtonItem BarBtnNewEmail;
         private DevExpress.XtraBars.BarButtonItem BarBtnSmsSend;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem20;
+        private DevExpress.XtraBars.BarButtonItem BarBtnCards;
     }
 }
 
