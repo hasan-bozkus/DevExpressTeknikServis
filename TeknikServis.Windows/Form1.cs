@@ -29,5 +29,25 @@ namespace TeknikServis.Windows
             Forms.FrmNewProduct fr = new Forms.FrmNewProduct();
             fr.Show();
         }
+
+        private void BarBtnCategoryList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmCategory fr = new Forms.FrmCategory();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnNewCategory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmNewCategory fr = new Forms.FrmNewCategory();
+            fr.Show();
+        }
+
+        private void BarBtnProductStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmStatistics fr = new Forms.FrmStatistics();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

@@ -306,7 +306,7 @@
             // 
             // SmpBtnSave
             // 
-            this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnSave.ImageOptions.Image")));
             this.SmpBtnSave.Location = new System.Drawing.Point(12, 562);
             this.SmpBtnSave.Name = "SmpBtnSave";
             this.SmpBtnSave.Size = new System.Drawing.Size(143, 36);
@@ -316,7 +316,7 @@
             // 
             // SmpBtnCancel
             // 
-            this.SmpBtnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.SmpBtnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnCancel.ImageOptions.Image")));
             this.SmpBtnCancel.Location = new System.Drawing.Point(161, 562);
             this.SmpBtnCancel.Name = "SmpBtnCancel";
             this.SmpBtnCancel.Size = new System.Drawing.Size(149, 36);

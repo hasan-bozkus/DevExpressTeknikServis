@@ -165,6 +165,7 @@
             this.BarBtnCategoryList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCategoryList.ImageOptions.Image")));
             this.BarBtnCategoryList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCategoryList.ImageOptions.LargeImage")));
             this.BarBtnCategoryList.Name = "BarBtnCategoryList";
+            this.BarBtnCategoryList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnCategoryList_ItemClick);
             // 
             // BarBtnNewCategory
             // 
@@ -173,6 +174,7 @@
             this.BarBtnNewCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCategory.ImageOptions.Image")));
             this.BarBtnNewCategory.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCategory.ImageOptions.LargeImage")));
             this.BarBtnNewCategory.Name = "BarBtnNewCategory";
+            this.BarBtnNewCategory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewCategory_ItemClick);
             // 
             // BarBtnProductList
             // 
@@ -207,6 +209,7 @@
             this.BarBtnProductStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnProductStatistics.ImageOptions.Image")));
             this.BarBtnProductStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnProductStatistics.ImageOptions.LargeImage")));
             this.BarBtnProductStatistics.Name = "BarBtnProductStatistics";
+            this.BarBtnProductStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnProductStatistics_ItemClick);
             // 
             // BarBtnBrandStatistics
             // 
