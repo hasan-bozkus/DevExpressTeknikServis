@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStatistics));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LblTotalProductCount = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.LblTotalProductCount = new DevExpress.XtraEditors.LabelControl();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -112,8 +112,8 @@
             this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
             this.LblSmallHomeApplianceStokQuantity = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.panel3.SuspendLayout();
@@ -165,17 +165,17 @@
             this.panel1.Size = new System.Drawing.Size(261, 137);
             this.panel1.TabIndex = 0;
             // 
-            // LblTotalProductCount
+            // pictureEdit1
             // 
-            this.LblTotalProductCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalProductCount.Appearance.ForeColor = System.Drawing.Color.White;
-            this.LblTotalProductCount.Appearance.Options.UseFont = true;
-            this.LblTotalProductCount.Appearance.Options.UseForeColor = true;
-            this.LblTotalProductCount.Location = new System.Drawing.Point(32, 48);
-            this.LblTotalProductCount.Name = "LblTotalProductCount";
-            this.LblTotalProductCount.Size = new System.Drawing.Size(75, 59);
-            this.LblTotalProductCount.TabIndex = 0;
-            this.LblTotalProductCount.Text = "584";
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(153, 48);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(60, 60);
+            this.pictureEdit1.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -189,17 +189,17 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Toplam Ürün Sayısı";
             // 
-            // pictureEdit1
+            // LblTotalProductCount
             // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(153, 48);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(60, 60);
-            this.pictureEdit1.TabIndex = 1;
+            this.LblTotalProductCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalProductCount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblTotalProductCount.Appearance.Options.UseFont = true;
+            this.LblTotalProductCount.Appearance.Options.UseForeColor = true;
+            this.LblTotalProductCount.Location = new System.Drawing.Point(32, 48);
+            this.LblTotalProductCount.Name = "LblTotalProductCount";
+            this.LblTotalProductCount.Size = new System.Drawing.Size(75, 59);
+            this.LblTotalProductCount.TabIndex = 0;
+            this.LblTotalProductCount.Text = "584";
             // 
             // panel2
             // 
@@ -1121,10 +1121,11 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmStatistics";
             this.Text = "FrmStatistics";
+            this.Load += new System.EventHandler(this.FrmStatistics_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
