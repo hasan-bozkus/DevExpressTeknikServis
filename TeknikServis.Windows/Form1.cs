@@ -49,5 +49,12 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnBrandStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmBrand fr = new Forms.FrmBrand();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

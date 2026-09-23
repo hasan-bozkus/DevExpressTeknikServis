@@ -218,6 +218,7 @@
             this.BarBtnBrandStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnBrandStatistics.ImageOptions.Image")));
             this.BarBtnBrandStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnBrandStatistics.ImageOptions.LargeImage")));
             this.BarBtnBrandStatistics.Name = "BarBtnBrandStatistics";
+            this.BarBtnBrandStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnBrandStatistics_ItemClick);
             // 
             // BarBtnFaultProductList
             // 
