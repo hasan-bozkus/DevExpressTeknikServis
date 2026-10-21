@@ -78,7 +78,7 @@
             this.RbnPageGroupStatistics = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnPageGroupFault = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnPageGroupQrAndBarcode = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.RbnCurrentPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -149,7 +149,7 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
             this.RbnProducts,
-            this.ribbonPage2,
+            this.RbnCurrentPage,
             this.ribbonPage3,
             this.ribbonPage4,
             this.ribbonPage5,
@@ -267,6 +267,7 @@
             this.BarBtnNewCurrent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCurrent.ImageOptions.Image")));
             this.BarBtnNewCurrent.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewCurrent.ImageOptions.LargeImage")));
             this.BarBtnNewCurrent.Name = "BarBtnNewCurrent";
+            this.BarBtnNewCurrent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewCurrent_ItemClick);
             // 
             // BarBtnCurrentList
             // 
@@ -275,6 +276,7 @@
             this.BarBtnCurrentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentList.ImageOptions.Image")));
             this.BarBtnCurrentList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCurrentList.ImageOptions.LargeImage")));
             this.BarBtnCurrentList.Name = "BarBtnCurrentList";
+            this.BarBtnCurrentList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnCurrentList_ItemClick);
             // 
             // BarBtnCityStatistics
             // 
@@ -283,6 +285,7 @@
             this.BarBtnCityStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCityStatistics.ImageOptions.Image")));
             this.BarBtnCityStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCityStatistics.ImageOptions.LargeImage")));
             this.BarBtnCityStatistics.Name = "BarBtnCityStatistics";
+            this.BarBtnCityStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnCityStatistics_ItemClick);
             // 
             // BarBtnCurrentMovenets
             // 
@@ -536,12 +539,12 @@
             this.RbnPageGroupQrAndBarcode.Name = "RbnPageGroupQrAndBarcode";
             this.RbnPageGroupQrAndBarcode.Text = "Qr - Barkod";
             // 
-            // ribbonPage2
+            // RbnCurrentPage
             // 
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.RbnCurrentPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Cariler";
+            this.RbnCurrentPage.Name = "RbnCurrentPage";
+            this.RbnCurrentPage.Text = "Cariler";
             // 
             // ribbonPageGroup3
             // 
@@ -690,7 +693,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage RbnProducts;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup RbnPageGroupCategory;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup RbnPageGroupProduct;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPage RbnCurrentPage;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;

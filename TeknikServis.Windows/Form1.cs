@@ -56,5 +56,25 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnCurrentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmCurrentList fr = new Forms.FrmCurrentList();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnCityStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmCurrents fr = new Forms.FrmCurrents();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnNewCurrent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmNewCurrent fr = new Forms.FrmNewCurrent();
+            fr.Show();
+        }
     }
 }

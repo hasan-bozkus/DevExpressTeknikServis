@@ -111,11 +111,29 @@
     <Compile Include="Forms\FrmCategory.Designer.cs">
       <DependentUpon>FrmCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmCurrentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCurrentList.Designer.cs">
+      <DependentUpon>FrmCurrentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCurrents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCurrents.Designer.cs">
+      <DependentUpon>FrmCurrents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmNewCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmNewCategory.Designer.cs">
       <DependentUpon>FrmNewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNewCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNewCurrent.Designer.cs">
+      <DependentUpon>FrmNewCurrent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmNewProduct.cs">
       <SubType>Form</SubType>
@@ -190,8 +208,17 @@
     <EmbeddedResource Include="Forms\FrmCategory.resx">
       <DependentUpon>FrmCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCurrentList.resx">
+      <DependentUpon>FrmCurrentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCurrents.resx">
+      <DependentUpon>FrmCurrents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmNewCategory.resx">
       <DependentUpon>FrmNewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNewCurrent.resx">
+      <DependentUpon>FrmNewCurrent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmNewProduct.resx">
       <DependentUpon>FrmNewProduct.cs</DependentUpon>
@@ -239,6 +266,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\financial.svg" />
     <None Include="Resources\Sorting.ico" />
     <None Include="Resources\casper1.jpg" />
     <None Include="Resources\casper.jpg" />
