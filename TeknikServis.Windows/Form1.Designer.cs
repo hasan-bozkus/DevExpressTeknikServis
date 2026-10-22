@@ -374,6 +374,7 @@
             this.BarBtnDepartmentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnDepartmentList.ImageOptions.Image")));
             this.BarBtnDepartmentList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnDepartmentList.ImageOptions.LargeImage")));
             this.BarBtnDepartmentList.Name = "BarBtnDepartmentList";
+            this.BarBtnDepartmentList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnDepartmentList_ItemClick);
             // 
             // BarBtnNewDepartment
             // 
@@ -382,6 +383,7 @@
             this.BarBtnNewDepartment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewDepartment.ImageOptions.Image")));
             this.BarBtnNewDepartment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewDepartment.ImageOptions.LargeImage")));
             this.BarBtnNewDepartment.Name = "BarBtnNewDepartment";
+            this.BarBtnNewDepartment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewDepartment_ItemClick);
             // 
             // BarBtnCalculator
             // 

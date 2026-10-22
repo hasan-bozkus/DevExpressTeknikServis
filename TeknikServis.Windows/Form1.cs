@@ -76,5 +76,18 @@ namespace TeknikServis.Windows
             Forms.FrmNewCurrent fr = new Forms.FrmNewCurrent();
             fr.Show();
         }
+
+        private void BarBtnDepartmentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmDepartment fr = new Forms.FrmDepartment();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnNewDepartment_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmNewDepartment fr = new Forms.FrmNewDepartment();
+            fr.Show();
+        }
     }
 }
