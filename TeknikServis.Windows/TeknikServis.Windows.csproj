@@ -134,6 +134,12 @@
     <Compile Include="Forms\FrmDepartment.Designer.cs">
       <DependentUpon>FrmDepartment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEmployee.Designer.cs">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmNewCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     <EmbeddedResource Include="Forms\FrmDepartment.resx">
       <DependentUpon>FrmDepartment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEmployee.resx">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmNewCategory.resx">
       <DependentUpon>FrmNewCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +298,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\adam1kesin.png" />
+    <Content Include="Resources\kadin1.png" />
+    <Content Include="Resources\kadin2kesin.png" />
+    <Content Include="Resources\man5kesin.png" />
     <None Include="Resources\financial.svg" />
     <None Include="Resources\Sorting.ico" />
     <None Include="Resources\casper1.jpg" />

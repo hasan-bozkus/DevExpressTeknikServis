@@ -358,6 +358,7 @@
             this.BarBtnEmployeeList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnEmployeeList.ImageOptions.Image")));
             this.BarBtnEmployeeList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnEmployeeList.ImageOptions.LargeImage")));
             this.BarBtnEmployeeList.Name = "BarBtnEmployeeList";
+            this.BarBtnEmployeeList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnEmployeeList_ItemClick);
             // 
             // BtnBtnNewEmployee
             // 

@@ -89,5 +89,12 @@ namespace TeknikServis.Windows
             Forms.FrmNewDepartment fr = new Forms.FrmNewDepartment();
             fr.Show();
         }
+
+        private void BarBtnEmployeeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmEmployee fr = new Forms.FrmEmployee();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
