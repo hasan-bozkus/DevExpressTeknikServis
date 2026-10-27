@@ -140,6 +140,12 @@
     <Compile Include="Forms\FrmEmployee.Designer.cs">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmExchangeRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmExchangeRates.Designer.cs">
+      <DependentUpon>FrmExchangeRates.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmNewCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,12 @@
     <Compile Include="Forms\FrmNewProduct.Designer.cs">
       <DependentUpon>FrmNewProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNotes.Designer.cs">
+      <DependentUpon>FrmNotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmProductList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,12 @@
     </Compile>
     <Compile Include="Forms\FrmStatistics.Designer.cs">
       <DependentUpon>FrmStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmYoutube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmYoutube.Designer.cs">
+      <DependentUpon>FrmYoutube.cs</DependentUpon>
     </Compile>
     <Compile Include="InvoiceDetails.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -243,6 +261,9 @@
     <EmbeddedResource Include="Forms\FrmEmployee.resx">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmExchangeRates.resx">
+      <DependentUpon>FrmExchangeRates.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmNewCategory.resx">
       <DependentUpon>FrmNewCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,11 +276,17 @@
     <EmbeddedResource Include="Forms\FrmNewProduct.resx">
       <DependentUpon>FrmNewProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNotes.resx">
+      <DependentUpon>FrmNotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmProductList.resx">
       <DependentUpon>FrmProductList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmStatistics.resx">
       <DependentUpon>FrmStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmYoutube.resx">
+      <DependentUpon>FrmYoutube.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

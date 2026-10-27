@@ -61,7 +61,7 @@
             this.BarBtnCalculator = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewNote = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnExchangeRates = new DevExpress.XtraBars.BarButtonItem();
-            this.BarBtnNews = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnYoutube = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnForeignCurrencyTransactions = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnOfficeWord = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnOfficeExcel = new DevExpress.XtraBars.BarButtonItem();
@@ -95,6 +95,7 @@
             this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.BarBtnNoteList = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -134,7 +135,7 @@
             this.BarBtnCalculator,
             this.BarBtnNewNote,
             this.BarBtnExchangeRates,
-            this.BarBtnNews,
+            this.BarBtnYoutube,
             this.BarBtnForeignCurrencyTransactions,
             this.BarBtnOfficeWord,
             this.BarBtnOfficeExcel,
@@ -142,9 +143,10 @@
             this.BarBtnEmailBox,
             this.BarBtnNewEmail,
             this.BarBtnSmsSend,
-            this.BarBtnCards});
+            this.BarBtnCards,
+            this.BarBtnNoteList});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 40;
+            this.ribbonControl1.MaxItemId = 41;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
@@ -393,6 +395,7 @@
             this.BarBtnCalculator.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnCalculator.ImageOptions.Image")));
             this.BarBtnCalculator.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCalculator.ImageOptions.LargeImage")));
             this.BarBtnCalculator.Name = "BarBtnCalculator";
+            this.BarBtnCalculator.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnCalculator_ItemClick);
             // 
             // BarBtnNewNote
             // 
@@ -409,14 +412,16 @@
             this.BarBtnExchangeRates.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnExchangeRates.ImageOptions.Image")));
             this.BarBtnExchangeRates.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnExchangeRates.ImageOptions.LargeImage")));
             this.BarBtnExchangeRates.Name = "BarBtnExchangeRates";
+            this.BarBtnExchangeRates.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnExchangeRates_ItemClick);
             // 
-            // BarBtnNews
+            // BarBtnYoutube
             // 
-            this.BarBtnNews.Caption = "Haberler";
-            this.BarBtnNews.Id = 31;
-            this.BarBtnNews.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNews.ImageOptions.Image")));
-            this.BarBtnNews.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNews.ImageOptions.LargeImage")));
-            this.BarBtnNews.Name = "BarBtnNews";
+            this.BarBtnYoutube.Caption = "Youtube";
+            this.BarBtnYoutube.Id = 31;
+            this.BarBtnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnYoutube.ImageOptions.Image")));
+            this.BarBtnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnYoutube.ImageOptions.LargeImage")));
+            this.BarBtnYoutube.Name = "BarBtnYoutube";
+            this.BarBtnYoutube.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnYoutube_ItemClick);
             // 
             // BarBtnForeignCurrencyTransactions
             // 
@@ -433,6 +438,7 @@
             this.BarBtnOfficeWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeWord.ImageOptions.Image")));
             this.BarBtnOfficeWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeWord.ImageOptions.LargeImage")));
             this.BarBtnOfficeWord.Name = "BarBtnOfficeWord";
+            this.BarBtnOfficeWord.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnOfficeWord_ItemClick);
             // 
             // BarBtnOfficeExcel
             // 
@@ -441,6 +447,7 @@
             this.BarBtnOfficeExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeExcel.ImageOptions.Image")));
             this.BarBtnOfficeExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnOfficeExcel.ImageOptions.LargeImage")));
             this.BarBtnOfficeExcel.Name = "BarBtnOfficeExcel";
+            this.BarBtnOfficeExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnOfficeExcel_ItemClick);
             // 
             // BarBtnHelp
             // 
@@ -630,9 +637,10 @@
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnCalculator);
+            this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnNoteList);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnNewNote);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnExchangeRates);
-            this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnNews);
+            this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnYoutube);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnForeignCurrencyTransactions);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnOfficeWord);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnOfficeExcel);
@@ -668,6 +676,15 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // BarBtnNoteList
+            // 
+            this.BarBtnNoteList.Caption = "Ajanda";
+            this.BarBtnNoteList.Id = 40;
+            this.BarBtnNoteList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNoteList.ImageOptions.Image")));
+            this.BarBtnNoteList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNoteList.ImageOptions.LargeImage")));
+            this.BarBtnNoteList.Name = "BarBtnNoteList";
+            this.BarBtnNoteList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNoteList_ItemClick);
             // 
             // Form1
             // 
@@ -744,7 +761,7 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnNewNote;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem BarBtnExchangeRates;
-        private DevExpress.XtraBars.BarButtonItem BarBtnNews;
+        private DevExpress.XtraBars.BarButtonItem BarBtnYoutube;
         private DevExpress.XtraBars.BarButtonItem BarBtnForeignCurrencyTransactions;
         private DevExpress.XtraBars.BarButtonItem BarBtnOfficeWord;
         private DevExpress.XtraBars.BarButtonItem BarBtnOfficeExcel;
@@ -753,6 +770,7 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnNewEmail;
         private DevExpress.XtraBars.BarButtonItem BarBtnSmsSend;
         private DevExpress.XtraBars.BarButtonItem BarBtnCards;
+        private DevExpress.XtraBars.BarButtonItem BarBtnNoteList;
     }
 }
 

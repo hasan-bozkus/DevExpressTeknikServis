@@ -96,5 +96,41 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnCalculator_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
+
+        private void BarBtnExchangeRates_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmExchangeRates fr = new Forms.FrmExchangeRates();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnOfficeWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("winword");
+        }
+
+        private void BarBtnOfficeExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("excel");
+        }
+
+        private void BarBtnYoutube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmYoutube fr = new Forms.FrmYoutube();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnNoteList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmNotes fr = new Forms.FrmNotes();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
