@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbTeknikServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbTeknikServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Admin">
           <Key>
             <PropertyRef Name="AdminId" />
@@ -116,11 +116,11 @@
             <PropertyRef Name="ProcessId" />
           </Key>
           <Property Name="ProcessId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Product" Type="int" />
           <Property Name="Current" Type="int" />
           <Property Name="Employee" Type="smallint" />
           <Property Name="ReceiveDate" Type="smalldatetime" />
           <Property Name="ReleaseDate" Type="smalldatetime" />
+          <Property Name="ProductSerialNo" Type="char" MaxLength="5" />
         </EntityType>
         <EntityType Name="ProductMovements">
           <Key>
@@ -133,6 +133,7 @@
           <Property Name="Date" Type="smalldatetime" />
           <Property Name="Quantity" Type="smallint" />
           <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ProductSerialNo" Type="char" MaxLength="5" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
@@ -239,18 +240,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ProductAcceptances_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
-          <End Role="ProductAcceptances" Type="Self.ProductAcceptances" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="ProductId" />
-            </Principal>
-            <Dependent Role="ProductAcceptances">
-              <PropertyRef Name="Product" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ProductMovements_Currents">
           <End Role="Currents" Type="Self.Currents" Multiplicity="0..1" />
           <End Role="ProductMovements" Type="Self.ProductMovements" Multiplicity="*" />
@@ -351,10 +340,6 @@
             <End Role="Employees" EntitySet="Employees" />
             <End Role="ProductAcceptances" EntitySet="ProductAcceptances" />
           </AssociationSet>
-          <AssociationSet Name="FK_ProductAcceptances_Products" Association="Self.FK_ProductAcceptances_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="ProductAcceptances" EntitySet="ProductAcceptances" />
-          </AssociationSet>
           <AssociationSet Name="FK_ProductMovements_Currents" Association="Self.FK_ProductMovements_Currents">
             <End Role="Currents" EntitySet="Currents" />
             <End Role="ProductMovements" EntitySet="ProductMovements" />
@@ -376,8 +361,7 @@
             <End Role="ProductTracings" EntitySet="ProductTracings" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbTeknikServisModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -505,14 +489,13 @@
             <PropertyRef Name="ProcessId" />
           </Key>
           <Property Name="ProcessId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Product" Type="Int32" />
           <Property Name="Current" Type="Int32" />
           <Property Name="Employee" Type="Int16" />
           <Property Name="ReceiveDate" Type="DateTime" Precision="0" />
           <Property Name="ReleaseDate" Type="DateTime" Precision="0" />
           <NavigationProperty Name="Currents" Relationship="Self.FK_ProductAcceptances_Currents" FromRole="ProductAcceptances" ToRole="Currents" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_ProductAcceptances_Employees" FromRole="ProductAcceptances" ToRole="Employees" />
-          <NavigationProperty Name="Products" Relationship="Self.FK_ProductAcceptances_Products" FromRole="ProductAcceptances" ToRole="Products" />
+          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="ProductMovements">
           <Key>
@@ -528,6 +511,7 @@
           <NavigationProperty Name="Currents" Relationship="Self.FK_ProductMovements_Currents" FromRole="ProductMovements" ToRole="Currents" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_ProductMovements_Employees" FromRole="ProductMovements" ToRole="Employees" />
           <NavigationProperty Name="Products" Relationship="Self.FK_ProductMovements_Products" FromRole="ProductMovements" ToRole="Products" />
+          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
@@ -542,7 +526,6 @@
           <Property Name="CategoryId" Type="Byte" />
           <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="Categories" Relationship="Self.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
-          <NavigationProperty Name="ProductAcceptances" Relationship="Self.FK_ProductAcceptances_Products" FromRole="Products" ToRole="ProductAcceptances" />
           <NavigationProperty Name="ProductMovements" Relationship="Self.FK_ProductMovements_Products" FromRole="Products" ToRole="ProductMovements" />
           <NavigationProperty Name="ProductTracings" Relationship="Self.FK_ProductTracings_Products" FromRole="Products" ToRole="ProductTracings" />
         </EntityType>
@@ -675,18 +658,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ProductAcceptances_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
-          <End Role="ProductAcceptances" Type="Self.ProductAcceptances" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="ProductId" />
-            </Principal>
-            <Dependent Role="ProductAcceptances">
-              <PropertyRef Name="Product" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ProductMovements_Products">
           <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
           <End Role="ProductMovements" Type="Self.ProductMovements" Multiplicity="*" />
@@ -762,10 +733,6 @@
           <AssociationSet Name="FK_InvoiceDetails_InvoiceInformations" Association="Self.FK_InvoiceDetails_InvoiceInformations">
             <End Role="InvoiceInformations" EntitySet="InvoiceInformations" />
             <End Role="InvoiceDetails" EntitySet="InvoiceDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK_ProductAcceptances_Products" Association="Self.FK_ProductAcceptances_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="ProductAcceptances" EntitySet="ProductAcceptances" />
           </AssociationSet>
           <AssociationSet Name="FK_ProductMovements_Products" Association="Self.FK_ProductMovements_Products">
             <End Role="Products" EntitySet="Products" />
@@ -901,8 +868,8 @@
           <EntitySetMapping Name="ProductAcceptances">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductAcceptances">
               <MappingFragment StoreEntitySet="ProductAcceptances">
+                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
                 <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
-                <ScalarProperty Name="Product" ColumnName="Product" />
                 <ScalarProperty Name="Current" ColumnName="Current" />
                 <ScalarProperty Name="Employee" ColumnName="Employee" />
                 <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
@@ -913,6 +880,7 @@
           <EntitySetMapping Name="ProductMovements">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductMovements">
               <MappingFragment StoreEntitySet="ProductMovements">
+                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
                 <ScalarProperty Name="MovementId" ColumnName="MovementId" />
                 <ScalarProperty Name="Product" ColumnName="Product" />
                 <ScalarProperty Name="Current" ColumnName="Current" />

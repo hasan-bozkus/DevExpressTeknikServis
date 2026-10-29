@@ -17,7 +17,6 @@ namespace TeknikServis.Windows
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Products()
         {
-            this.ProductAcceptances = new HashSet<ProductAcceptances>();
             this.ProductMovements = new HashSet<ProductMovements>();
             this.ProductTracings = new HashSet<ProductTracings>();
         }
@@ -32,8 +31,6 @@ namespace TeknikServis.Windows
         public Nullable<bool> Status { get; set; }
     
         public virtual Categories Categories { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductAcceptances> ProductAcceptances { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductMovements> ProductMovements { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -21,6 +21,7 @@ namespace TeknikServis.Windows
         public Nullable<System.DateTime> Date { get; set; }
         public Nullable<short> Quantity { get; set; }
         public Nullable<decimal> Price { get; set; }
+        public string ProductSerialNo { get; set; }
     
         public virtual Currents Currents { get; set; }
         public virtual Employees Employees { get; set; }

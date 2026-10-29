@@ -132,5 +132,12 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnFaultProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmFaultsList fr = new Forms.FrmFaultsList();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

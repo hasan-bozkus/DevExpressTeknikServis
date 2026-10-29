@@ -70,6 +70,7 @@
             this.BarBtnNewEmail = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnSmsSend = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnCards = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnNoteList = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -95,7 +96,6 @@
             this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.BarBtnNoteList = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -229,6 +229,7 @@
             this.BarBtnFaultProductList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductList.ImageOptions.Image")));
             this.BarBtnFaultProductList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductList.ImageOptions.LargeImage")));
             this.BarBtnFaultProductList.Name = "BarBtnFaultProductList";
+            this.BarBtnFaultProductList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnFaultProductList_ItemClick);
             // 
             // BarBtnNewFaultProduct
             // 
@@ -489,6 +490,15 @@
             this.BarBtnCards.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnCards.ImageOptions.LargeImage")));
             this.BarBtnCards.Name = "BarBtnCards";
             // 
+            // BarBtnNoteList
+            // 
+            this.BarBtnNoteList.Caption = "Ajanda";
+            this.BarBtnNoteList.Id = 40;
+            this.BarBtnNoteList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNoteList.ImageOptions.Image")));
+            this.BarBtnNoteList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNoteList.ImageOptions.LargeImage")));
+            this.BarBtnNoteList.Name = "BarBtnNoteList";
+            this.BarBtnNoteList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNoteList_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -677,15 +687,6 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // BarBtnNoteList
-            // 
-            this.BarBtnNoteList.Caption = "Ajanda";
-            this.BarBtnNoteList.Id = 40;
-            this.BarBtnNoteList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNoteList.ImageOptions.Image")));
-            this.BarBtnNoteList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNoteList.ImageOptions.LargeImage")));
-            this.BarBtnNoteList.Name = "BarBtnNoteList";
-            this.BarBtnNoteList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNoteList_ItemClick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -740,7 +741,6 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnNewBarcode;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup RbnPageGroupFault;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup RbnPageGroupQrAndBarcode;
-        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem BarBtnNewCurrent;
         private DevExpress.XtraBars.BarButtonItem BarBtnCurrentList;
         private DevExpress.XtraBars.BarButtonItem BarBtnCityStatistics;
@@ -771,6 +771,7 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnSmsSend;
         private DevExpress.XtraBars.BarButtonItem BarBtnCards;
         private DevExpress.XtraBars.BarButtonItem BarBtnNoteList;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }
 }
 

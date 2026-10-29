@@ -15,14 +15,13 @@ namespace TeknikServis.Windows
     public partial class ProductAcceptances
     {
         public int ProcessId { get; set; }
-        public Nullable<int> Product { get; set; }
         public Nullable<int> Current { get; set; }
         public Nullable<short> Employee { get; set; }
         public Nullable<System.DateTime> ReceiveDate { get; set; }
         public Nullable<System.DateTime> ReleaseDate { get; set; }
+        public string ProductSerialNo { get; set; }
     
         public virtual Currents Currents { get; set; }
         public virtual Employees Employees { get; set; }
-        public virtual Products Products { get; set; }
     }
 }
