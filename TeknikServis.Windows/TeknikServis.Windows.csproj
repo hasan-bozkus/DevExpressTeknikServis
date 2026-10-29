@@ -188,6 +188,18 @@
     <Compile Include="Forms\FrmProductList.Designer.cs">
       <DependentUpon>FrmProductList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmNewProductSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNewProductSales.Designer.cs">
+      <DependentUpon>FrmNewProductSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSales.Designer.cs">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmStatistics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +303,12 @@
     <EmbeddedResource Include="Forms\FrmProductList.resx">
       <DependentUpon>FrmProductList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNewProductSales.resx">
+      <DependentUpon>FrmNewProductSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSales.resx">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmStatistics.resx">
       <DependentUpon>FrmStatistics.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,9 +353,18 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Resources\adam1kesin.png" />
+    <None Include="Resources\Tag.svg" />
+    <None Include="Resources\QRCode.svg" />
+    <None Include="Resources\SIPMove.svg" />
+    <None Include="Resources\QuarentinedItems.svg" />
+    <None Include="Resources\DateTime.svg" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />
+    <None Include="Resources\PartyLeader.svg" />
+    <None Include="Resources\PersonalFolder.svg" />
+    <None Include="Resources\radarwithmarkers_16x16.png" />
+    <None Include="Resources\radarwithmarkers_32x32.png" />
     <None Include="Resources\financial.svg" />
     <None Include="Resources\Sorting.ico" />
     <None Include="Resources\casper1.jpg" />

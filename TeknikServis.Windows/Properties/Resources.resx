@@ -178,4 +178,31 @@
   <data name="financial" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\financial.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="radarwithmarkers_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radarwithmarkers_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radarwithmarkers_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radarwithmarkers_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PersonalFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PersonalFolder.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PartyLeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PartyLeader.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DateTime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DateTime.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QuarentinedItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuarentinedItems.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SIPMove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SIPMove.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="QRCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QRCode.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tag.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v25.1, Version=25.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
 </root>

@@ -71,6 +71,8 @@
             this.BarBtnSmsSend = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnCards = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNoteList = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnSalesList = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -81,6 +83,7 @@
             this.RbnPageGroupQrAndBarcode = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnCurrentPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -144,9 +147,11 @@
             this.BarBtnNewEmail,
             this.BarBtnSmsSend,
             this.BarBtnCards,
-            this.BarBtnNoteList});
+            this.BarBtnNoteList,
+            this.BarBtnNewProductSales,
+            this.BarBtnSalesList});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 41;
+            this.ribbonControl1.MaxItemId = 43;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
@@ -499,6 +504,24 @@
             this.BarBtnNoteList.Name = "BarBtnNoteList";
             this.BarBtnNoteList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNoteList_ItemClick);
             // 
+            // BarBtnNewProductSales
+            // 
+            this.BarBtnNewProductSales.Caption = "Yeni Ürün Satışı";
+            this.BarBtnNewProductSales.Id = 41;
+            this.BarBtnNewProductSales.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewProductSales.ImageOptions.Image")));
+            this.BarBtnNewProductSales.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewProductSales.ImageOptions.LargeImage")));
+            this.BarBtnNewProductSales.Name = "BarBtnNewProductSales";
+            this.BarBtnNewProductSales.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewProductSales_ItemClick);
+            // 
+            // BarBtnSalesList
+            // 
+            this.BarBtnSalesList.Caption = "Satış Listesi";
+            this.BarBtnSalesList.Id = 42;
+            this.BarBtnSalesList.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.radarwithmarkers_16x16;
+            this.BarBtnSalesList.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.radarwithmarkers_32x32;
+            this.BarBtnSalesList.Name = "BarBtnSalesList";
+            this.BarBtnSalesList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnSalesList_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -562,7 +585,8 @@
             // RbnCurrentPage
             // 
             this.RbnCurrentPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup11});
             this.RbnCurrentPage.Name = "RbnCurrentPage";
             this.RbnCurrentPage.Text = "Cariler";
             // 
@@ -573,6 +597,13 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.BarBtnCityStatistics);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.BarBtnNewProductSales);
+            this.ribbonPageGroup11.ItemLinks.Add(this.BarBtnSalesList);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
             // 
             // ribbonPage3
             // 
@@ -772,6 +803,9 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnCards;
         private DevExpress.XtraBars.BarButtonItem BarBtnNoteList;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem BarBtnNewProductSales;
+        private DevExpress.XtraBars.BarButtonItem BarBtnSalesList;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
     }
 }
 
