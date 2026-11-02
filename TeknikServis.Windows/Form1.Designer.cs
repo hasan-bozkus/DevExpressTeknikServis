@@ -73,6 +73,7 @@
             this.BarBtnNoteList = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnSalesList = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnFaultProductDetails = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -149,9 +150,10 @@
             this.BarBtnCards,
             this.BarBtnNoteList,
             this.BarBtnNewProductSales,
-            this.BarBtnSalesList});
+            this.BarBtnSalesList,
+            this.BarBtnFaultProductDetails});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 43;
+            this.ribbonControl1.MaxItemId = 44;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
@@ -243,6 +245,7 @@
             this.BarBtnNewFaultProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewFaultProduct.ImageOptions.Image")));
             this.BarBtnNewFaultProduct.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewFaultProduct.ImageOptions.LargeImage")));
             this.BarBtnNewFaultProduct.Name = "BarBtnNewFaultProduct";
+            this.BarBtnNewFaultProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewFaultProduct_ItemClick);
             // 
             // BarBtnFaultProductDescription
             // 
@@ -251,6 +254,7 @@
             this.BarBtnFaultProductDescription.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductDescription.ImageOptions.Image")));
             this.BarBtnFaultProductDescription.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnFaultProductDescription.ImageOptions.LargeImage")));
             this.BarBtnFaultProductDescription.Name = "BarBtnFaultProductDescription";
+            this.BarBtnFaultProductDescription.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnFaultProductDescription_ItemClick);
             // 
             // BarBtnNewQRCode
             // 
@@ -522,6 +526,15 @@
             this.BarBtnSalesList.Name = "BarBtnSalesList";
             this.BarBtnSalesList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnSalesList_ItemClick);
             // 
+            // BarBtnFaultProductDetails
+            // 
+            this.BarBtnFaultProductDetails.Caption = "Arızalı Ürün Detayları";
+            this.BarBtnFaultProductDetails.Id = 43;
+            this.BarBtnFaultProductDetails.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.pictureshapefillcolor_16x16;
+            this.BarBtnFaultProductDetails.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.pictureshapefillcolor_32x32;
+            this.BarBtnFaultProductDetails.Name = "BarBtnFaultProductDetails";
+            this.BarBtnFaultProductDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnFaultProductDetails_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -572,6 +585,7 @@
             this.RbnPageGroupFault.ItemLinks.Add(this.BarBtnFaultProductList);
             this.RbnPageGroupFault.ItemLinks.Add(this.BarBtnNewFaultProduct);
             this.RbnPageGroupFault.ItemLinks.Add(this.BarBtnFaultProductDescription);
+            this.RbnPageGroupFault.ItemLinks.Add(this.BarBtnFaultProductDetails);
             this.RbnPageGroupFault.Name = "RbnPageGroupFault";
             this.RbnPageGroupFault.Text = "Arıza";
             // 
@@ -806,6 +820,7 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnNewProductSales;
         private DevExpress.XtraBars.BarButtonItem BarBtnSalesList;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+        private DevExpress.XtraBars.BarButtonItem BarBtnFaultProductDetails;
     }
 }
 

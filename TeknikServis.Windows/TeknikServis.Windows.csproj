@@ -146,6 +146,24 @@
     <Compile Include="Forms\FrmExchangeRates.Designer.cs">
       <DependentUpon>FrmExchangeRates.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmFaultDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFaultDetails.Designer.cs">
+      <DependentUpon>FrmFaultDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFaultProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFaultProductDetails.Designer.cs">
+      <DependentUpon>FrmFaultProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFaultProductRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFaultProductRegistration.Designer.cs">
+      <DependentUpon>FrmFaultProductRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmFaultsList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +300,15 @@
     <EmbeddedResource Include="Forms\FrmExchangeRates.resx">
       <DependentUpon>FrmExchangeRates.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFaultDetails.resx">
+      <DependentUpon>FrmFaultDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFaultProductDetails.resx">
+      <DependentUpon>FrmFaultProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFaultProductRegistration.resx">
+      <DependentUpon>FrmFaultProductRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFaultsList.resx">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,11 +380,14 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Resources\adam1kesin.png" />
+    <None Include="Resources\pictureshapefillcolor_16x16.png" />
+    <None Include="Resources\pictureshapefillcolor_32x32.png" />
     <None Include="Resources\Tag.svg" />
     <None Include="Resources\QRCode.svg" />
     <None Include="Resources\SIPMove.svg" />
     <None Include="Resources\QuarentinedItems.svg" />
     <None Include="Resources\DateTime.svg" />
+    <None Include="Resources\apply_32x32.png" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />

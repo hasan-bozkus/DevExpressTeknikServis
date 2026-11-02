@@ -153,10 +153,9 @@
             <PropertyRef Name="TracingId" />
           </Key>
           <Property Name="TracingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Product" Type="int" />
-          <Property Name="Status" Type="nvarchar" MaxLength="250" />
-          <Property Name="Date" Type="int" />
-          <Property Name="TracingCode" Type="char" MaxLength="5" />
+          <Property Name="Description" Type="nvarchar" MaxLength="250" />
+          <Property Name="Date" Type="smalldatetime" />
+          <Property Name="ProductSerialNo" Type="char" MaxLength="5" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -288,18 +287,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ProductTracings_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
-          <End Role="ProductTracings" Type="Self.ProductTracings" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="ProductId" />
-            </Principal>
-            <Dependent Role="ProductTracings">
-              <PropertyRef Name="Product" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DbTeknikServisModelStoreContainer">
           <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
@@ -355,10 +342,6 @@
           <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
             <End Role="Categories" EntitySet="Categories" />
             <End Role="Products" EntitySet="Products" />
-          </AssociationSet>
-          <AssociationSet Name="FK_ProductTracings_Products" Association="Self.FK_ProductTracings_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="ProductTracings" EntitySet="ProductTracings" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -527,18 +510,15 @@
           <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="Categories" Relationship="Self.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
           <NavigationProperty Name="ProductMovements" Relationship="Self.FK_ProductMovements_Products" FromRole="Products" ToRole="ProductMovements" />
-          <NavigationProperty Name="ProductTracings" Relationship="Self.FK_ProductTracings_Products" FromRole="Products" ToRole="ProductTracings" />
         </EntityType>
         <EntityType Name="ProductTracings">
           <Key>
             <PropertyRef Name="TracingId" />
           </Key>
           <Property Name="TracingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Product" Type="Int32" />
-          <Property Name="Status" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-          <Property Name="Date" Type="Int32" />
-          <Property Name="TracingCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
-          <NavigationProperty Name="Products" Relationship="Self.FK_ProductTracings_Products" FromRole="ProductTracings" ToRole="Products" />
+          <Property Name="Date" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -670,18 +650,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ProductTracings_Products">
-          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
-          <End Role="ProductTracings" Type="Self.ProductTracings" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Products">
-              <PropertyRef Name="ProductId" />
-            </Principal>
-            <Dependent Role="ProductTracings">
-              <PropertyRef Name="Product" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DbTeknikServisEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admin" EntityType="Self.Admin" />
           <EntitySet Name="Categories" EntityType="Self.Categories" />
@@ -737,10 +705,6 @@
           <AssociationSet Name="FK_ProductMovements_Products" Association="Self.FK_ProductMovements_Products">
             <End Role="Products" EntitySet="Products" />
             <End Role="ProductMovements" EntitySet="ProductMovements" />
-          </AssociationSet>
-          <AssociationSet Name="FK_ProductTracings_Products" Association="Self.FK_ProductTracings_Products">
-            <End Role="Products" EntitySet="Products" />
-            <End Role="ProductTracings" EntitySet="ProductTracings" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -908,11 +872,10 @@
           <EntitySetMapping Name="ProductTracings">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductTracings">
               <MappingFragment StoreEntitySet="ProductTracings">
+                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="TracingId" ColumnName="TracingId" />
-                <ScalarProperty Name="Product" ColumnName="Product" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="TracingCode" ColumnName="TracingCode" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

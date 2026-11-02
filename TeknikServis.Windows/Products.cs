@@ -18,7 +18,6 @@ namespace TeknikServis.Windows
         public Products()
         {
             this.ProductMovements = new HashSet<ProductMovements>();
-            this.ProductTracings = new HashSet<ProductTracings>();
         }
     
         public int ProductId { get; set; }
@@ -33,7 +32,5 @@ namespace TeknikServis.Windows
         public virtual Categories Categories { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductMovements> ProductMovements { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductTracings> ProductTracings { get; set; }
     }
 }

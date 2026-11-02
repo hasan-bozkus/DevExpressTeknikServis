@@ -131,7 +131,7 @@
             this.GrdFaultsList.Location = new System.Drawing.Point(1, -9);
             this.GrdFaultsList.MainView = this.GrdViewItems;
             this.GrdFaultsList.Name = "GrdFaultsList";
-            this.GrdFaultsList.Size = new System.Drawing.Size(541, 550);
+            this.GrdFaultsList.Size = new System.Drawing.Size(763, 550);
             this.GrdFaultsList.TabIndex = 5;
             this.GrdFaultsList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdViewItems});

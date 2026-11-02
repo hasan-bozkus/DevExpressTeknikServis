@@ -152,5 +152,24 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnNewFaultProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmFaultProductRegistration fr = new Forms.FrmFaultProductRegistration();
+            fr.Show();
+        }
+
+        private void BarBtnFaultProductDescription_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmFaultDetails fr = new Forms.FrmFaultDetails();
+            fr.Show();
+        }
+
+        private void BarBtnFaultProductDetails_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmFaultProductDetails fr = new Forms.FrmFaultProductDetails();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

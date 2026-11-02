@@ -30,7 +30,6 @@
         <AssociationConnector Association="DbTeknikServisModel.FK_ProductMovements_Employees" ManuallyRouted="false" />
         <AssociationConnector Association="DbTeknikServisModel.FK_InvoiceDetails_InvoiceInformations" ManuallyRouted="false" />
         <AssociationConnector Association="DbTeknikServisModel.FK_ProductMovements_Products" ManuallyRouted="false" />
-        <AssociationConnector Association="DbTeknikServisModel.FK_ProductTracings_Products" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
