@@ -313,6 +313,16 @@ namespace TeknikServis.Windows.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage QRCode1 {
+            get {
+                object obj = ResourceManager.GetObject("QRCode1", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage QuarentinedItems {
             get {
                 object obj = ResourceManager.GetObject("QuarentinedItems", resourceCulture);

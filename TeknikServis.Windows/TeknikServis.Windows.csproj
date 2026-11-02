@@ -61,6 +61,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -212,6 +215,12 @@
     <Compile Include="Forms\FrmNewProductSales.Designer.cs">
       <DependentUpon>FrmNewProductSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmQRCode.Designer.cs">
+      <DependentUpon>FrmQRCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +342,9 @@
     <EmbeddedResource Include="Forms\FrmNewProductSales.resx">
       <DependentUpon>FrmNewProductSales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQRCode.resx">
+      <DependentUpon>FrmQRCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmSales.resx">
       <DependentUpon>FrmSales.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,6 +392,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Resources\adam1kesin.png" />
+    <None Include="Resources\QRCode1.svg" />
     <None Include="Resources\pictureshapefillcolor_16x16.png" />
     <None Include="Resources\pictureshapefillcolor_32x32.png" />
     <None Include="Resources\Tag.svg" />

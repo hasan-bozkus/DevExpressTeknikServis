@@ -171,5 +171,11 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnNewQRCode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmQRCode fr = new Forms.FrmQRCode();
+            fr.Show();
+        }
     }
 }
