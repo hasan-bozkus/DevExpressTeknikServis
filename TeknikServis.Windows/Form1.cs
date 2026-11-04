@@ -177,5 +177,12 @@ namespace TeknikServis.Windows
             Forms.FrmQRCode fr = new Forms.FrmQRCode();
             fr.Show();
         }
+
+        private void BarBtnInvoiceList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmInvoiceList fr = new Forms.FrmInvoiceList();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

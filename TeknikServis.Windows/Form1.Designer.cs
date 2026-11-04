@@ -74,6 +74,7 @@
             this.BarBtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnSalesList = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnFaultProductDetails = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnInvoiceList = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -151,9 +152,10 @@
             this.BarBtnNoteList,
             this.BarBtnNewProductSales,
             this.BarBtnSalesList,
-            this.BarBtnFaultProductDetails});
+            this.BarBtnFaultProductDetails,
+            this.BarBtnInvoiceList});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 44;
+            this.ribbonControl1.MaxItemId = 45;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
@@ -536,6 +538,15 @@
             this.BarBtnFaultProductDetails.Name = "BarBtnFaultProductDetails";
             this.BarBtnFaultProductDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnFaultProductDetails_ItemClick);
             // 
+            // BarBtnInvoiceList
+            // 
+            this.BarBtnInvoiceList.Caption = "Fatura Listesi";
+            this.BarBtnInvoiceList.Id = 44;
+            this.BarBtnInvoiceList.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.colorlegend_16x16;
+            this.BarBtnInvoiceList.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.colorlegend_32x32;
+            this.BarBtnInvoiceList.Name = "BarBtnInvoiceList";
+            this.BarBtnInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnInvoiceList_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -659,6 +670,7 @@
             // 
             // ribbonPageGroup2
             // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnInvoiceList);
             this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnNewInvoice);
             this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnNewInvoiceItem);
             this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnDetailedBllInquiry);
@@ -822,6 +834,7 @@
         private DevExpress.XtraBars.BarButtonItem BarBtnSalesList;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.BarButtonItem BarBtnFaultProductDetails;
+        private DevExpress.XtraBars.BarButtonItem BarBtnInvoiceList;
     }
 }
 

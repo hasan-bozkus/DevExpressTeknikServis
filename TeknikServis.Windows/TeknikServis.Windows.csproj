@@ -173,6 +173,12 @@
     <Compile Include="Forms\FrmFaultsList.Designer.cs">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmInvoiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInvoiceList.Designer.cs">
+      <DependentUpon>FrmInvoiceList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmNewCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +327,9 @@
     <EmbeddedResource Include="Forms\FrmFaultsList.resx">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInvoiceList.resx">
+      <DependentUpon>FrmInvoiceList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmNewCategory.resx">
       <DependentUpon>FrmNewCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +410,8 @@
     <None Include="Resources\QuarentinedItems.svg" />
     <None Include="Resources\DateTime.svg" />
     <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\colorlegend_32x32.png" />
+    <None Include="Resources\colorlegend_16x16.png" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />
