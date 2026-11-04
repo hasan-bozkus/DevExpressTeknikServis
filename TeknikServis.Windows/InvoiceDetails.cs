@@ -19,7 +19,7 @@ namespace TeknikServis.Windows
         public Nullable<short> Quantity { get; set; }
         public Nullable<decimal> Price { get; set; }
         public Nullable<decimal> Amount { get; set; }
-        public Nullable<int> InvoiceInformation { get; set; }
+        public Nullable<int> InvoiceInformationId { get; set; }
     
         public virtual InvoiceInformations InvoiceInformations { get; set; }
     }

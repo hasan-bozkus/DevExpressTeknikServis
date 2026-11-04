@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraBars;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -181,6 +182,20 @@ namespace TeknikServis.Windows
         private void BarBtnInvoiceList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Forms.FrmInvoiceList fr = new Forms.FrmInvoiceList();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnNewInvoiceItem_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Forms.FrmInvoiceItem fr = new Forms.FrmInvoiceItem();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnDetailedBllInquiry_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Forms.FrmInvoiceItemsList fr = new Forms.FrmInvoiceItemsList();
             fr.MdiParent = this;
             fr.Show();
         }

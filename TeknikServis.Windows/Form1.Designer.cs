@@ -1,4 +1,7 @@
-﻿namespace TeknikServis.Windows
+﻿using DevExpress.XtraBars;
+using System;
+
+namespace TeknikServis.Windows
 {
     partial class Form1
     {
@@ -333,6 +336,7 @@
             this.BarBtnNewInvoiceItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoiceItem.ImageOptions.Image")));
             this.BarBtnNewInvoiceItem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewInvoiceItem.ImageOptions.LargeImage")));
             this.BarBtnNewInvoiceItem.Name = "BarBtnNewInvoiceItem";
+            this.BarBtnNewInvoiceItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewInvoiceItem_ItemClick);
             // 
             // BarBtnDetailedBllInquiry
             // 
@@ -341,6 +345,7 @@
             this.BarBtnDetailedBllInquiry.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnDetailedBllInquiry.ImageOptions.Image")));
             this.BarBtnDetailedBllInquiry.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnDetailedBllInquiry.ImageOptions.LargeImage")));
             this.BarBtnDetailedBllInquiry.Name = "BarBtnDetailedBllInquiry";
+            this.BarBtnDetailedBllInquiry.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnDetailedBllInquiry_ItemClick);
             // 
             // BarBtnInvoicePdf
             // 

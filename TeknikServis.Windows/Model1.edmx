@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="DbTeknikServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DbTeknikServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Admin">
           <Key>
             <PropertyRef Name="AdminId" />
@@ -87,7 +87,7 @@
           <Property Name="Quantity" Type="smallint" />
           <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="InvoiceInformation" Type="int" />
+          <Property Name="InvoiceInformationId" Type="int" />
         </EntityType>
         <EntityType Name="InvoiceInformations">
           <Key>
@@ -167,6 +167,13 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
+        <EntityType Name="Tools">
+          <Key>
+            <PropertyRef Name="ToolId" />
+          </Key>
+          <Property Name="ToolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <Association Name="FK_Employees_Departments">
           <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
           <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
@@ -187,7 +194,7 @@
               <PropertyRef Name="InvoiceInformationId" />
             </Principal>
             <Dependent Role="InvoiceDetails">
-              <PropertyRef Name="InvoiceInformation" />
+              <PropertyRef Name="InvoiceInformationId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -303,6 +310,7 @@
           <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductTracings" EntityType="Self.ProductTracings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tools" EntityType="Self.Tools" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Employees_Departments" Association="Self.FK_Employees_Departments">
             <End Role="Departments" EntitySet="Departments" />
             <End Role="Employees" EntitySet="Employees" />
@@ -344,7 +352,8 @@
             <End Role="Products" EntitySet="Products" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbTeknikServisModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -439,7 +448,7 @@
           <Property Name="Quantity" Type="Int16" />
           <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="InvoiceInformation" Type="Int32" />
+          <Property Name="InvoiceInformationId" Type="Int32" />
           <NavigationProperty Name="InvoiceInformations" Relationship="Self.FK_InvoiceDetails_InvoiceInformations" FromRole="InvoiceDetails" ToRole="InvoiceInformations" />
         </EntityType>
         <EntityType Name="InvoiceInformations">
@@ -476,9 +485,9 @@
           <Property Name="Employee" Type="Int16" />
           <Property Name="ReceiveDate" Type="DateTime" Precision="0" />
           <Property Name="ReleaseDate" Type="DateTime" Precision="0" />
+          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="Currents" Relationship="Self.FK_ProductAcceptances_Currents" FromRole="ProductAcceptances" ToRole="Currents" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_ProductAcceptances_Employees" FromRole="ProductAcceptances" ToRole="Employees" />
-          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="ProductMovements">
           <Key>
@@ -491,10 +500,10 @@
           <Property Name="Date" Type="DateTime" Precision="0" />
           <Property Name="Quantity" Type="Int16" />
           <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="Currents" Relationship="Self.FK_ProductMovements_Currents" FromRole="ProductMovements" ToRole="Currents" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_ProductMovements_Employees" FromRole="ProductMovements" ToRole="Employees" />
           <NavigationProperty Name="Products" Relationship="Self.FK_ProductMovements_Products" FromRole="ProductMovements" ToRole="Products" />
-          <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
@@ -516,8 +525,8 @@
             <PropertyRef Name="TracingId" />
           </Key>
           <Property Name="TracingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Date" Type="DateTime" />
           <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
           <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -529,6 +538,13 @@
           <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tools">
+          <Key>
+            <PropertyRef Name="ToolId" />
+          </Key>
+          <Property Name="ToolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_Products_Categories">
           <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
@@ -634,7 +650,7 @@
               <PropertyRef Name="InvoiceInformationId" />
             </Principal>
             <Dependent Role="InvoiceDetails">
-              <PropertyRef Name="InvoiceInformation" />
+              <PropertyRef Name="InvoiceInformationId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -650,7 +666,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DbTeknikServisEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admin" EntityType="Self.Admin" />
           <EntitySet Name="Categories" EntityType="Self.Categories" />
           <EntitySet Name="Currents" EntityType="Self.Currents" />
@@ -666,6 +682,7 @@
           <EntitySet Name="Products" EntityType="Self.Products" />
           <EntitySet Name="ProductTracings" EntityType="Self.ProductTracings" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Tools" EntityType="Self.Tools" />
           <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
             <End Role="Categories" EntitySet="Categories" />
             <End Role="Products" EntitySet="Products" />
@@ -712,7 +729,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbTeknikServisModelStoreContainer" CdmEntityContainer="DbTeknikServisEntities">
+        <EntityContainerMapping StorageEntityContainer="DbTeknikServisModelStoreContainer" CdmEntityContainer="Entities">
           <EntitySetMapping Name="Admin">
             <EntityTypeMapping TypeName="DbTeknikServisModel.Admin">
               <MappingFragment StoreEntitySet="Admin">
@@ -801,7 +818,7 @@
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="InvoiceInformation" ColumnName="InvoiceInformation" />
+                <ScalarProperty Name="InvoiceInformationId" ColumnName="InvoiceInformationId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -832,19 +849,18 @@
           <EntitySetMapping Name="ProductAcceptances">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductAcceptances">
               <MappingFragment StoreEntitySet="ProductAcceptances">
-                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
                 <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
                 <ScalarProperty Name="Current" ColumnName="Current" />
                 <ScalarProperty Name="Employee" ColumnName="Employee" />
                 <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
                 <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProductMovements">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductMovements">
               <MappingFragment StoreEntitySet="ProductMovements">
-                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
                 <ScalarProperty Name="MovementId" ColumnName="MovementId" />
                 <ScalarProperty Name="Product" ColumnName="Product" />
                 <ScalarProperty Name="Current" ColumnName="Current" />
@@ -852,6 +868,7 @@
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -872,10 +889,10 @@
           <EntitySetMapping Name="ProductTracings">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductTracings">
               <MappingFragment StoreEntitySet="ProductTracings">
-                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="TracingId" ColumnName="TracingId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ProductSerialNo" ColumnName="ProductSerialNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -887,6 +904,14 @@
                 <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
                 <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tools">
+            <EntityTypeMapping TypeName="DbTeknikServisModel.Tools">
+              <MappingFragment StoreEntitySet="Tools">
+                <ScalarProperty Name="ToolId" ColumnName="ToolId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

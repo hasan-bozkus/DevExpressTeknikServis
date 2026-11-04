@@ -173,6 +173,18 @@
     <Compile Include="Forms\FrmFaultsList.Designer.cs">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmInvoiceItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInvoiceItem.Designer.cs">
+      <DependentUpon>FrmInvoiceItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInvoiceItemsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInvoiceItemsList.Designer.cs">
+      <DependentUpon>FrmInvoiceItemsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmInvoiceList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +303,9 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Tools.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +341,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFaultsList.resx">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInvoiceItem.resx">
+      <DependentUpon>FrmInvoiceItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInvoiceItemsList.resx">
+      <DependentUpon>FrmInvoiceItemsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmInvoiceList.resx">
       <DependentUpon>FrmInvoiceList.cs</DependentUpon>
@@ -412,6 +433,7 @@
     <None Include="Resources\apply_32x32.png" />
     <None Include="Resources\colorlegend_32x32.png" />
     <None Include="Resources\colorlegend_16x16.png" />
+    <None Include="Resources\find_32x32.png" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />

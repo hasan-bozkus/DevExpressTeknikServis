@@ -15,8 +15,8 @@ namespace TeknikServis.Windows
     public partial class ProductTracings
     {
         public int TracingId { get; set; }
-        public Nullable<System.DateTime> Date { get; set; }
         public string Description { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
         public string ProductSerialNo { get; set; }
     }
 }
