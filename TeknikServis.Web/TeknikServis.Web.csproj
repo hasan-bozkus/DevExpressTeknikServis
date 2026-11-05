@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
     <Content Include="Entites\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -86,10 +87,45 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\TeknikServisWeb\css\bootstrap.css" />
+    <Content Include="Resources\TeknikServisWeb\css\fontawesome-all.min.css" />
+    <Content Include="Resources\TeknikServisWeb\css\style.css" />
+    <Content Include="Resources\TeknikServisWeb\fonts\fontawesome-webfont.svg" />
+    <Content Include="Resources\TeknikServisWeb\images\1.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\about.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\about1.png" />
+    <Content Include="Resources\TeknikServisWeb\images\about2.png" />
+    <Content Include="Resources\TeknikServisWeb\images\banner1.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\computer1.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\computer2.png" />
+    <Content Include="Resources\TeknikServisWeb\images\g1.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\g2.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\g3.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\g4.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\g5.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\pro1.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\t3.jpg" />
+    <Content Include="Resources\TeknikServisWeb\images\technicalserviceproduct.png" />
+    <Content Include="Resources\TeknikServisWeb\images\top-arrow.png" />
+    <Content Include="Resources\TeknikServisWeb\index.html" />
+    <Content Include="Resources\TeknikServisWeb\w3layouts-License.txt" />
     <Content Include="UrunTakip.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entites\Abouts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entites\Messages.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entites\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,6 +140,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entites\Products.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\ProductTracings.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -134,6 +173,13 @@
     </Content>
     <None Include="packages.config" />
     <Content Include="User.Master" />
+    <Content Include="Resources\TeknikServisWeb\fonts\fontawesome-webfont.eot" />
+    <Content Include="Resources\TeknikServisWeb\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Resources\TeknikServisWeb\fonts\fontawesome-webfont.woff" />
+    <Content Include="Resources\TeknikServisWeb\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Resources\TeknikServisWeb\fonts\FontAwesome.otf" />
+    <Content Include="Resources\TeknikServisWeb\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Resources\TeknikServisWeb\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

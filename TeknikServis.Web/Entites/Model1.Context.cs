@@ -26,5 +26,8 @@ namespace TeknikServis.Web.Entites
         }
     
         public virtual DbSet<ProductTracings> ProductTracings { get; set; }
+        public virtual DbSet<Abouts> Abouts { get; set; }
+        public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<Messages> Messages { get; set; }
     }
 }
