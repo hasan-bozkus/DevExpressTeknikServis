@@ -223,9 +223,49 @@ namespace TeknikServis.Windows.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap geopointmap_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("geopointmap_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geopointmap_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("geopointmap_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Identification_Documents {
             get {
                 object obj = ResourceManager.GetObject("Identification Documents", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("info_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("info_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +326,16 @@ namespace TeknikServis.Windows.Properties {
         internal static System.Drawing.Bitmap pictureshapefillcolor_32x32 {
             get {
                 object obj = ResourceManager.GetObject("pictureshapefillcolor_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap previous_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("previous_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +426,16 @@ namespace TeknikServis.Windows.Properties {
         internal static System.Drawing.Bitmap radarwithmarkers_32x32 {
             get {
                 object obj = ResourceManager.GetObject("radarwithmarkers_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reset2_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("reset2_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -31,6 +31,8 @@
         <AssociationConnector Association="DbTeknikServisModel.FK_ProductMovements_Employees" ManuallyRouted="false" />
         <AssociationConnector Association="DbTeknikServisModel.FK_InvoiceDetails_InvoiceInformations" ManuallyRouted="false" />
         <AssociationConnector Association="DbTeknikServisModel.FK_ProductMovements_Products" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.Abouts" Width="1.5" PointX="10.375" PointY="11.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.Messages" Width="1.5" PointX="5.375" PointY="12.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

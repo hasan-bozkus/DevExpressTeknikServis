@@ -199,5 +199,19 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BrBtnGauge_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Forms.FrmGauge fr = new Forms.FrmGauge();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnMap_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Forms.FrmMap fr = new Forms.FrmMap();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

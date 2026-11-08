@@ -78,6 +78,8 @@ namespace TeknikServis.Windows
             this.BarBtnSalesList = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnFaultProductDetails = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnInvoiceList = new DevExpress.XtraBars.BarButtonItem();
+            this.BrBtnGauge = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnMap = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -156,9 +158,11 @@ namespace TeknikServis.Windows
             this.BarBtnNewProductSales,
             this.BarBtnSalesList,
             this.BarBtnFaultProductDetails,
-            this.BarBtnInvoiceList});
+            this.BarBtnInvoiceList,
+            this.BrBtnGauge,
+            this.BarBtnMap});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 45;
+            this.ribbonControl1.MaxItemId = 47;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
@@ -552,6 +556,24 @@ namespace TeknikServis.Windows
             this.BarBtnInvoiceList.Name = "BarBtnInvoiceList";
             this.BarBtnInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnInvoiceList_ItemClick);
             // 
+            // BrBtnGauge
+            // 
+            this.BrBtnGauge.Caption = "Gauge";
+            this.BrBtnGauge.Id = 45;
+            this.BrBtnGauge.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.info_16x16;
+            this.BrBtnGauge.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.info_32x32;
+            this.BrBtnGauge.Name = "BrBtnGauge";
+            this.BrBtnGauge.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BrBtnGauge_ItemClick);
+            // 
+            // BarBtnMap
+            // 
+            this.BarBtnMap.Caption = "Haritalar";
+            this.BarBtnMap.Id = 46;
+            this.BarBtnMap.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.geopointmap_16x16;
+            this.BarBtnMap.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.geopointmap_32x32;
+            this.BarBtnMap.Name = "BarBtnMap";
+            this.BarBtnMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnMap_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -717,6 +739,8 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnForeignCurrencyTransactions);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnOfficeWord);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnOfficeExcel);
+            this.ribbonPageGroup7.ItemLinks.Add(this.BrBtnGauge);
+            this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnMap);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnHelp);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "ribbonPageGroup7";
@@ -840,6 +864,8 @@ namespace TeknikServis.Windows
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.BarButtonItem BarBtnFaultProductDetails;
         private DevExpress.XtraBars.BarButtonItem BarBtnInvoiceList;
+        private BarButtonItem BrBtnGauge;
+        private BarButtonItem BarBtnMap;
     }
 }
 

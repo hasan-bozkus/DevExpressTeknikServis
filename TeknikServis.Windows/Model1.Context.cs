@@ -41,5 +41,7 @@ namespace TeknikServis.Windows
         public virtual DbSet<ProductTracings> ProductTracings { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tools> Tools { get; set; }
+        public virtual DbSet<Abouts> Abouts { get; set; }
+        public virtual DbSet<Messages> Messages { get; set; }
     }
 }
