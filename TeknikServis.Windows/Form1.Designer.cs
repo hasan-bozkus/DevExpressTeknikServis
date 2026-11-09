@@ -80,6 +80,7 @@ namespace TeknikServis.Windows
             this.BarBtnInvoiceList = new DevExpress.XtraBars.BarButtonItem();
             this.BrBtnGauge = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnMap = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnReports = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -112,6 +113,7 @@ namespace TeknikServis.Windows
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(46);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -160,10 +162,13 @@ namespace TeknikServis.Windows
             this.BarBtnFaultProductDetails,
             this.BarBtnInvoiceList,
             this.BrBtnGauge,
-            this.BarBtnMap});
+            this.BarBtnMap,
+            this.BarBtnReports});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 47;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ribbonControl1.MaxItemId = 48;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.OptionsMenuMinWidth = 515;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
             this.RbnProducts,
@@ -574,6 +579,15 @@ namespace TeknikServis.Windows
             this.BarBtnMap.Name = "BarBtnMap";
             this.BarBtnMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnMap_ItemClick);
             // 
+            // BarBtnReports
+            // 
+            this.BarBtnReports.Caption = "Rapor Sihirbazı";
+            this.BarBtnReports.Id = 47;
+            this.BarBtnReports.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.wizard_16x16;
+            this.BarBtnReports.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.wizard_32x32;
+            this.BarBtnReports.Name = "BarBtnReports";
+            this.BarBtnReports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnReports_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -754,8 +768,9 @@ namespace TeknikServis.Windows
             // 
             // ribbonPageGroup8
             // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.BarBtnReports);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "Raporlar";
             // 
             // ribbonPage8
             // 
@@ -866,6 +881,7 @@ namespace TeknikServis.Windows
         private DevExpress.XtraBars.BarButtonItem BarBtnInvoiceList;
         private BarButtonItem BrBtnGauge;
         private BarButtonItem BarBtnMap;
+        private BarButtonItem BarBtnReports;
     }
 }
 

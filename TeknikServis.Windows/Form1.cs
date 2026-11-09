@@ -213,5 +213,11 @@ namespace TeknikServis.Windows
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BarBtnReports_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Forms.FrmReport fr = new Forms.FrmReport();
+            fr.Show();
+        }
     }
 }
