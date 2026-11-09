@@ -209,6 +209,12 @@
     <Compile Include="Forms\FrmFaultsList.Designer.cs">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHomePage.Designer.cs">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmInvoiceItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +408,9 @@
     <EmbeddedResource Include="Forms\FrmFaultsList.resx">
       <DependentUpon>FrmFaultsList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHomePage.resx">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmInvoiceItem.resx">
       <DependentUpon>FrmInvoiceItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -511,6 +520,8 @@
     <None Include="Resources\info_16x16.png" />
     <None Include="Resources\geopointmap_32x32.png" />
     <None Include="Resources\geopointmap_16x16.png" />
+    <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\home_16x16.png" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />

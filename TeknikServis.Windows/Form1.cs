@@ -219,5 +219,19 @@ namespace TeknikServis.Windows
             Forms.FrmReport fr = new Forms.FrmReport();
             fr.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Forms.FrmHomePage fr = new Forms.FrmHomePage();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BarBtnHomePage_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Forms.FrmHomePage fr = new Forms.FrmHomePage();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

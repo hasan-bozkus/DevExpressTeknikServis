@@ -81,6 +81,7 @@ namespace TeknikServis.Windows
             this.BrBtnGauge = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnMap = new DevExpress.XtraBars.BarButtonItem();
             this.BarBtnReports = new DevExpress.XtraBars.BarButtonItem();
+            this.BarBtnHomePage = new DevExpress.XtraBars.BarButtonItem();
             this.RbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -163,10 +164,11 @@ namespace TeknikServis.Windows
             this.BarBtnInvoiceList,
             this.BrBtnGauge,
             this.BarBtnMap,
-            this.BarBtnReports});
+            this.BarBtnReports,
+            this.BarBtnHomePage});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.ribbonControl1.MaxItemId = 48;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.ribbonControl1.MaxItemId = 49;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 515;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -588,6 +590,15 @@ namespace TeknikServis.Windows
             this.BarBtnReports.Name = "BarBtnReports";
             this.BarBtnReports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnReports_ItemClick);
             // 
+            // BarBtnHomePage
+            // 
+            this.BarBtnHomePage.Caption = "Ana Sayfa";
+            this.BarBtnHomePage.Id = 48;
+            this.BarBtnHomePage.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.home_16x16;
+            this.BarBtnHomePage.ImageOptions.LargeImage = global::TeknikServis.Windows.Properties.Resources.home_32x32;
+            this.BarBtnHomePage.Name = "BarBtnHomePage";
+            this.BarBtnHomePage.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnHomePage_ItemClick);
+            // 
             // RbnHomePage
             // 
             this.RbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -597,8 +608,9 @@ namespace TeknikServis.Windows
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.BarBtnHomePage);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Ana Sayfa";
             // 
             // RbnProducts
             // 
@@ -799,6 +811,7 @@ namespace TeknikServis.Windows
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
@@ -882,6 +895,7 @@ namespace TeknikServis.Windows
         private BarButtonItem BrBtnGauge;
         private BarButtonItem BarBtnMap;
         private BarButtonItem BarBtnReports;
+        private BarButtonItem BarBtnHomePage;
     }
 }
 
