@@ -32,6 +32,13 @@
             this.GrdProducts = new DevExpress.XtraGrid.GridControl();
             this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GrpCtrlProductProcess = new DevExpress.XtraEditors.GroupControl();
+            this.TxtProductId = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.SmpBtnClear = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnList = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnRemove = new DevExpress.XtraEditors.SimpleButton();
+            this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
             this.LkUpCategory = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.TxtStock = new DevExpress.XtraEditors.TextEdit();
@@ -44,28 +51,22 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtProductName = new DevExpress.XtraEditors.TextEdit();
             this.LblTextProductName = new DevExpress.XtraEditors.LabelControl();
-            this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.SmpBtnUpdate = new DevExpress.XtraEditors.SimpleButton();
-            this.SmpBtnRemove = new DevExpress.XtraEditors.SimpleButton();
-            this.SmpBtnList = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtProductId = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.GrdProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlProductProcess)).BeginInit();
             this.GrpCtrlProductProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LkUpCategory.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStock.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSalePrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPurchasePrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBrand.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtProductName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // GrdProducts
             // 
-            this.GrdProducts.Location = new System.Drawing.Point(1, -3);
+            this.GrdProducts.Location = new System.Drawing.Point(1, 0);
             this.GrdProducts.MainView = this.GrdViewItems;
             this.GrdProducts.Name = "GrdProducts";
             this.GrdProducts.Size = new System.Drawing.Size(1009, 550);
@@ -87,6 +88,7 @@
             // 
             this.GrpCtrlProductProcess.Controls.Add(this.TxtProductId);
             this.GrpCtrlProductProcess.Controls.Add(this.labelControl6);
+            this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnClear);
             this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnList);
             this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnUpdate);
             this.GrpCtrlProductProcess.Controls.Add(this.SmpBtnRemove);
@@ -103,11 +105,77 @@
             this.GrpCtrlProductProcess.Controls.Add(this.labelControl1);
             this.GrpCtrlProductProcess.Controls.Add(this.TxtProductName);
             this.GrpCtrlProductProcess.Controls.Add(this.LblTextProductName);
-            this.GrpCtrlProductProcess.Location = new System.Drawing.Point(1007, -3);
+            this.GrpCtrlProductProcess.Location = new System.Drawing.Point(1007, 0);
             this.GrpCtrlProductProcess.Name = "GrpCtrlProductProcess";
             this.GrpCtrlProductProcess.Size = new System.Drawing.Size(358, 537);
             this.GrpCtrlProductProcess.TabIndex = 1;
             this.GrpCtrlProductProcess.Text = "ÜRÜN İŞLEMLERİ";
+            // 
+            // TxtProductId
+            // 
+            this.TxtProductId.Enabled = false;
+            this.TxtProductId.Location = new System.Drawing.Point(99, 48);
+            this.TxtProductId.Name = "TxtProductId";
+            this.TxtProductId.Size = new System.Drawing.Size(171, 22);
+            this.TxtProductId.TabIndex = 20;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(28, 51);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(57, 16);
+            this.labelControl6.TabIndex = 19;
+            this.labelControl6.Text = "ÜRÜN ID: ";
+            // 
+            // SmpBtnClear
+            // 
+            this.SmpBtnClear.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.clear_32x32;
+            this.SmpBtnClear.Location = new System.Drawing.Point(99, 465);
+            this.SmpBtnClear.Name = "SmpBtnClear";
+            this.SmpBtnClear.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnClear.TabIndex = 18;
+            this.SmpBtnClear.Text = "TEMİZLE";
+            this.SmpBtnClear.Click += new System.EventHandler(this.SmpBtnClear_Click);
+            // 
+            // SmpBtnList
+            // 
+            this.SmpBtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnList.ImageOptions.Image")));
+            this.SmpBtnList.Location = new System.Drawing.Point(99, 427);
+            this.SmpBtnList.Name = "SmpBtnList";
+            this.SmpBtnList.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnList.TabIndex = 18;
+            this.SmpBtnList.Text = "LİSTELE";
+            this.SmpBtnList.Click += new System.EventHandler(this.SmpBtnList_Click);
+            // 
+            // SmpBtnUpdate
+            // 
+            this.SmpBtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnUpdate.ImageOptions.Image")));
+            this.SmpBtnUpdate.Location = new System.Drawing.Point(99, 389);
+            this.SmpBtnUpdate.Name = "SmpBtnUpdate";
+            this.SmpBtnUpdate.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnUpdate.TabIndex = 17;
+            this.SmpBtnUpdate.Text = "GÜNCELLE";
+            this.SmpBtnUpdate.Click += new System.EventHandler(this.SmpBtnUpdate_Click);
+            // 
+            // SmpBtnRemove
+            // 
+            this.SmpBtnRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnRemove.ImageOptions.Image")));
+            this.SmpBtnRemove.Location = new System.Drawing.Point(99, 351);
+            this.SmpBtnRemove.Name = "SmpBtnRemove";
+            this.SmpBtnRemove.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnRemove.TabIndex = 16;
+            this.SmpBtnRemove.Text = "SİL";
+            this.SmpBtnRemove.Click += new System.EventHandler(this.SmpBtnRemove_Click);
+            // 
+            // SmpBtnSave
+            // 
+            this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnSave.ImageOptions.Image")));
+            this.SmpBtnSave.Location = new System.Drawing.Point(99, 313);
+            this.SmpBtnSave.Name = "SmpBtnSave";
+            this.SmpBtnSave.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnSave.TabIndex = 15;
+            this.SmpBtnSave.Text = "KAYDET";
+            this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
             // 
             // LkUpCategory
             // 
@@ -116,6 +184,7 @@
             this.LkUpCategory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.LkUpCategory.Properties.DisplayMember = "CategoryName";
+            this.LkUpCategory.Properties.NullText = "--- Lütfen Seçiniz ---";
             this.LkUpCategory.Properties.ValueMember = "CategoryId";
             this.LkUpCategory.Size = new System.Drawing.Size(171, 22);
             this.LkUpCategory.TabIndex = 14;
@@ -203,62 +272,6 @@
             this.LblTextProductName.TabIndex = 3;
             this.LblTextProductName.Text = "ÜRÜN ADI: ";
             // 
-            // SmpBtnSave
-            // 
-            this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnSave.ImageOptions.Image")));
-            this.SmpBtnSave.Location = new System.Drawing.Point(99, 340);
-            this.SmpBtnSave.Name = "SmpBtnSave";
-            this.SmpBtnSave.Size = new System.Drawing.Size(171, 32);
-            this.SmpBtnSave.TabIndex = 15;
-            this.SmpBtnSave.Text = "KAYDET";
-            this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
-            // 
-            // SmpBtnUpdate
-            // 
-            this.SmpBtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.SmpBtnUpdate.Location = new System.Drawing.Point(99, 416);
-            this.SmpBtnUpdate.Name = "SmpBtnUpdate";
-            this.SmpBtnUpdate.Size = new System.Drawing.Size(171, 32);
-            this.SmpBtnUpdate.TabIndex = 17;
-            this.SmpBtnUpdate.Text = "GÜNCELLE";
-            this.SmpBtnUpdate.Click += new System.EventHandler(this.SmpBtnUpdate_Click);
-            // 
-            // SmpBtnRemove
-            // 
-            this.SmpBtnRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnRemove.ImageOptions.Image")));
-            this.SmpBtnRemove.Location = new System.Drawing.Point(99, 378);
-            this.SmpBtnRemove.Name = "SmpBtnRemove";
-            this.SmpBtnRemove.Size = new System.Drawing.Size(171, 32);
-            this.SmpBtnRemove.TabIndex = 16;
-            this.SmpBtnRemove.Text = "SİL";
-            this.SmpBtnRemove.Click += new System.EventHandler(this.SmpBtnRemove_Click);
-            // 
-            // SmpBtnList
-            // 
-            this.SmpBtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.SmpBtnList.Location = new System.Drawing.Point(99, 454);
-            this.SmpBtnList.Name = "SmpBtnList";
-            this.SmpBtnList.Size = new System.Drawing.Size(171, 32);
-            this.SmpBtnList.TabIndex = 18;
-            this.SmpBtnList.Text = "LİSTELE";
-            this.SmpBtnList.Click += new System.EventHandler(this.SmpBtnList_Click);
-            // 
-            // TxtProductId
-            // 
-            this.TxtProductId.Enabled = false;
-            this.TxtProductId.Location = new System.Drawing.Point(99, 48);
-            this.TxtProductId.Name = "TxtProductId";
-            this.TxtProductId.Size = new System.Drawing.Size(171, 22);
-            this.TxtProductId.TabIndex = 20;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(28, 51);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(57, 16);
-            this.labelControl6.TabIndex = 19;
-            this.labelControl6.Text = "ÜRÜN ID: ";
-            // 
             // FrmProductList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,13 +289,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlProductProcess)).EndInit();
             this.GrpCtrlProductProcess.ResumeLayout(false);
             this.GrpCtrlProductProcess.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LkUpCategory.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStock.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSalePrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPurchasePrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBrand.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtProductName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -310,5 +323,6 @@
         private DevExpress.XtraEditors.SimpleButton SmpBtnList;
         private DevExpress.XtraEditors.TextEdit TxtProductId;
         private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.SimpleButton SmpBtnClear;
     }
 }

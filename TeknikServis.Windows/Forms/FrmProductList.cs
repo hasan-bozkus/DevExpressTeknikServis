@@ -18,7 +18,7 @@ namespace TeknikServis.Windows.Forms
         public FrmProductList()
         {
             InitializeComponent();
-        }      
+        }
 
         private async Task ProductList()
         {
@@ -71,12 +71,21 @@ namespace TeknikServis.Windows.Forms
 
         private void GrdViewItems_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            TxtProductId.Text = GrdViewItems.GetFocusedRowCellValue("ProductId").ToString();
-            TxtProductName.Text = GrdViewItems.GetFocusedRowCellValue("ProductName").ToString();
-            TxtBrand.Text = GrdViewItems.GetFocusedRowCellValue("ProductBrand").ToString();
-            TxtPurchasePrice.Text = GrdViewItems.GetFocusedRowCellValue("PurchasePrice").ToString();
-            TxtSalePrice.Text = GrdViewItems.GetFocusedRowCellValue("SalePrice").ToString();
-            TxtStock.Text = GrdViewItems.GetFocusedRowCellValue("Stock").ToString();
+            try
+            {
+                TxtProductId.Text = GrdViewItems.GetFocusedRowCellValue("ProductId").ToString();
+                TxtProductName.Text = GrdViewItems.GetFocusedRowCellValue("ProductName").ToString();
+                TxtBrand.Text = GrdViewItems.GetFocusedRowCellValue("ProductBrand").ToString();
+                TxtPurchasePrice.Text = GrdViewItems.GetFocusedRowCellValue("PurchasePrice").ToString();
+                TxtSalePrice.Text = GrdViewItems.GetFocusedRowCellValue("SalePrice").ToString();
+                TxtStock.Text = GrdViewItems.GetFocusedRowCellValue("Stock").ToString();
+                LkUpCategory.EditValue = GrdViewItems.GetFocusedRowCellValue("CategoryId").ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lütfen Bir Satır Seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
 
         private async void SmpBtnRemove_Click(object sender, EventArgs e)
@@ -105,6 +114,16 @@ namespace TeknikServis.Windows.Forms
             await db.SaveChangesAsync();
 
             MessageBox.Show("Ürün Başarıyla Güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void SmpBtnClear_Click(object sender, EventArgs e)
+        {
+            TxtProductId.Text = "";
+            TxtProductName.Text = "";
+            TxtBrand.Text = "";
+            TxtPurchasePrice.Text = "";
+            TxtSalePrice.Text = "";
+            TxtStock.Text = "";
         }
     }
 }

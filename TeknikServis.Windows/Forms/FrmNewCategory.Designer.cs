@@ -32,8 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
             this.TxtCategoryName = new DevExpress.XtraEditors.TextEdit();
+            this.PcClose = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCategoryName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +55,7 @@
             this.SmpBtnSave.Name = "SmpBtnSave";
             this.SmpBtnSave.Size = new System.Drawing.Size(143, 36);
             this.SmpBtnSave.TabIndex = 26;
-            this.SmpBtnSave.Text = "Kaydet";
+            this.SmpBtnSave.Text = "KAYDET";
             this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
             // 
             // TxtCategoryName
@@ -70,6 +72,21 @@
             this.TxtCategoryName.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.TxtCategoryName.Size = new System.Drawing.Size(177, 32);
             this.TxtCategoryName.TabIndex = 22;
+            // 
+            // PcClose
+            // 
+            this.PcClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PcClose.EditValue = global::TeknikServis.Windows.Properties.Resources.Cancel;
+            this.PcClose.Location = new System.Drawing.Point(282, 12);
+            this.PcClose.Name = "PcClose";
+            this.PcClose.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.PcClose.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.PcClose.Properties.Appearance.Options.UseBackColor = true;
+            this.PcClose.Properties.Appearance.Options.UseForeColor = true;
+            this.PcClose.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.PcClose.Size = new System.Drawing.Size(32, 32);
+            this.PcClose.TabIndex = 21;
+            this.PcClose.Click += new System.EventHandler(this.PcClose_Click);
             // 
             // pictureEdit1
             // 
@@ -91,6 +108,7 @@
             this.Controls.Add(this.SmpBtnSave);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.TxtCategoryName);
+            this.Controls.Add(this.PcClose);
             this.Controls.Add(this.pictureEdit1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -98,6 +116,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNewCategory";
             ((System.ComponentModel.ISupportInitialize)(this.TxtCategoryName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -109,5 +128,6 @@
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.TextEdit TxtCategoryName;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit PcClose;
     }
 }

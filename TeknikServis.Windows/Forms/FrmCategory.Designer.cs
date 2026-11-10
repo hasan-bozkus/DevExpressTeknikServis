@@ -38,6 +38,7 @@
             this.TxtCategoryName = new DevExpress.XtraEditors.TextEdit();
             this.LblTextProductName = new DevExpress.XtraEditors.LabelControl();
             this.GrpCtrlCategoryProcess = new DevExpress.XtraEditors.GroupControl();
+            this.SmpBtnClear = new DevExpress.XtraEditors.SimpleButton();
             this.GrdCategories = new DevExpress.XtraGrid.GridControl();
             this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -163,24 +164,35 @@
             // 
             this.GrpCtrlCategoryProcess.Controls.Add(this.TxtCategoryId);
             this.GrpCtrlCategoryProcess.Controls.Add(this.labelControl6);
+            this.GrpCtrlCategoryProcess.Controls.Add(this.SmpBtnClear);
             this.GrpCtrlCategoryProcess.Controls.Add(this.SmpBtnList);
             this.GrpCtrlCategoryProcess.Controls.Add(this.SmpBtnUpdate);
             this.GrpCtrlCategoryProcess.Controls.Add(this.SmpBtnRemove);
             this.GrpCtrlCategoryProcess.Controls.Add(this.SmpBtnSave);
             this.GrpCtrlCategoryProcess.Controls.Add(this.TxtCategoryName);
             this.GrpCtrlCategoryProcess.Controls.Add(this.LblTextProductName);
-            this.GrpCtrlCategoryProcess.Location = new System.Drawing.Point(996, -1);
+            this.GrpCtrlCategoryProcess.Location = new System.Drawing.Point(996, 0);
             this.GrpCtrlCategoryProcess.Name = "GrpCtrlCategoryProcess";
             this.GrpCtrlCategoryProcess.Size = new System.Drawing.Size(370, 565);
             this.GrpCtrlCategoryProcess.TabIndex = 3;
             this.GrpCtrlCategoryProcess.Text = "KATEGORİ İŞLEMLERİ";
             // 
+            // SmpBtnClear
+            // 
+            this.SmpBtnClear.ImageOptions.Image = global::TeknikServis.Windows.Properties.Resources.clearall_32x32;
+            this.SmpBtnClear.Location = new System.Drawing.Point(113, 296);
+            this.SmpBtnClear.Name = "SmpBtnClear";
+            this.SmpBtnClear.Size = new System.Drawing.Size(171, 33);
+            this.SmpBtnClear.TabIndex = 18;
+            this.SmpBtnClear.Text = "TEMİZLE";
+            this.SmpBtnClear.Click += new System.EventHandler(this.SmpBtnClear_Click);
+            // 
             // GrdCategories
             // 
-            this.GrdCategories.Location = new System.Drawing.Point(2, -9);
+            this.GrdCategories.Location = new System.Drawing.Point(2, 0);
             this.GrdCategories.MainView = this.GrdViewItems;
             this.GrdCategories.Name = "GrdCategories";
-            this.GrdCategories.Size = new System.Drawing.Size(994, 319);
+            this.GrdCategories.Size = new System.Drawing.Size(994, 310);
             this.GrdCategories.TabIndex = 2;
             this.GrdCategories.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdViewItems});
@@ -372,7 +384,7 @@
             this.Controls.Add(this.GrpCtrlCategoryProcess);
             this.Controls.Add(this.GrdCategories);
             this.Name = "FrmCategory";
-            this.Text = "FrmCategory";
+            this.Text = "Kategoriler";
             this.Load += new System.EventHandler(this.FrmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtCategoryId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCategoryName.Properties)).EndInit();
@@ -438,5 +450,6 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
+        private DevExpress.XtraEditors.SimpleButton SmpBtnClear;
     }
 }
