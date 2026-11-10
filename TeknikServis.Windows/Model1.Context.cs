@@ -50,5 +50,15 @@ namespace TeknikServis.Windows
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ProductWithCategory_Result>("ProductWithCategory");
         }
+    
+        public virtual ObjectResult<string> MaxCategoryProduct()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("MaxCategoryProduct");
+        }
+    
+        public virtual ObjectResult<MaxProductBrand_Result> MaxProductBrand()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<MaxProductBrand_Result>("MaxProductBrand");
+        }
     }
 }

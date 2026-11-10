@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D4 = new DevExpress.XtraCharts.SimpleDiagram3D();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView4 = new DevExpress.XtraCharts.Pie3DSeriesView();
+            DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D1 = new DevExpress.XtraCharts.SimpleDiagram3D();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView1 = new DevExpress.XtraCharts.Pie3DSeriesView();
             this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GrdCurrents = new DevExpress.XtraGrid.GridControl();
             this.ChartCtrlCurrentStatistics = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdCurrents)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartCtrlCurrentStatistics)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).BeginInit();
             this.SuspendLayout();
             // 
             // GrdViewItems
@@ -64,18 +64,18 @@
             // 
             // ChartCtrlCurrentStatistics
             // 
-            simpleDiagram3D4.RotationMatrixSerializable = "-0.520491087930203;0.716796492564723;-0.463995490961004;0;0.765105799543006;0.632" +
+            simpleDiagram3D1.RotationMatrixSerializable = "-0.520491087930203;0.716796492564723;-0.463995490961004;0;0.765105799543006;0.632" +
     "765138494126;0.119253490565975;0;0.379080654862382;-0.292935262051909;-0.8777737" +
     "68892467;0;0;0;0;1";
-            this.ChartCtrlCurrentStatistics.Diagram = simpleDiagram3D4;
+            this.ChartCtrlCurrentStatistics.Diagram = simpleDiagram3D1;
             this.ChartCtrlCurrentStatistics.Location = new System.Drawing.Point(400, 0);
             this.ChartCtrlCurrentStatistics.Name = "ChartCtrlCurrentStatistics";
-            series4.LegendTextPattern = "{A}";
-            series4.Name = "Series 1";
-            series4.SeriesID = 1;
-            series4.View = pie3DSeriesView4;
+            series1.LegendTextPattern = "{A}";
+            series1.Name = "Series 1";
+            series1.SeriesID = 1;
+            series1.View = pie3DSeriesView1;
             this.ChartCtrlCurrentStatistics.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
+        series1};
             this.ChartCtrlCurrentStatistics.Size = new System.Drawing.Size(965, 537);
             this.ChartCtrlCurrentStatistics.TabIndex = 5;
             // 
@@ -91,9 +91,9 @@
             this.Load += new System.EventHandler(this.FrmCurrents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdCurrents)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartCtrlCurrentStatistics)).EndInit();
             this.ResumeLayout(false);
 

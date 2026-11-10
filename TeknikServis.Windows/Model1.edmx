@@ -312,6 +312,8 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="MaxCategoryProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="MaxProductBrand" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="ProductWithCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbTeknikServisModelStoreContainer">
           <EntitySet Name="Abouts" EntityType="Self.Abouts" Schema="dbo" store:Type="Tables" />
@@ -747,6 +749,8 @@
           <EntitySet Name="Abouts" EntityType="DbTeknikServisModel.Abouts" />
           <EntitySet Name="Messages" EntityType="DbTeknikServisModel.Messages" />
           <FunctionImport Name="ProductWithCategory" ReturnType="Collection(DbTeknikServisModel.ProductWithCategory_Result)" />
+          <FunctionImport Name="MaxCategoryProduct" ReturnType="Collection(String)" />
+          <FunctionImport Name="MaxProductBrand" ReturnType="Collection(DbTeknikServisModel.MaxProductBrand_Result)" />
         </EntityContainer>
         <EntityType Name="Abouts">
           <Key>
@@ -768,6 +772,10 @@
         <ComplexType Name="ProductWithCategory_Result">
           <Property Type="Int32" Name="Adet" Nullable="true" />
           <Property Type="String" Name="Kategori_Adı" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="MaxProductBrand_Result">
+          <Property Type="String" Name="Marka" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Column1" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -985,6 +993,15 @@
               <ComplexTypeMapping TypeName="DbTeknikServisModel.ProductWithCategory_Result">
                 <ScalarProperty Name="Adet" ColumnName="Adet" />
                 <ScalarProperty Name="Kategori_Adı" ColumnName="Kategori Adı" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="MaxCategoryProduct" FunctionName="DbTeknikServisModel.Store.MaxCategoryProduct" />
+          <FunctionImportMapping FunctionImportName="MaxProductBrand" FunctionName="DbTeknikServisModel.Store.MaxProductBrand">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbTeknikServisModel.MaxProductBrand_Result">
+                <ScalarProperty Name="Marka" ColumnName="Marka" />
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

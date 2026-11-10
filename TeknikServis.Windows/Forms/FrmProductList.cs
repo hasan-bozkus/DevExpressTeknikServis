@@ -79,7 +79,7 @@ namespace TeknikServis.Windows.Forms
                 TxtPurchasePrice.Text = GrdViewItems.GetFocusedRowCellValue("PurchasePrice").ToString();
                 TxtSalePrice.Text = GrdViewItems.GetFocusedRowCellValue("SalePrice").ToString();
                 TxtStock.Text = GrdViewItems.GetFocusedRowCellValue("Stock").ToString();
-                LkUpCategory.EditValue = GrdViewItems.GetFocusedRowCellValue("CategoryId").ToString();
+                LkUpCategory.EditValue = GrdViewItems?.GetFocusedRowCellValue("CategoryId").ToString();
             }
             catch (Exception)
             {

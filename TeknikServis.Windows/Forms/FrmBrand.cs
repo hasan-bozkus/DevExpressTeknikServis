@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,18 +33,24 @@ namespace TeknikServis.Windows.Forms
             LblMaxProductCountByBrand.Text = db.Products.OrderByDescending(x => x.SalePrice).Select(y => y.ProductName).FirstOrDefault();
             LblMaxPricedBrand.Text = (from x in db.Products group x by x.ProductBrand into g select new { BrandName = g.Key, Count = g.Count() }).OrderByDescending(x => x.Count).Select(x => x.BrandName).FirstOrDefault();
 
-            ChartBrandAndValue.Series["Series 1"].Points.AddPoint("Siemens", 4);
-            ChartBrandAndValue.Series["Series 1"].Points.AddPoint("Arçelik", 6);
-            ChartBrandAndValue.Series["Series 1"].Points.AddPoint("Beko", 2);
-            ChartBrandAndValue.Series["Series 1"].Points.AddPoint("Toshiba", 1);
-            ChartBrandAndValue.Series["Series 1"].Points.AddPoint("Asus", 10);
+            SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-PDF8JNK\SQLEXPRESS;Initial Catalog=DbTeknikServis;integrated Security=True;TrustServerCertificate=True;");
+            connection.Open();
+            SqlCommand command = new SqlCommand("Select ProductBrand, Count(*) From Products Group By ProductBrand ", connection);
+            SqlDataReader dr = command.ExecuteReader();
+            while (dr.Read())
+            {
+                ChartBrandAndValue.Series["Series 1"].Points.AddPoint(dr[0].ToString(), (int)dr[1]);
+            }
+            connection.Close();
 
-            ChartProductAndValue.Series["Kategoriler"].Points.AddPoint("Beyaz Eşya", 4);
-            ChartProductAndValue.Series["Kategoriler"].Points.AddPoint("Bilgisayar", 3);
-            ChartProductAndValue.Series["Kategoriler"].Points.AddPoint("Küçük Ev aletleri", 6);
-            ChartProductAndValue.Series["Kategoriler"].Points.AddPoint("Televizyon", 2);
-            ChartProductAndValue.Series["Kategoriler"].Points.AddPoint("Telefon", 1);
-            ChartProductAndValue.Series["Kategoriler"].Points.AddPoint("Diğer", 2);
+            connection.Open();
+            SqlCommand command2 = new SqlCommand("Select Categories.CategoryName, Count(*) From Products Inner Join Categories On Products.CategoryId = Categories.CategoryId Group By Categories.CategoryName ", connection);
+            SqlDataReader dr2 = command2.ExecuteReader();
+            while (dr2.Read())
+            {
+                ChartProductAndValue.Series["Kategoriler"].Points.AddPoint(Convert.ToString(dr2[0]), (int)dr2[1]);
+            }
+            connection.Close();
         }
     }
 }

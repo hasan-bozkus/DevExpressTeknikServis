@@ -20,26 +20,32 @@ namespace TeknikServis.Windows
 
         private void BarBtnProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmProductList fr = new Forms.FrmProductList();
-            fr.MdiParent = this;
-            fr.Show();
+            Forms.FrmProductList fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmProductList();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
 
         private void BarBtnNewProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmNewProduct fr = new Forms.FrmNewProduct();
+            Forms.FrmNewProduct fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmNewProduct();
                 fr.Show();
             }
         }
 
         private void BarBtnCategoryList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmCategory fr = new Forms.FrmCategory();
+            Forms.FrmCategory fr = null;
 
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmCategory();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -47,15 +53,20 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewCategory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmNewCategory fr = new Forms.FrmNewCategory();
-            fr.Show();
+            Forms.FrmNewCategory fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmNewCategory();
+                fr.Show();
+            }
         }
 
         private void BarBtnProductStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmStatistics fr = new Forms.FrmStatistics();
+            Forms.FrmStatistics fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmStatistics();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -63,9 +74,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnBrandStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmBrand fr = new Forms.FrmBrand();
+            Forms.FrmBrand fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmBrand();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -73,9 +85,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnCurrentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmCurrentList fr = new Forms.FrmCurrentList();
+            Forms.FrmCurrentList fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmCurrentList();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -83,9 +96,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnCityStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmCurrents fr = new Forms.FrmCurrents();
+            Forms.FrmCurrents fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmCurrents();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -93,15 +107,20 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewCurrent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmNewCurrent fr = new Forms.FrmNewCurrent();
-            fr.Show();
+            Forms.FrmNewCurrent fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmNewCurrent();
+                fr.Show();
+            }
         }
 
         private void BarBtnDepartmentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmDepartment fr = new Forms.FrmDepartment();
+            Forms.FrmDepartment fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmDepartment();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -109,15 +128,20 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewDepartment_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmNewDepartment fr = new Forms.FrmNewDepartment();
-            fr.Show();
+            Forms.FrmNewDepartment fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmNewDepartment();
+                fr.Show();
+            }
         }
 
         private void BarBtnEmployeeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmEmployee fr = new Forms.FrmEmployee();
+            Forms.FrmEmployee fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmEmployee();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -130,9 +154,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnExchangeRates_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmExchangeRates fr = new Forms.FrmExchangeRates();
+            Forms.FrmExchangeRates fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmExchangeRates();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -150,9 +175,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnYoutube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmYoutube fr = new Forms.FrmYoutube();
+            Forms.FrmYoutube fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmYoutube();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -160,9 +186,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnNoteList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmNotes fr = new Forms.FrmNotes();
+            Forms.FrmNotes fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmNotes();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -170,9 +197,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnFaultProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmFaultsList fr = new Forms.FrmFaultsList();
+            Forms.FrmFaultsList fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmFaultsList();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -180,15 +208,20 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewProductSales_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmNewProductSales fr = new Forms.FrmNewProductSales();
-            fr.Show();
+            Forms.FrmNewProductSales fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmNewProductSales();
+                fr.Show();
+            }
         }
 
         private void BarBtnSalesList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmSales fr = new Forms.FrmSales();
+            Forms.FrmSales fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmSales();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -196,21 +229,30 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewFaultProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmFaultProductRegistration fr = new Forms.FrmFaultProductRegistration();
-            fr.Show();
+            Forms.FrmFaultProductRegistration fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmFaultProductRegistration();
+                fr.Show();
+            }
         }
 
         private void BarBtnFaultProductDescription_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmFaultDetails fr = new Forms.FrmFaultDetails();
-            fr.Show();
+            Forms.FrmFaultDetails fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmFaultDetails();
+                fr.Show();
+            }
         }
 
         private void BarBtnFaultProductDetails_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmFaultProductDetails fr = new Forms.FrmFaultProductDetails();
+            Forms.FrmFaultProductDetails fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmFaultProductDetails();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -218,15 +260,20 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewQRCode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmQRCode fr = new Forms.FrmQRCode();
-            fr.Show();
+            Forms.FrmQRCode fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmQRCode();
+                fr.Show();
+            }
         }
 
         private void BarBtnInvoiceList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmInvoiceList fr = new Forms.FrmInvoiceList();
+            Forms.FrmInvoiceList fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmInvoiceList();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -234,9 +281,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnNewInvoiceItem_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmInvoiceItem fr = new Forms.FrmInvoiceItem();
+            Forms.FrmInvoiceItem fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmInvoiceItem();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -244,9 +292,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnDetailedBllInquiry_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmInvoiceItemsList fr = new Forms.FrmInvoiceItemsList();
+            Forms.FrmInvoiceItemsList fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmInvoiceItemsList();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -254,9 +303,10 @@ namespace TeknikServis.Windows
 
         private void BrBtnGauge_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmGauge fr = new Forms.FrmGauge();
+            Forms.FrmGauge fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmGauge();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -264,9 +314,10 @@ namespace TeknikServis.Windows
 
         private void BarBtnMap_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmMap fr = new Forms.FrmMap();
+            Forms.FrmMap fr = null;
             if (fr == null || fr.IsDisposed)
             {
+                fr = new Forms.FrmMap();
                 fr.MdiParent = this;
                 fr.Show();
             }
@@ -274,8 +325,12 @@ namespace TeknikServis.Windows
 
         private void BarBtnReports_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmReport fr = new Forms.FrmReport();
-            fr.Show();
+            Forms.FrmReport fr = null   ;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FrmReport();
+                fr.Show();
+            }
         }
 
         Forms.FrmHomePage frHome;

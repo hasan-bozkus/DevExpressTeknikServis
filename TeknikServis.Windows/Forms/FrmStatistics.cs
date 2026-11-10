@@ -25,7 +25,7 @@ namespace TeknikServis.Windows.Forms
             LblTotalCategoryCount.Text = db.Categories.Count().ToString();
             LblTotalStockCount.Text = db.Products.Sum(x => x.Stock).ToString();
             LblCriticalLevel.Text = db.Products.Count(x => x.Stock <= 10).ToString();
-           // LblProductSoldTodayCount.Text = db.Sales.Count(x => x.SaleDate.Date == DateTime.Today).ToString();
+           //LblProductSoldTodayCount.Text = db.Sales.Count(x => x.SaleDate.Date == DateTime.Today).ToString();
 
             LblMaxStockProduct.Text = (from x in db.Products orderby x.Stock descending select x.ProductName).FirstOrDefault();
             LblMinStockProduct.Text = (from x in db.Products orderby x.Stock ascending select x.ProductName).FirstOrDefault();
@@ -35,9 +35,12 @@ namespace TeknikServis.Windows.Forms
 
             LblTotalBrandCount.Text = db.Products.Select(x => x.ProductBrand).Distinct().Count().ToString();
             LblMaxProductBrand.Text = (from x in db.Products group x by x.ProductBrand into g select new { BrandName = g.Key, Count = g.Count() }).OrderByDescending(x => x.Count).Select(x => x.BrandName).FirstOrDefault();
-            LblDefectiveProductCount.Text = db.Products.Count(x => x.Status == false).ToString();
+            LblDefectiveProductCount.Text = db.ProductAcceptances.Count().ToString();
             LblInRepairProductCount.Text = db.Products.Count(x => x.Status == true).ToString();
+            //LblDefetiveProductInToday.Text = db.ProductAcceptances.Count(x => x.Status == false && x.Date == DateTime.Today).ToString();
 
+            //LblRenovationProductCount.Text = db.Products.Count(x => x.Status == true).ToString();
+            //LabelProductInShipmentCount.Text = db.Products.Count(x => x.Status == true).ToString();
             LblWhiteGoodsStokQuantity.Text = db.Products.Where(x => x.Categories.CategoryName == "Beyaz Eşya").Sum(x => x.Stock).ToString();
             LbComputerStokQuantity.Text = db.Products.Where(x => x.Categories.CategoryName == "Bilgisayar").Sum(x => x.Stock).ToString();
             LblSmallHomeApplianceStokQuantity.Text = db.Products.Where(x => x.Categories.CategoryName == "Küçük Ev Aletleri").Sum(x => x.Stock).ToString();

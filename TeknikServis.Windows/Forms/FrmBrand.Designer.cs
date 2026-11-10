@@ -60,18 +60,18 @@
             this.ChartProductAndValue = new DevExpress.XtraCharts.ChartControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdBrands)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
             this.panel1.SuspendLayout();
@@ -91,18 +91,18 @@
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).BeginInit();
             this.panel7.SuspendLayout();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // GrdBrands
@@ -308,7 +308,7 @@
             this.ChartBrandAndValue.Location = new System.Drawing.Point(12, 99);
             this.ChartBrandAndValue.Name = "ChartBrandAndValue";
             this.ChartBrandAndValue.PaletteName = "Pastel Kit";
-            series3.LegendTextPattern = "(A)";
+            series3.LegendTextPattern = "{A}";
             series3.Name = "Series 1";
             series3.SeriesID = 0;
             series3.View = pieSeriesView2;
@@ -390,93 +390,27 @@
             this.panel7.Size = new System.Drawing.Size(407, 79);
             this.panel7.TabIndex = 4;
             // 
-            // panel12
+            // panel13
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
-            this.panel12.Controls.Add(this.pictureEdit7);
-            this.panel12.Location = new System.Drawing.Point(0, 3);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(75, 72);
-            this.panel12.TabIndex = 0;
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(18)))));
+            this.panel13.Controls.Add(this.pictureEdit8);
+            this.panel13.Location = new System.Drawing.Point(324, 4);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(75, 72);
+            this.panel13.TabIndex = 0;
             // 
-            // pictureEdit7
+            // pictureEdit8
             // 
-            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(15, 12);
-            this.pictureEdit7.Name = "pictureEdit7";
-            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit7.Size = new System.Drawing.Size(48, 48);
-            this.pictureEdit7.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
-            this.panel8.Controls.Add(this.pictureEdit3);
-            this.panel8.Location = new System.Drawing.Point(0, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(75, 72);
-            this.panel8.TabIndex = 0;
-            // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(11, 13);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(48, 48);
-            this.pictureEdit3.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(76)))), ((int)(((byte)(103)))));
-            this.panel9.Controls.Add(this.pictureEdit4);
-            this.panel9.Location = new System.Drawing.Point(81, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(75, 72);
-            this.panel9.TabIndex = 0;
-            // 
-            // pictureEdit4
-            // 
-            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(15, 12);
-            this.pictureEdit4.Name = "pictureEdit4";
-            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit4.Size = new System.Drawing.Size(48, 48);
-            this.pictureEdit4.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
-            this.panel10.Controls.Add(this.pictureEdit5);
-            this.panel10.Location = new System.Drawing.Point(162, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(75, 72);
-            this.panel10.TabIndex = 0;
-            // 
-            // pictureEdit5
-            // 
-            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(15, 12);
-            this.pictureEdit5.Name = "pictureEdit5";
-            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit5.Size = new System.Drawing.Size(48, 48);
-            this.pictureEdit5.TabIndex = 0;
+            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
+            this.pictureEdit8.Location = new System.Drawing.Point(15, 12);
+            this.pictureEdit8.Name = "pictureEdit8";
+            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit8.Size = new System.Drawing.Size(48, 48);
+            this.pictureEdit8.TabIndex = 0;
             // 
             // panel11
             // 
@@ -500,27 +434,93 @@
             this.pictureEdit6.Size = new System.Drawing.Size(48, 48);
             this.pictureEdit6.TabIndex = 0;
             // 
-            // panel13
+            // panel10
             // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(18)))));
-            this.panel13.Controls.Add(this.pictureEdit8);
-            this.panel13.Location = new System.Drawing.Point(324, 4);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(75, 72);
-            this.panel13.TabIndex = 0;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
+            this.panel10.Controls.Add(this.pictureEdit5);
+            this.panel10.Location = new System.Drawing.Point(162, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(75, 72);
+            this.panel10.TabIndex = 0;
             // 
-            // pictureEdit8
+            // pictureEdit5
             // 
-            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
-            this.pictureEdit8.Location = new System.Drawing.Point(15, 12);
-            this.pictureEdit8.Name = "pictureEdit8";
-            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit8.Size = new System.Drawing.Size(48, 48);
-            this.pictureEdit8.TabIndex = 0;
+            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
+            this.pictureEdit5.Location = new System.Drawing.Point(15, 12);
+            this.pictureEdit5.Name = "pictureEdit5";
+            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit5.Size = new System.Drawing.Size(48, 48);
+            this.pictureEdit5.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(76)))), ((int)(((byte)(103)))));
+            this.panel9.Controls.Add(this.pictureEdit4);
+            this.panel9.Location = new System.Drawing.Point(81, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(75, 72);
+            this.panel9.TabIndex = 0;
+            // 
+            // pictureEdit4
+            // 
+            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
+            this.pictureEdit4.Location = new System.Drawing.Point(15, 12);
+            this.pictureEdit4.Name = "pictureEdit4";
+            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit4.Size = new System.Drawing.Size(48, 48);
+            this.pictureEdit4.TabIndex = 0;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
+            this.panel8.Controls.Add(this.pictureEdit3);
+            this.panel8.Location = new System.Drawing.Point(0, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(75, 72);
+            this.panel8.TabIndex = 0;
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(11, 13);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit3.Size = new System.Drawing.Size(48, 48);
+            this.pictureEdit3.TabIndex = 0;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
+            this.panel12.Controls.Add(this.pictureEdit7);
+            this.panel12.Location = new System.Drawing.Point(0, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(75, 72);
+            this.panel12.TabIndex = 0;
+            // 
+            // pictureEdit7
+            // 
+            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
+            this.pictureEdit7.Location = new System.Drawing.Point(15, 12);
+            this.pictureEdit7.Name = "pictureEdit7";
+            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit7.Size = new System.Drawing.Size(48, 48);
+            this.pictureEdit7.TabIndex = 0;
             // 
             // FrmBrand
             // 
@@ -536,7 +536,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.GrdBrands);
             this.Name = "FrmBrand";
-            this.Text = "FrmBrand";
+            this.Text = "Markalar";
             this.Load += new System.EventHandler(this.FrmBrand_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdBrands)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
@@ -563,18 +563,18 @@
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartProductAndValue)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
