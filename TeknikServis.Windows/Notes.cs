@@ -18,5 +18,6 @@ namespace TeknikServis.Windows
         public string Title { get; set; }
         public string Content { get; set; }
         public Nullable<bool> Status { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
     }
 }

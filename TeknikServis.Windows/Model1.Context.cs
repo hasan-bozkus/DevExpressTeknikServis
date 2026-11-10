@@ -12,6 +12,8 @@ namespace TeknikServis.Windows
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbTeknikServisEntities : DbContext
     {
@@ -43,5 +45,10 @@ namespace TeknikServis.Windows
         public virtual DbSet<Tools> Tools { get; set; }
         public virtual DbSet<Abouts> Abouts { get; set; }
         public virtual DbSet<Messages> Messages { get; set; }
+    
+        public virtual ObjectResult<ProductWithCategory_Result> ProductWithCategory()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ProductWithCategory_Result>("ProductWithCategory");
+        }
     }
 }

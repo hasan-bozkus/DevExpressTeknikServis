@@ -220,18 +220,26 @@ namespace TeknikServis.Windows
             fr.Show();
         }
 
+        Forms.FrmHomePage frHome;
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            Forms.FrmHomePage fr = new Forms.FrmHomePage();
-            fr.MdiParent = this;
-            fr.Show();
+            if (frHome == null || frHome.IsDisposed)
+            {
+                frHome = new Forms.FrmHomePage();
+                frHome.MdiParent = this;
+                frHome.Show();
+            }
         }
 
         private void BarBtnHomePage_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmHomePage fr = new Forms.FrmHomePage();
-            fr.MdiParent = this;
-            fr.Show();
+            if (frHome == null || frHome.IsDisposed)
+            {
+                frHome = new Forms.FrmHomePage();
+                frHome.MdiParent = this;
+                frHome.Show();
+            }
         }
     }
 }

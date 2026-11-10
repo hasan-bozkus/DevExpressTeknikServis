@@ -127,6 +127,7 @@
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
           <Property Name="Content" Type="nvarchar(max)" />
           <Property Name="Status" Type="bit" />
+          <Property Name="Date" Type="smalldatetime" />
         </EntityType>
         <EntityType Name="ProductAcceptances">
           <Key>
@@ -311,6 +312,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="ProductWithCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbTeknikServisModelStoreContainer">
           <EntitySet Name="Abouts" EntityType="Self.Abouts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
@@ -493,6 +495,7 @@
           <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Boolean" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="ProductAcceptances">
           <Key>
@@ -743,6 +746,7 @@
           </AssociationSet>
           <EntitySet Name="Abouts" EntityType="DbTeknikServisModel.Abouts" />
           <EntitySet Name="Messages" EntityType="DbTeknikServisModel.Messages" />
+          <FunctionImport Name="ProductWithCategory" ReturnType="Collection(DbTeknikServisModel.ProductWithCategory_Result)" />
         </EntityContainer>
         <EntityType Name="Abouts">
           <Key>
@@ -761,6 +765,10 @@
           <Property Name="Subject" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="MessageContent" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
         </EntityType>
+        <ComplexType Name="ProductWithCategory_Result">
+          <Property Type="Int32" Name="Adet" Nullable="true" />
+          <Property Type="String" Name="Kategori_Adı" Nullable="true" MaxLength="50" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -876,6 +884,7 @@
           <EntitySetMapping Name="Notes">
             <EntityTypeMapping TypeName="DbTeknikServisModel.Notes">
               <MappingFragment StoreEntitySet="Notes">
+                <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="NoteId" ColumnName="NoteId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
@@ -971,6 +980,14 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ProductWithCategory" FunctionName="DbTeknikServisModel.Store.ProductWithCategory">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbTeknikServisModel.ProductWithCategory_Result">
+                <ScalarProperty Name="Adet" ColumnName="Adet" />
+                <ScalarProperty Name="Kategori_Adı" ColumnName="Kategori Adı" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
