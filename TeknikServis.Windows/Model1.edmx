@@ -139,6 +139,8 @@
           <Property Name="ReceiveDate" Type="smalldatetime" />
           <Property Name="ReleaseDate" Type="smalldatetime" />
           <Property Name="ProductSerialNo" Type="char" MaxLength="5" />
+          <Property Name="ProductStatus" Type="bit" />
+          <Property Name="StatusDetail" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="ProductMovements">
           <Key>
@@ -511,6 +513,8 @@
           <Property Name="ProductSerialNo" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="Currents" Relationship="Self.FK_ProductAcceptances_Currents" FromRole="ProductAcceptances" ToRole="Currents" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_ProductAcceptances_Employees" FromRole="ProductAcceptances" ToRole="Employees" />
+          <Property Name="ProductStatus" Type="Boolean" />
+          <Property Name="StatusDetail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ProductMovements">
           <Key>
@@ -903,6 +907,8 @@
           <EntitySetMapping Name="ProductAcceptances">
             <EntityTypeMapping TypeName="DbTeknikServisModel.ProductAcceptances">
               <MappingFragment StoreEntitySet="ProductAcceptances">
+                <ScalarProperty Name="StatusDetail" ColumnName="StatusDetail" />
+                <ScalarProperty Name="ProductStatus" ColumnName="ProductStatus" />
                 <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
                 <ScalarProperty Name="Current" ColumnName="Current" />
                 <ScalarProperty Name="Employee" ColumnName="Employee" />

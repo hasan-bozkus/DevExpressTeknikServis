@@ -20,6 +20,8 @@ namespace TeknikServis.Windows
         public Nullable<System.DateTime> ReceiveDate { get; set; }
         public Nullable<System.DateTime> ReleaseDate { get; set; }
         public string ProductSerialNo { get; set; }
+        public Nullable<bool> ProductStatus { get; set; }
+        public string StatusDetail { get; set; }
     
         public virtual Currents Currents { get; set; }
         public virtual Employees Employees { get; set; }

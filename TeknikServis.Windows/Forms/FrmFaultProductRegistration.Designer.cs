@@ -45,6 +45,7 @@
             this.TxtDate = new DevExpress.XtraEditors.TextEdit();
             this.panel4 = new System.Windows.Forms.Panel();
             this.SmpBtnFindCurrentAndEmployee = new DevExpress.XtraEditors.SimpleButton();
+            this.PcClose = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
@@ -54,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -86,7 +88,7 @@
             // SmpBtnCancel
             // 
             this.SmpBtnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnCancel.ImageOptions.Image")));
-            this.SmpBtnCancel.Location = new System.Drawing.Point(253, 371);
+            this.SmpBtnCancel.Location = new System.Drawing.Point(256, 380);
             this.SmpBtnCancel.Name = "SmpBtnCancel";
             this.SmpBtnCancel.Size = new System.Drawing.Size(149, 36);
             this.SmpBtnCancel.TabIndex = 7;
@@ -96,7 +98,7 @@
             // SmpSell
             // 
             this.SmpSell.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpSell.ImageOptions.Image")));
-            this.SmpSell.Location = new System.Drawing.Point(104, 371);
+            this.SmpSell.Location = new System.Drawing.Point(107, 380);
             this.SmpSell.Name = "SmpSell";
             this.SmpSell.Size = new System.Drawing.Size(143, 36);
             this.SmpSell.TabIndex = 6;
@@ -134,6 +136,7 @@
             this.TxtSerialNumber.Properties.MaskSettings.Set("mask", "AAAAA");
             this.TxtSerialNumber.Size = new System.Drawing.Size(210, 32);
             this.TxtSerialNumber.TabIndex = 5;
+            this.TxtSerialNumber.Click += new System.EventHandler(this.TxtSerialNumber_Click);
             // 
             // pictureEdit7
             // 
@@ -149,7 +152,7 @@
             // 
             // TxtEmployeeId
             // 
-            this.TxtEmployeeId.EditValue = "PersonelId";
+            this.TxtEmployeeId.EditValue = "Personel";
             this.TxtEmployeeId.Location = new System.Drawing.Point(83, 233);
             this.TxtEmployeeId.Name = "TxtEmployeeId";
             this.TxtEmployeeId.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -161,6 +164,7 @@
             this.TxtEmployeeId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.TxtEmployeeId.Size = new System.Drawing.Size(371, 32);
             this.TxtEmployeeId.TabIndex = 3;
+            this.TxtEmployeeId.Click += new System.EventHandler(this.TxtEmployeeId_Click);
             // 
             // pictureEdit3
             // 
@@ -176,7 +180,7 @@
             // 
             // TxtCurrentId
             // 
-            this.TxtCurrentId.EditValue = "Müşteri ID";
+            this.TxtCurrentId.EditValue = "Müşteri";
             this.TxtCurrentId.Location = new System.Drawing.Point(83, 159);
             this.TxtCurrentId.Name = "TxtCurrentId";
             this.TxtCurrentId.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -188,6 +192,7 @@
             this.TxtCurrentId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.TxtCurrentId.Size = new System.Drawing.Size(371, 32);
             this.TxtCurrentId.TabIndex = 2;
+            this.TxtCurrentId.Click += new System.EventHandler(this.TxtCurrentId_Click);
             // 
             // pictureEdit1
             // 
@@ -229,6 +234,7 @@
             this.TxtDate.Properties.MaskSettings.Set("mask", "d");
             this.TxtDate.Size = new System.Drawing.Size(371, 32);
             this.TxtDate.TabIndex = 4;
+            this.TxtDate.Click += new System.EventHandler(this.TxtDate_Click);
             // 
             // panel4
             // 
@@ -248,12 +254,28 @@
             this.SmpBtnFindCurrentAndEmployee.Text = "Müşteri Getir";
             this.SmpBtnFindCurrentAndEmployee.Click += new System.EventHandler(this.SmpBtnFindCurrentAndEmployee_Click);
             // 
+            // PcClose
+            // 
+            this.PcClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PcClose.EditValue = global::TeknikServis.Windows.Properties.Resources.Cancel;
+            this.PcClose.Location = new System.Drawing.Point(478, 1);
+            this.PcClose.Name = "PcClose";
+            this.PcClose.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.PcClose.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.PcClose.Properties.Appearance.Options.UseBackColor = true;
+            this.PcClose.Properties.Appearance.Options.UseForeColor = true;
+            this.PcClose.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.PcClose.Size = new System.Drawing.Size(32, 32);
+            this.PcClose.TabIndex = 65;
+            this.PcClose.Click += new System.EventHandler(this.PcClose_Click);
+            // 
             // FrmFaultProductRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(510, 449);
+            this.Controls.Add(this.PcClose);
             this.Controls.Add(this.SmpBtnCancel);
             this.Controls.Add(this.SmpBtnFindCurrentAndEmployee);
             this.Controls.Add(this.SmpSell);
@@ -274,6 +296,7 @@
             this.Name = "FrmFaultProductRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFaultProductRegistration";
+            this.Load += new System.EventHandler(this.FrmFaultProductRegistration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
@@ -283,6 +306,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,5 +329,6 @@
         private DevExpress.XtraEditors.TextEdit TxtDate;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton SmpBtnFindCurrentAndEmployee;
+        private DevExpress.XtraEditors.PictureEdit PcClose;
     }
 }

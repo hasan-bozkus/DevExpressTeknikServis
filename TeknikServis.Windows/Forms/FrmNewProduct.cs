@@ -81,5 +81,10 @@ namespace TeknikServis.Windows.Forms
             TxtStock.Text = "";
             TxtStock.Focus();
         }
+
+        private void PcClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

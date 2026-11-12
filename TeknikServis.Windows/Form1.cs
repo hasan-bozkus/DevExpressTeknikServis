@@ -325,7 +325,7 @@ namespace TeknikServis.Windows
 
         private void BarBtnReports_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Forms.FrmReport fr = null   ;
+            Forms.FrmReport fr = null;
             if (fr == null || fr.IsDisposed)
             {
                 fr = new Forms.FrmReport();

@@ -36,30 +36,30 @@
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.ChartBrandAndValue = new DevExpress.XtraCharts.ChartControl();
+            this.ChartProductFaultStatus = new DevExpress.XtraCharts.ChartControl();
             this.GrdFaultsList = new DevExpress.XtraGrid.GridControl();
             this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalBrandCount = new DevExpress.XtraEditors.LabelControl();
+            this.LblNumberOfItemsWithCompletedRenovations = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.LblMaxProductCountByBrand = new DevExpress.XtraEditors.LabelControl();
+            this.LblNumberOfCurrentlyFaultyProducts = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.LblMaxPricedBrand = new DevExpress.XtraEditors.LabelControl();
+            this.LblNumberOfProductsAwaitingParts = new DevExpress.XtraEditors.LabelControl();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.LblCustomersAwaitingMessage = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.LblCancelledTransactions = new DevExpress.XtraEditors.LabelControl();
             this.panel8 = new System.Windows.Forms.Panel();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.LblTotalProductCount = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartBrandAndValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartProductFaultStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).BeginInit();
@@ -106,32 +106,32 @@
             this.labelControl3.Text = "Projemizin bu bölümünde markalar ve bu markalara ait istatistik değerlerine grafi" +
     "k alanı üzerinden güçlü bir \r\narayüzle ulaşabilirsiniz.";
             // 
-            // ChartBrandAndValue
+            // ChartProductFaultStatus
             // 
             simpleDiagram3D1.RotationMatrixSerializable = "0.810740653830928;0.313214395603366;-0.494566815114618;0;-0.585404076680073;0.435" +
     "635238285001;-0.683757271384167;0;0.0012881118543125;0.843871247022428;0.5365441" +
     "81980069;0;0;0;0;1";
-            this.ChartBrandAndValue.Diagram = simpleDiagram3D1;
-            this.ChartBrandAndValue.IndicatorsPaletteName = "Office 2013";
-            this.ChartBrandAndValue.Location = new System.Drawing.Point(3, 90);
-            this.ChartBrandAndValue.Name = "ChartBrandAndValue";
-            this.ChartBrandAndValue.PaletteName = "Pastel Kit";
-            series1.LegendTextPattern = "(A)";
+            this.ChartProductFaultStatus.Diagram = simpleDiagram3D1;
+            this.ChartProductFaultStatus.IndicatorsPaletteName = "Office 2013";
+            this.ChartProductFaultStatus.Location = new System.Drawing.Point(3, 90);
+            this.ChartProductFaultStatus.Name = "ChartProductFaultStatus";
+            this.ChartProductFaultStatus.PaletteName = "Pastel Kit";
+            series1.LegendTextPattern = "{A}";
             series1.Name = "Series 1";
             series1.SeriesID = 0;
             series1.View = pie3DSeriesView1;
-            this.ChartBrandAndValue.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+            this.ChartProductFaultStatus.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.ChartBrandAndValue.SeriesTemplate.View = pie3DSeriesView2;
-            this.ChartBrandAndValue.Size = new System.Drawing.Size(624, 161);
-            this.ChartBrandAndValue.TabIndex = 0;
+            this.ChartProductFaultStatus.SeriesTemplate.View = pie3DSeriesView2;
+            this.ChartProductFaultStatus.Size = new System.Drawing.Size(624, 161);
+            this.ChartProductFaultStatus.TabIndex = 0;
             // 
             // GrdFaultsList
             // 
-            this.GrdFaultsList.Location = new System.Drawing.Point(1, -9);
+            this.GrdFaultsList.Location = new System.Drawing.Point(1, 0);
             this.GrdFaultsList.MainView = this.GrdViewItems;
             this.GrdFaultsList.Name = "GrdFaultsList";
-            this.GrdFaultsList.Size = new System.Drawing.Size(763, 550);
+            this.GrdFaultsList.Size = new System.Drawing.Size(763, 541);
             this.GrdFaultsList.TabIndex = 5;
             this.GrdFaultsList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdViewItems});
@@ -149,7 +149,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
             this.panel2.Controls.Add(this.labelControl2);
-            this.panel2.Controls.Add(this.LblTotalBrandCount);
+            this.panel2.Controls.Add(this.LblNumberOfItemsWithCompletedRenovations);
             this.panel2.Location = new System.Drawing.Point(975, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 137);
@@ -167,17 +167,17 @@
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Tadilatı Biten Ürün Sayısı";
             // 
-            // LblTotalBrandCount
+            // LblNumberOfItemsWithCompletedRenovations
             // 
-            this.LblTotalBrandCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalBrandCount.Appearance.ForeColor = System.Drawing.Color.White;
-            this.LblTotalBrandCount.Appearance.Options.UseFont = true;
-            this.LblTotalBrandCount.Appearance.Options.UseForeColor = true;
-            this.LblTotalBrandCount.Location = new System.Drawing.Point(45, 48);
-            this.LblTotalBrandCount.Name = "LblTotalBrandCount";
-            this.LblTotalBrandCount.Size = new System.Drawing.Size(75, 59);
-            this.LblTotalBrandCount.TabIndex = 0;
-            this.LblTotalBrandCount.Text = "584";
+            this.LblNumberOfItemsWithCompletedRenovations.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblNumberOfItemsWithCompletedRenovations.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblNumberOfItemsWithCompletedRenovations.Appearance.Options.UseFont = true;
+            this.LblNumberOfItemsWithCompletedRenovations.Appearance.Options.UseForeColor = true;
+            this.LblNumberOfItemsWithCompletedRenovations.Location = new System.Drawing.Point(45, 48);
+            this.LblNumberOfItemsWithCompletedRenovations.Name = "LblNumberOfItemsWithCompletedRenovations";
+            this.LblNumberOfItemsWithCompletedRenovations.Size = new System.Drawing.Size(75, 59);
+            this.LblNumberOfItemsWithCompletedRenovations.TabIndex = 0;
+            this.LblNumberOfItemsWithCompletedRenovations.Text = "584";
             // 
             // labelControl4
             // 
@@ -191,23 +191,23 @@
             this.labelControl4.TabIndex = 0;
             this.labelControl4.Text = "Mevcut Arızalı Ürün Sayısı";
             // 
-            // LblMaxProductCountByBrand
+            // LblNumberOfCurrentlyFaultyProducts
             // 
-            this.LblMaxProductCountByBrand.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.LblMaxProductCountByBrand.Appearance.ForeColor = System.Drawing.Color.White;
-            this.LblMaxProductCountByBrand.Appearance.Options.UseFont = true;
-            this.LblMaxProductCountByBrand.Appearance.Options.UseForeColor = true;
-            this.LblMaxProductCountByBrand.Location = new System.Drawing.Point(43, 59);
-            this.LblMaxProductCountByBrand.Name = "LblMaxProductCountByBrand";
-            this.LblMaxProductCountByBrand.Size = new System.Drawing.Size(57, 45);
-            this.LblMaxProductCountByBrand.TabIndex = 0;
-            this.LblMaxProductCountByBrand.Text = "584";
+            this.LblNumberOfCurrentlyFaultyProducts.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.LblNumberOfCurrentlyFaultyProducts.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblNumberOfCurrentlyFaultyProducts.Appearance.Options.UseFont = true;
+            this.LblNumberOfCurrentlyFaultyProducts.Appearance.Options.UseForeColor = true;
+            this.LblNumberOfCurrentlyFaultyProducts.Location = new System.Drawing.Point(43, 59);
+            this.LblNumberOfCurrentlyFaultyProducts.Name = "LblNumberOfCurrentlyFaultyProducts";
+            this.LblNumberOfCurrentlyFaultyProducts.Size = new System.Drawing.Size(57, 45);
+            this.LblNumberOfCurrentlyFaultyProducts.TabIndex = 0;
+            this.LblNumberOfCurrentlyFaultyProducts.Text = "584";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
             this.panel4.Controls.Add(this.labelControl6);
-            this.panel4.Controls.Add(this.LblMaxPricedBrand);
+            this.panel4.Controls.Add(this.LblNumberOfProductsAwaitingParts);
             this.panel4.Location = new System.Drawing.Point(1183, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 137);
@@ -225,24 +225,24 @@
             this.labelControl6.TabIndex = 0;
             this.labelControl6.Text = "Parça Bekleyen Ürün Sayısı";
             // 
-            // LblMaxPricedBrand
+            // LblNumberOfProductsAwaitingParts
             // 
-            this.LblMaxPricedBrand.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.LblMaxPricedBrand.Appearance.ForeColor = System.Drawing.Color.White;
-            this.LblMaxPricedBrand.Appearance.Options.UseFont = true;
-            this.LblMaxPricedBrand.Appearance.Options.UseForeColor = true;
-            this.LblMaxPricedBrand.Location = new System.Drawing.Point(42, 59);
-            this.LblMaxPricedBrand.Name = "LblMaxPricedBrand";
-            this.LblMaxPricedBrand.Size = new System.Drawing.Size(57, 45);
-            this.LblMaxPricedBrand.TabIndex = 0;
-            this.LblMaxPricedBrand.Text = "584";
+            this.LblNumberOfProductsAwaitingParts.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.LblNumberOfProductsAwaitingParts.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblNumberOfProductsAwaitingParts.Appearance.Options.UseFont = true;
+            this.LblNumberOfProductsAwaitingParts.Appearance.Options.UseForeColor = true;
+            this.LblNumberOfProductsAwaitingParts.Location = new System.Drawing.Point(42, 59);
+            this.LblNumberOfProductsAwaitingParts.Name = "LblNumberOfProductsAwaitingParts";
+            this.LblNumberOfProductsAwaitingParts.Size = new System.Drawing.Size(57, 45);
+            this.LblNumberOfProductsAwaitingParts.TabIndex = 0;
+            this.LblNumberOfProductsAwaitingParts.Text = "584";
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.pictureEdit1);
             this.panel5.Controls.Add(this.labelControl5);
             this.panel5.Controls.Add(this.labelControl3);
-            this.panel5.Controls.Add(this.ChartBrandAndValue);
+            this.panel5.Controls.Add(this.ChartProductFaultStatus);
             this.panel5.Location = new System.Drawing.Point(767, 287);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(630, 254);
@@ -252,7 +252,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(189)))), ((int)(((byte)(227)))));
             this.panel3.Controls.Add(this.labelControl4);
-            this.panel3.Controls.Add(this.LblMaxProductCountByBrand);
+            this.panel3.Controls.Add(this.LblNumberOfCurrentlyFaultyProducts);
             this.panel3.Location = new System.Drawing.Point(767, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(202, 137);
@@ -262,7 +262,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(163)))), ((int)(((byte)(164)))));
             this.panel6.Controls.Add(this.labelControl7);
-            this.panel6.Controls.Add(this.labelControl8);
+            this.panel6.Controls.Add(this.LblCustomersAwaitingMessage);
             this.panel6.Location = new System.Drawing.Point(767, 145);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(202, 137);
@@ -274,29 +274,29 @@
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(27, 21);
+            this.labelControl7.Location = new System.Drawing.Point(13, 21);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(136, 21);
+            this.labelControl7.Size = new System.Drawing.Size(182, 21);
             this.labelControl7.TabIndex = 0;
-            this.labelControl7.Text = "Arızalı Ürünler Kasa";
+            this.labelControl7.Text = "Mesaj Bekleyen Müşteriler";
             // 
-            // labelControl8
+            // LblCustomersAwaitingMessage
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(43, 59);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(57, 45);
-            this.labelControl8.TabIndex = 0;
-            this.labelControl8.Text = "584";
+            this.LblCustomersAwaitingMessage.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.LblCustomersAwaitingMessage.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblCustomersAwaitingMessage.Appearance.Options.UseFont = true;
+            this.LblCustomersAwaitingMessage.Appearance.Options.UseForeColor = true;
+            this.LblCustomersAwaitingMessage.Location = new System.Drawing.Point(43, 59);
+            this.LblCustomersAwaitingMessage.Name = "LblCustomersAwaitingMessage";
+            this.LblCustomersAwaitingMessage.Size = new System.Drawing.Size(57, 45);
+            this.LblCustomersAwaitingMessage.TabIndex = 0;
+            this.LblCustomersAwaitingMessage.Text = "584";
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
             this.panel7.Controls.Add(this.labelControl9);
-            this.panel7.Controls.Add(this.labelControl10);
+            this.panel7.Controls.Add(this.LblCancelledTransactions);
             this.panel7.Location = new System.Drawing.Point(1183, 145);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(214, 137);
@@ -310,27 +310,27 @@
             this.labelControl9.Appearance.Options.UseForeColor = true;
             this.labelControl9.Location = new System.Drawing.Point(19, 21);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(181, 21);
+            this.labelControl9.Size = new System.Drawing.Size(135, 21);
             this.labelControl9.TabIndex = 0;
-            this.labelControl9.Text = "En Fazla Arızalanan Marka";
+            this.labelControl9.Text = "İptal Edilen İşlemler";
             // 
-            // labelControl10
+            // LblCancelledTransactions
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(42, 59);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(57, 45);
-            this.labelControl10.TabIndex = 0;
-            this.labelControl10.Text = "584";
+            this.LblCancelledTransactions.Appearance.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.LblCancelledTransactions.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblCancelledTransactions.Appearance.Options.UseFont = true;
+            this.LblCancelledTransactions.Appearance.Options.UseForeColor = true;
+            this.LblCancelledTransactions.Location = new System.Drawing.Point(42, 59);
+            this.LblCancelledTransactions.Name = "LblCancelledTransactions";
+            this.LblCancelledTransactions.Size = new System.Drawing.Size(57, 45);
+            this.LblCancelledTransactions.TabIndex = 0;
+            this.LblCancelledTransactions.Text = "584";
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(104)))), ((int)(((byte)(224)))));
             this.panel8.Controls.Add(this.labelControl11);
-            this.panel8.Controls.Add(this.labelControl12);
+            this.panel8.Controls.Add(this.LblTotalProductCount);
             this.panel8.Location = new System.Drawing.Point(975, 145);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(202, 137);
@@ -348,17 +348,17 @@
             this.labelControl11.TabIndex = 0;
             this.labelControl11.Text = "Toplam Ürün Sayısı";
             // 
-            // labelControl12
+            // LblTotalProductCount
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Location = new System.Drawing.Point(45, 48);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(75, 59);
-            this.labelControl12.TabIndex = 0;
-            this.labelControl12.Text = "584";
+            this.LblTotalProductCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalProductCount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblTotalProductCount.Appearance.Options.UseFont = true;
+            this.LblTotalProductCount.Appearance.Options.UseForeColor = true;
+            this.LblTotalProductCount.Location = new System.Drawing.Point(45, 48);
+            this.LblTotalProductCount.Name = "LblTotalProductCount";
+            this.LblTotalProductCount.Size = new System.Drawing.Size(75, 59);
+            this.LblTotalProductCount.TabIndex = 0;
+            this.LblTotalProductCount.Text = "584";
             // 
             // FrmFaultsList
             // 
@@ -374,14 +374,14 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Name = "FrmFaultsList";
-            this.Text = "FrmFaultsList";
+            this.Text = "Arıza Listesi";
             this.Load += new System.EventHandler(this.FrmFaultsList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartBrandAndValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartProductFaultStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdFaultsList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -406,27 +406,27 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraCharts.ChartControl ChartBrandAndValue;
+        private DevExpress.XtraCharts.ChartControl ChartProductFaultStatus;
         private DevExpress.XtraGrid.GridControl GrdFaultsList;
         private DevExpress.XtraGrid.Views.Grid.GridView GrdViewItems;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl LblTotalBrandCount;
+        private DevExpress.XtraEditors.LabelControl LblNumberOfItemsWithCompletedRenovations;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl LblMaxProductCountByBrand;
+        private DevExpress.XtraEditors.LabelControl LblNumberOfCurrentlyFaultyProducts;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl LblMaxPricedBrand;
+        private DevExpress.XtraEditors.LabelControl LblNumberOfProductsAwaitingParts;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl LblCustomersAwaitingMessage;
         private System.Windows.Forms.Panel panel7;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl LblCancelledTransactions;
         private System.Windows.Forms.Panel panel8;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.LabelControl LblTotalProductCount;
     }
 }

@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBrand));
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView2 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView3 = new DevExpress.XtraCharts.StackedBarSeriesView();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView4 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel1 = new DevExpress.XtraCharts.PieSeriesLabel();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView2 = new DevExpress.XtraCharts.StackedBarSeriesView();
             this.GrdBrands = new DevExpress.XtraGrid.GridControl();
             this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -81,15 +82,16 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartBrandAndValue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartProductAndValue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
@@ -308,12 +310,14 @@
             this.ChartBrandAndValue.Location = new System.Drawing.Point(12, 99);
             this.ChartBrandAndValue.Name = "ChartBrandAndValue";
             this.ChartBrandAndValue.PaletteName = "Pastel Kit";
-            series3.LegendTextPattern = "{A}";
-            series3.Name = "Series 1";
-            series3.SeriesID = 0;
-            series3.View = pieSeriesView2;
+            pieSeriesLabel1.TextPattern = "{A}: {V}";
+            series1.Label = pieSeriesLabel1;
+            series1.LegendTextPattern = "{A}";
+            series1.Name = "Series 1";
+            series1.SeriesID = 0;
+            series1.View = pieSeriesView1;
             this.ChartBrandAndValue.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
+        series1};
             this.ChartBrandAndValue.Size = new System.Drawing.Size(415, 288);
             this.ChartBrandAndValue.TabIndex = 0;
             // 
@@ -350,19 +354,19 @@
             // 
             // ChartProductAndValue
             // 
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.ChartProductAndValue.Diagram = xyDiagram2;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.ChartProductAndValue.Diagram = xyDiagram1;
             this.ChartProductAndValue.IndicatorsPaletteName = "Office 2013";
             this.ChartProductAndValue.Location = new System.Drawing.Point(9, 99);
             this.ChartProductAndValue.Name = "ChartProductAndValue";
             this.ChartProductAndValue.PaletteName = "Pastel Kit";
-            series4.Name = "Kategoriler";
-            series4.SeriesID = 0;
-            series4.View = stackedBarSeriesView3;
+            series2.Name = "Kategoriler";
+            series2.SeriesID = 0;
+            series2.View = stackedBarSeriesView1;
             this.ChartProductAndValue.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
-            this.ChartProductAndValue.SeriesTemplate.View = stackedBarSeriesView4;
+        series2};
+            this.ChartProductAndValue.SeriesTemplate.View = stackedBarSeriesView2;
             this.ChartProductAndValue.Size = new System.Drawing.Size(390, 204);
             this.ChartProductAndValue.TabIndex = 0;
             // 
@@ -536,7 +540,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.GrdBrands);
             this.Name = "FrmBrand";
-            this.Text = "Markalar";
+            this.Text = "FrmBrand";
             this.Load += new System.EventHandler(this.FrmBrand_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdBrands)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
@@ -551,16 +555,17 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartBrandAndValue)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartProductAndValue)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);

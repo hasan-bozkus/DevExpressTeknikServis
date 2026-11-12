@@ -34,7 +34,10 @@ namespace TeknikServis.Windows.Forms
             LblMaxPricedBrand.Text = (from x in db.Products group x by x.ProductBrand into g select new { BrandName = g.Key, Count = g.Count() }).OrderByDescending(x => x.Count).Select(x => x.BrandName).FirstOrDefault();
 
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-PDF8JNK\SQLEXPRESS;Initial Catalog=DbTeknikServis;integrated Security=True;TrustServerCertificate=True;");
+           
+            
             connection.Open();
+            //boyut nedeni ile ilgili grafikte tasarımsal değişiklik yapıldı
             SqlCommand command = new SqlCommand("Select ProductBrand, Count(*) From Products Group By ProductBrand ", connection);
             SqlDataReader dr = command.ExecuteReader();
             while (dr.Read())

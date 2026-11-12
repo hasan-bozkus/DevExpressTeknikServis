@@ -51,6 +51,7 @@
             this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
             this.SmpBtnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.LkUpCategory = new DevExpress.XtraEditors.LookUpEdit();
+            this.PcClose = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStock.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
@@ -65,6 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LkUpCategory.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -345,12 +347,28 @@
             this.LkUpCategory.Size = new System.Drawing.Size(220, 34);
             this.LkUpCategory.TabIndex = 21;
             // 
+            // PcClose
+            // 
+            this.PcClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PcClose.EditValue = global::TeknikServis.Windows.Properties.Resources.Cancel;
+            this.PcClose.Location = new System.Drawing.Point(296, 2);
+            this.PcClose.Name = "PcClose";
+            this.PcClose.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.PcClose.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.PcClose.Properties.Appearance.Options.UseBackColor = true;
+            this.PcClose.Properties.Appearance.Options.UseForeColor = true;
+            this.PcClose.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.PcClose.Size = new System.Drawing.Size(32, 32);
+            this.PcClose.TabIndex = 22;
+            this.PcClose.Click += new System.EventHandler(this.PcClose_Click);
+            // 
             // FrmNewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(330, 616);
+            this.Controls.Add(this.PcClose);
             this.Controls.Add(this.LkUpCategory);
             this.Controls.Add(this.SmpBtnCancel);
             this.Controls.Add(this.SmpBtnSave);
@@ -392,6 +410,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LkUpCategory.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -420,5 +439,6 @@
         private DevExpress.XtraEditors.SimpleButton SmpBtnSave;
         private DevExpress.XtraEditors.SimpleButton SmpBtnCancel;
         private DevExpress.XtraEditors.LookUpEdit LkUpCategory;
+        private DevExpress.XtraEditors.PictureEdit PcClose;
     }
 }
