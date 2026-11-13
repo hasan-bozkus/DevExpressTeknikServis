@@ -144,6 +144,7 @@
             this.GrdViewItems.Appearance.Row.Options.UseBorderColor = true;
             this.GrdViewItems.GridControl = this.GrdFaultsList;
             this.GrdViewItems.Name = "GrdViewItems";
+            this.GrdViewItems.DoubleClick += new System.EventHandler(this.GrdViewItems_DoubleClick);
             // 
             // panel2
             // 

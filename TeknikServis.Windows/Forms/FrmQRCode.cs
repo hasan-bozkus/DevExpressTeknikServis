@@ -24,5 +24,21 @@ namespace TeknikServis.Windows.Forms
             QRCodeEncoder enc = new QRCodeEncoder();
             PictureEditQRCodeImage.Image = enc.Encode(TxtSerialNo.Text);
         }
+
+        private void FrmQRCode_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSerialNo_Click(object sender, EventArgs e)
+        {
+            TxtSerialNo.Text = "";
+            TxtSerialNo.Focus();
+        }
+
+        private void SmpBtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

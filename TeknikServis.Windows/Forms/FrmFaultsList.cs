@@ -30,7 +30,8 @@ namespace TeknikServis.Windows.Forms
                              CurrentFullName = x.Currents.CurrentName + " " + x.Currents.CurrentSurname,
                              EmployeeFullName = x.Employees.EmployeeName + " " + x.Employees.EmployeeSurname,
                              x.ReceiveDate,
-                             x.ReleaseDate                             
+                             x.ReleaseDate,
+                             x.StatusDetail
                          };
             GrdFaultsList.DataSource = values.ToList();
         }
@@ -59,6 +60,14 @@ namespace TeknikServis.Windows.Forms
             }
             connection.Close();
 
+        }
+
+        private void GrdViewItems_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaultDetails fr = new FrmFaultDetails();
+            fr.processId = GrdViewItems.GetFocusedRowCellValue("ProcessId").ToString();
+            fr.serialNo = GrdViewItems.GetFocusedRowCellValue("ProductSerialNo").ToString();
+            fr.Show();
         }
     }
 }

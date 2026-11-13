@@ -531,6 +531,7 @@
     <None Include="Resources\clearall_32x32.png" />
     <None Include="Resources\Cancel.svg" />
     <None Include="Resources\clear_32x32.png" />
+    <None Include="Resources\Cancel1.svg" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />
