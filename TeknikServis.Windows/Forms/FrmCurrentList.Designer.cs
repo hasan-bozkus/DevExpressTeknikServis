@@ -38,7 +38,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtPurchasePrice = new DevExpress.XtraEditors.TextEdit();
+            this.TxtPhoneNumber = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtCurrentSurname = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -58,18 +58,18 @@
             this.GrdViewItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.LblTotalProductCount = new DevExpress.XtraEditors.LabelControl();
+            this.LblTotalCurrentCount = new DevExpress.XtraEditors.LabelControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.LblCentralBranch = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.LblTotalCityCount = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.LblTotalDistrictCount = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentId.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPurchasePrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPhoneNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentSurname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).BeginInit();
@@ -112,6 +112,7 @@
             this.SmpBtnList.Size = new System.Drawing.Size(171, 32);
             this.SmpBtnList.TabIndex = 18;
             this.SmpBtnList.Text = "LİSTELE";
+            this.SmpBtnList.Click += new System.EventHandler(this.SmpBtnList_Click);
             // 
             // SmpBtnUpdate
             // 
@@ -139,6 +140,7 @@
             this.SmpBtnSave.Size = new System.Drawing.Size(171, 32);
             this.SmpBtnSave.TabIndex = 15;
             this.SmpBtnSave.Text = "KAYDET";
+            this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
             // 
             // labelControl5
             // 
@@ -164,16 +166,16 @@
             this.labelControl3.TabIndex = 9;
             this.labelControl3.Text = "İL: ";
             // 
-            // TxtPurchasePrice
+            // TxtPhoneNumber
             // 
-            this.TxtPurchasePrice.Location = new System.Drawing.Point(99, 115);
-            this.TxtPurchasePrice.Name = "TxtPurchasePrice";
-            this.TxtPurchasePrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.TxtPurchasePrice.Properties.MaskSettings.Set("mask", "(000) 000 - 00 00");
-            this.TxtPurchasePrice.Properties.MaskSettings.Set("culture", "tr-TR");
-            this.TxtPurchasePrice.Properties.MaskSettings.Set("placeholder", '1');
-            this.TxtPurchasePrice.Size = new System.Drawing.Size(171, 22);
-            this.TxtPurchasePrice.TabIndex = 8;
+            this.TxtPhoneNumber.Location = new System.Drawing.Point(99, 115);
+            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
+            this.TxtPhoneNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.TxtPhoneNumber.Properties.MaskSettings.Set("mask", "(000) 000 - 00 00");
+            this.TxtPhoneNumber.Properties.MaskSettings.Set("culture", "tr-TR");
+            this.TxtPhoneNumber.Properties.MaskSettings.Set("placeholder", '1');
+            this.TxtPhoneNumber.Size = new System.Drawing.Size(171, 22);
+            this.TxtPhoneNumber.TabIndex = 8;
             // 
             // labelControl2
             // 
@@ -233,15 +235,15 @@
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl5);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl4);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl3);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtPurchasePrice);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtPhoneNumber);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl2);
             this.GrpCtrlCurrentProcess.Controls.Add(this.TxtCurrentSurname);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl1);
             this.GrpCtrlCurrentProcess.Controls.Add(this.TxtCurrentName);
             this.GrpCtrlCurrentProcess.Controls.Add(this.LblTextProductName);
-            this.GrpCtrlCurrentProcess.Location = new System.Drawing.Point(880, -9);
+            this.GrpCtrlCurrentProcess.Location = new System.Drawing.Point(880, 0);
             this.GrpCtrlCurrentProcess.Name = "GrpCtrlCurrentProcess";
-            this.GrpCtrlCurrentProcess.Size = new System.Drawing.Size(486, 537);
+            this.GrpCtrlCurrentProcess.Size = new System.Drawing.Size(486, 532);
             this.GrpCtrlCurrentProcess.TabIndex = 3;
             this.GrpCtrlCurrentProcess.Text = "CARİ İŞLEMLERİ";
             // 
@@ -266,8 +268,9 @@
             this.LkUpDistrict.Name = "LkUpDistrict";
             this.LkUpDistrict.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LkUpDistrict.Properties.DisplayMember = "CategoryName";
-            this.LkUpDistrict.Properties.ValueMember = "CategoryId";
+            this.LkUpDistrict.Properties.DisplayMember = "ilce";
+            this.LkUpDistrict.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpDistrict.Properties.ValueMember = "id";
             this.LkUpDistrict.Size = new System.Drawing.Size(171, 22);
             this.LkUpDistrict.TabIndex = 26;
             // 
@@ -277,10 +280,12 @@
             this.LkUpCity.Name = "LkUpCity";
             this.LkUpCity.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LkUpCity.Properties.DisplayMember = "CategoryName";
-            this.LkUpCity.Properties.ValueMember = "CategoryId";
+            this.LkUpCity.Properties.DisplayMember = "sehir";
+            this.LkUpCity.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpCity.Properties.ValueMember = "id";
             this.LkUpCity.Size = new System.Drawing.Size(171, 22);
             this.LkUpCity.TabIndex = 25;
+            this.LkUpCity.EditValueChanged += new System.EventHandler(this.LkUpCity_EditValueChanged);
             // 
             // TxtTaxNumber
             // 
@@ -324,11 +329,10 @@
             this.GrdCurrents.Location = new System.Drawing.Point(2, 144);
             this.GrdCurrents.MainView = this.GrdViewItems;
             this.GrdCurrents.Name = "GrdCurrents";
-            this.GrdCurrents.Size = new System.Drawing.Size(872, 397);
+            this.GrdCurrents.Size = new System.Drawing.Size(872, 392);
             this.GrdCurrents.TabIndex = 2;
             this.GrdCurrents.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdViewItems});
-            this.GrdCurrents.Click += new System.EventHandler(this.GrdCurrents_Click);
             // 
             // GrdViewItems
             // 
@@ -344,7 +348,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.panel1.Controls.Add(this.labelControl10);
-            this.panel1.Controls.Add(this.LblTotalProductCount);
+            this.panel1.Controls.Add(this.LblTotalCurrentCount);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(214, 137);
@@ -362,23 +366,23 @@
             this.labelControl10.TabIndex = 0;
             this.labelControl10.Text = "Toplam Cari Sayısı";
             // 
-            // LblTotalProductCount
+            // LblTotalCurrentCount
             // 
-            this.LblTotalProductCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTotalProductCount.Appearance.ForeColor = System.Drawing.Color.White;
-            this.LblTotalProductCount.Appearance.Options.UseFont = true;
-            this.LblTotalProductCount.Appearance.Options.UseForeColor = true;
-            this.LblTotalProductCount.Location = new System.Drawing.Point(32, 48);
-            this.LblTotalProductCount.Name = "LblTotalProductCount";
-            this.LblTotalProductCount.Size = new System.Drawing.Size(75, 59);
-            this.LblTotalProductCount.TabIndex = 0;
-            this.LblTotalProductCount.Text = "584";
+            this.LblTotalCurrentCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalCurrentCount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblTotalCurrentCount.Appearance.Options.UseFont = true;
+            this.LblTotalCurrentCount.Appearance.Options.UseForeColor = true;
+            this.LblTotalCurrentCount.Location = new System.Drawing.Point(32, 48);
+            this.LblTotalCurrentCount.Name = "LblTotalCurrentCount";
+            this.LblTotalCurrentCount.Size = new System.Drawing.Size(75, 59);
+            this.LblTotalCurrentCount.TabIndex = 0;
+            this.LblTotalCurrentCount.Text = "584";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(1)))));
             this.panel2.Controls.Add(this.labelControl11);
-            this.panel2.Controls.Add(this.labelControl12);
+            this.panel2.Controls.Add(this.LblCentralBranch);
             this.panel2.Location = new System.Drawing.Point(220, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 137);
@@ -392,27 +396,27 @@
             this.labelControl11.Appearance.Options.UseForeColor = true;
             this.labelControl11.Location = new System.Drawing.Point(14, 21);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(108, 21);
+            this.labelControl11.Size = new System.Drawing.Size(90, 21);
             this.labelControl11.TabIndex = 0;
-            this.labelControl11.Text = "Aktif Cari Sayısı";
+            this.labelControl11.Text = "Merkez Şube";
             // 
-            // labelControl12
+            // LblCentralBranch
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Location = new System.Drawing.Point(32, 48);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(75, 59);
-            this.labelControl12.TabIndex = 0;
-            this.labelControl12.Text = "584";
+            this.LblCentralBranch.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblCentralBranch.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblCentralBranch.Appearance.Options.UseFont = true;
+            this.LblCentralBranch.Appearance.Options.UseForeColor = true;
+            this.LblCentralBranch.Location = new System.Drawing.Point(32, 48);
+            this.LblCentralBranch.Name = "LblCentralBranch";
+            this.LblCentralBranch.Size = new System.Drawing.Size(75, 59);
+            this.LblCentralBranch.TabIndex = 0;
+            this.LblCentralBranch.Text = "584";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(196)))), ((int)(((byte)(107)))));
             this.panel3.Controls.Add(this.labelControl13);
-            this.panel3.Controls.Add(this.labelControl14);
+            this.panel3.Controls.Add(this.LblTotalCityCount);
             this.panel3.Location = new System.Drawing.Point(440, 1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 137);
@@ -430,23 +434,23 @@
             this.labelControl13.TabIndex = 0;
             this.labelControl13.Text = "Toplam İl Sayısı";
             // 
-            // labelControl14
+            // LblTotalCityCount
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(32, 48);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(75, 59);
-            this.labelControl14.TabIndex = 0;
-            this.labelControl14.Text = "584";
+            this.LblTotalCityCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalCityCount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblTotalCityCount.Appearance.Options.UseFont = true;
+            this.LblTotalCityCount.Appearance.Options.UseForeColor = true;
+            this.LblTotalCityCount.Location = new System.Drawing.Point(32, 48);
+            this.LblTotalCityCount.Name = "LblTotalCityCount";
+            this.LblTotalCityCount.Size = new System.Drawing.Size(75, 59);
+            this.LblTotalCityCount.TabIndex = 0;
+            this.LblTotalCityCount.Text = "584";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(84)))), ((int)(((byte)(96)))));
             this.panel4.Controls.Add(this.labelControl15);
-            this.panel4.Controls.Add(this.labelControl16);
+            this.panel4.Controls.Add(this.LblTotalDistrictCount);
             this.panel4.Location = new System.Drawing.Point(660, 1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 137);
@@ -460,21 +464,21 @@
             this.labelControl15.Appearance.Options.UseForeColor = true;
             this.labelControl15.Location = new System.Drawing.Point(14, 21);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(108, 21);
+            this.labelControl15.Size = new System.Drawing.Size(123, 21);
             this.labelControl15.TabIndex = 0;
-            this.labelControl15.Text = "En Fazla Carili İl";
+            this.labelControl15.Text = "Toplam İlçe Sayısı";
             // 
-            // labelControl16
+            // LblTotalDistrictCount
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl16.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Appearance.Options.UseForeColor = true;
-            this.labelControl16.Location = new System.Drawing.Point(32, 48);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(75, 59);
-            this.labelControl16.TabIndex = 0;
-            this.labelControl16.Text = "584";
+            this.LblTotalDistrictCount.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTotalDistrictCount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblTotalDistrictCount.Appearance.Options.UseFont = true;
+            this.LblTotalDistrictCount.Appearance.Options.UseForeColor = true;
+            this.LblTotalDistrictCount.Location = new System.Drawing.Point(32, 48);
+            this.LblTotalDistrictCount.Name = "LblTotalDistrictCount";
+            this.LblTotalDistrictCount.Size = new System.Drawing.Size(75, 59);
+            this.LblTotalDistrictCount.TabIndex = 0;
+            this.LblTotalDistrictCount.Text = "584";
             // 
             // FrmCurrentList
             // 
@@ -488,9 +492,10 @@
             this.Controls.Add(this.GrpCtrlCurrentProcess);
             this.Controls.Add(this.GrdCurrents);
             this.Name = "FrmCurrentList";
-            this.Text = "FrmCurrentList";
+            this.Text = "Cari Listesi";
+            this.Load += new System.EventHandler(this.FrmCurrentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentId.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPurchasePrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPhoneNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentSurname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).EndInit();
@@ -527,7 +532,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit TxtPurchasePrice;
+        private DevExpress.XtraEditors.TextEdit TxtPhoneNumber;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit TxtCurrentSurname;
         private DevExpress.XtraEditors.LabelControl labelControl1;
@@ -547,15 +552,15 @@
         private DevExpress.XtraEditors.TextEdit TxtBankName;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl LblTotalProductCount;
+        private DevExpress.XtraEditors.LabelControl LblTotalCurrentCount;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.LabelControl LblCentralBranch;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl LblTotalCityCount;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraEditors.LabelControl LblTotalDistrictCount;
     }
 }

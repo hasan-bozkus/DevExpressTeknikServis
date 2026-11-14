@@ -87,7 +87,7 @@
             this.Controls.Add(this.ChartCtrlCurrentStatistics);
             this.Controls.Add(this.GrdCurrents);
             this.Name = "FrmCurrents";
-            this.Text = "FrmCurrents";
+            this.Text = "Cariler";
             this.Load += new System.EventHandler(this.FrmCurrents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdCurrents)).EndInit();

@@ -52,8 +52,8 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtDepartmentName = new DevExpress.XtraEditors.TextEdit();
             this.GrpCtrlCurrentProcess = new DevExpress.XtraEditors.GroupControl();
-            this.LblTextProductName = new DevExpress.XtraEditors.LabelControl();
             this.RchTxtDepartmentDescription = new System.Windows.Forms.RichTextBox();
+            this.LblTextProductName = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.GrdDepartments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
             this.panel1.SuspendLayout();
@@ -312,14 +312,6 @@
             this.GrpCtrlCurrentProcess.TabIndex = 31;
             this.GrpCtrlCurrentProcess.Text = "DEPARTMAN İŞLEMLERİ";
             // 
-            // LblTextProductName
-            // 
-            this.LblTextProductName.Location = new System.Drawing.Point(72, 62);
-            this.LblTextProductName.Name = "LblTextProductName";
-            this.LblTextProductName.Size = new System.Drawing.Size(25, 16);
-            this.LblTextProductName.TabIndex = 3;
-            this.LblTextProductName.Text = "AD: ";
-            // 
             // RchTxtDepartmentDescription
             // 
             this.RchTxtDepartmentDescription.Location = new System.Drawing.Point(99, 90);
@@ -327,6 +319,14 @@
             this.RchTxtDepartmentDescription.Size = new System.Drawing.Size(199, 104);
             this.RchTxtDepartmentDescription.TabIndex = 21;
             this.RchTxtDepartmentDescription.Text = "";
+            // 
+            // LblTextProductName
+            // 
+            this.LblTextProductName.Location = new System.Drawing.Point(72, 62);
+            this.LblTextProductName.Name = "LblTextProductName";
+            this.LblTextProductName.Size = new System.Drawing.Size(25, 16);
+            this.LblTextProductName.TabIndex = 3;
+            this.LblTextProductName.Text = "AD: ";
             // 
             // FrmDepartment
             // 
@@ -340,7 +340,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.GrpCtrlCurrentProcess);
             this.Name = "FrmDepartment";
-            this.Text = "FrmDepartment";
+            this.Text = "Departman";
             this.Load += new System.EventHandler(this.FrmDepartment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdDepartments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();

@@ -45,6 +45,8 @@ namespace TeknikServis.Windows
         public virtual DbSet<Tools> Tools { get; set; }
         public virtual DbSet<Abouts> Abouts { get; set; }
         public virtual DbSet<Messages> Messages { get; set; }
+        public virtual DbSet<ilceler> ilceler { get; set; }
+        public virtual DbSet<iller> iller { get; set; }
     
         public virtual ObjectResult<ProductWithCategory_Result> ProductWithCategory()
         {

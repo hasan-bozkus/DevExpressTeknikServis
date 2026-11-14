@@ -887,7 +887,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.GrdDepartments);
             this.Name = "FrmEmployee";
-            this.Text = "FrmEmployee";
+            this.Text = "Personel";
             this.Load += new System.EventHandler(this.FrmEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).EndInit();
             this.GrpCtrlCurrentProcess.ResumeLayout(false);

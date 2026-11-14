@@ -33,6 +33,9 @@
         <AssociationConnector Association="DbTeknikServisModel.FK_ProductMovements_Products" ManuallyRouted="false" />
         <EntityTypeShape EntityType="DbTeknikServisModel.Abouts" Width="1.5" PointX="10.375" PointY="11.75" />
         <EntityTypeShape EntityType="DbTeknikServisModel.Messages" Width="1.5" PointX="5.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.ilceler" Width="1.5" PointX="7.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.iller" Width="1.5" PointX="7.375" PointY="14.875" />
+        <AssociationConnector Association="DbTeknikServisModel.FK_ilceler_iller" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

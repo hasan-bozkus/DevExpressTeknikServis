@@ -540,7 +540,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.GrdBrands);
             this.Name = "FrmBrand";
-            this.Text = "FrmBrand";
+            this.Text = "Markalar";
             this.Load += new System.EventHandler(this.FrmBrand_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdBrands)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();

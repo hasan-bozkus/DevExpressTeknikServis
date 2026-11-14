@@ -311,6 +311,12 @@
     <Compile Include="Forms\FrmYoutube.Designer.cs">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
     </Compile>
+    <Compile Include="ilceler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="iller.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="InvoiceDetails.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -505,6 +511,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Requirements\il_ilce.sql" />
     <Content Include="Resources\adam1kesin.png" />
     <None Include="Resources\wizard_16x16.png" />
     <None Include="Resources\wizard_32x32.png" />

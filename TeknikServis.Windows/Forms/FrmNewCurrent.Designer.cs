@@ -43,11 +43,9 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.SmpBtnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtDistrict = new DevExpress.XtraEditors.TextEdit();
             this.PicEditCloseWindow = new DevExpress.XtraEditors.PictureEdit();
             this.TxtDescription = new DevExpress.XtraEditors.TextEdit();
             this.TxtAddress = new DevExpress.XtraEditors.TextEdit();
-            this.TxtCurrentCity = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
@@ -72,11 +70,11 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDistrict.Properties)).BeginInit();
+            this.LkUpDistrict = new DevExpress.XtraEditors.LookUpEdit();
+            this.LkUpCity = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.PicEditCloseWindow.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtDescription.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAddress.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentCity.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
@@ -99,6 +97,8 @@
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpDistrict.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpCity.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -216,7 +216,7 @@
             this.SmpBtnCancel.Name = "SmpBtnCancel";
             this.SmpBtnCancel.Size = new System.Drawing.Size(149, 36);
             this.SmpBtnCancel.TabIndex = 42;
-            this.SmpBtnCancel.Text = "Vazgeç";
+            this.SmpBtnCancel.Text = "KAYDET";
             this.SmpBtnCancel.Click += new System.EventHandler(this.SmpBtnCancel_Click);
             // 
             // SmpBtnSave
@@ -226,23 +226,8 @@
             this.SmpBtnSave.Name = "SmpBtnSave";
             this.SmpBtnSave.Size = new System.Drawing.Size(143, 36);
             this.SmpBtnSave.TabIndex = 41;
-            this.SmpBtnSave.Text = "Kaydet";
+            this.SmpBtnSave.Text = "KAYDET";
             this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
-            // 
-            // TxtDistrict
-            // 
-            this.TxtDistrict.EditValue = "İlçe";
-            this.TxtDistrict.Location = new System.Drawing.Point(457, 413);
-            this.TxtDistrict.Name = "TxtDistrict";
-            this.TxtDistrict.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.TxtDistrict.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtDistrict.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.TxtDistrict.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtDistrict.Properties.Appearance.Options.UseFont = true;
-            this.TxtDistrict.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtDistrict.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtDistrict.Size = new System.Drawing.Size(177, 32);
-            this.TxtDistrict.TabIndex = 37;
             // 
             // PicEditCloseWindow
             // 
@@ -288,21 +273,6 @@
             this.TxtAddress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.TxtAddress.Size = new System.Drawing.Size(177, 32);
             this.TxtAddress.TabIndex = 34;
-            // 
-            // TxtCurrentCity
-            // 
-            this.TxtCurrentCity.EditValue = "İl";
-            this.TxtCurrentCity.Location = new System.Drawing.Point(457, 344);
-            this.TxtCurrentCity.Name = "TxtCurrentCity";
-            this.TxtCurrentCity.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.TxtCurrentCity.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCurrentCity.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.TxtCurrentCity.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtCurrentCity.Properties.Appearance.Options.UseFont = true;
-            this.TxtCurrentCity.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtCurrentCity.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtCurrentCity.Size = new System.Drawing.Size(177, 32);
-            this.TxtCurrentCity.TabIndex = 34;
             // 
             // pictureEdit12
             // 
@@ -613,24 +583,63 @@
             this.pictureEdit6.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit6.TabIndex = 21;
             // 
+            // LkUpDistrict
+            // 
+            this.LkUpDistrict.Location = new System.Drawing.Point(457, 411);
+            this.LkUpDistrict.Name = "LkUpDistrict";
+            this.LkUpDistrict.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.LkUpDistrict.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LkUpDistrict.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LkUpDistrict.Properties.Appearance.Options.UseBackColor = true;
+            this.LkUpDistrict.Properties.Appearance.Options.UseFont = true;
+            this.LkUpDistrict.Properties.Appearance.Options.UseForeColor = true;
+            this.LkUpDistrict.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.LkUpDistrict.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpDistrict.Properties.DisplayMember = "ilce";
+            this.LkUpDistrict.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpDistrict.Properties.ValueMember = "id";
+            this.LkUpDistrict.Size = new System.Drawing.Size(220, 32);
+            this.LkUpDistrict.TabIndex = 45;
+            // 
+            // LkUpCity
+            // 
+            this.LkUpCity.Location = new System.Drawing.Point(457, 342);
+            this.LkUpCity.Name = "LkUpCity";
+            this.LkUpCity.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.LkUpCity.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LkUpCity.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LkUpCity.Properties.Appearance.Options.UseBackColor = true;
+            this.LkUpCity.Properties.Appearance.Options.UseFont = true;
+            this.LkUpCity.Properties.Appearance.Options.UseForeColor = true;
+            this.LkUpCity.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.LkUpCity.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpCity.Properties.DisplayMember = "sehir";
+            this.LkUpCity.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpCity.Properties.ValueMember = "id";
+            this.LkUpCity.Size = new System.Drawing.Size(220, 32);
+            this.LkUpCity.TabIndex = 44;
+            this.LkUpCity.EditValueChanged += new System.EventHandler(this.LkUpCity_EditValueChanged);
+            // 
             // FrmNewCurrent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(39)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1058, 568);
+            this.Controls.Add(this.LkUpDistrict);
+            this.Controls.Add(this.LkUpCity);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.SmpBtnCancel);
             this.Controls.Add(this.SmpBtnSave);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.TxtDistrict);
             this.Controls.Add(this.PicEditCloseWindow);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.TxtDescription);
             this.Controls.Add(this.TxtAddress);
-            this.Controls.Add(this.TxtCurrentCity);
             this.Controls.Add(this.pictureEdit12);
             this.Controls.Add(this.pictureEdit11);
             this.Controls.Add(this.pictureEdit5);
@@ -663,11 +672,10 @@
             this.Name = "FrmNewCurrent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmNewCurrent";
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDistrict.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.FrmNewCurrent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicEditCloseWindow.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtDescription.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAddress.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCurrentCity.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
@@ -691,6 +699,8 @@
             this.panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpDistrict.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpCity.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -700,10 +710,8 @@
         private DevExpress.XtraEditors.SimpleButton SmpBtnCancel;
         private DevExpress.XtraEditors.SimpleButton SmpBtnSave;
         private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.TextEdit TxtDistrict;
         private DevExpress.XtraEditors.PictureEdit PicEditCloseWindow;
         private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraEditors.TextEdit TxtCurrentCity;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.TextEdit TxtEmail;
@@ -740,5 +748,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit13;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
+        private DevExpress.XtraEditors.LookUpEdit LkUpDistrict;
+        private DevExpress.XtraEditors.LookUpEdit LkUpCity;
     }
 }

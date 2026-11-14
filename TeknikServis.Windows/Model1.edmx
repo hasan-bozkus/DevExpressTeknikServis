@@ -109,6 +109,21 @@
           <Property Name="Current" Type="int" />
           <Property Name="Employee" Type="smallint" />
         </EntityType>
+        <EntityType Name="ilceler">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="ilce" Type="nvarchar" MaxLength="255" />
+          <Property Name="sehir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="iller">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sehir" Type="nvarchar" MaxLength="255" />
+        </EntityType>
         <EntityType Name="Messages">
           <Key>
             <PropertyRef Name="MessageId" />
@@ -242,6 +257,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_ilceler_iller">
+          <End Role="iller" Type="Self.iller" Multiplicity="1" />
+          <End Role="ilceler" Type="Self.ilceler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iller">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ilceler">
+              <PropertyRef Name="sehir" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_ProductAcceptances_Currents">
           <End Role="Currents" Type="Self.Currents" Multiplicity="0..1" />
           <End Role="ProductAcceptances" Type="Self.ProductAcceptances" Multiplicity="*" />
@@ -328,6 +355,8 @@
           <EntitySet Name="FaultDetails" EntityType="Self.FaultDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="InvoiceDetails" EntityType="Self.InvoiceDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="InvoiceInformations" EntityType="Self.InvoiceInformations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ilceler" EntityType="Self.ilceler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="iller" EntityType="Self.iller" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Messages" EntityType="Self.Messages" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Notes" EntityType="Self.Notes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductAcceptances" EntityType="Self.ProductAcceptances" Schema="dbo" store:Type="Tables" />
@@ -351,6 +380,10 @@
           <AssociationSet Name="FK_InvoiceInformations_Employees" Association="Self.FK_InvoiceInformations_Employees">
             <End Role="Employees" EntitySet="Employees" />
             <End Role="InvoiceInformations" EntitySet="InvoiceInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ilceler_iller" Association="Self.FK_ilceler_iller">
+            <End Role="iller" EntitySet="iller" />
+            <End Role="ilceler" EntitySet="ilceler" />
           </AssociationSet>
           <AssociationSet Name="FK_ProductAcceptances_Currents" Association="Self.FK_ProductAcceptances_Currents">
             <End Role="Currents" EntitySet="Currents" />
@@ -755,6 +788,12 @@
           <FunctionImport Name="ProductWithCategory" ReturnType="Collection(DbTeknikServisModel.ProductWithCategory_Result)" />
           <FunctionImport Name="MaxCategoryProduct" ReturnType="Collection(String)" />
           <FunctionImport Name="MaxProductBrand" ReturnType="Collection(DbTeknikServisModel.MaxProductBrand_Result)" />
+          <EntitySet Name="ilceler" EntityType="DbTeknikServisModel.ilceler" />
+          <EntitySet Name="iller" EntityType="DbTeknikServisModel.iller" />
+          <AssociationSet Name="FK_ilceler_iller" Association="DbTeknikServisModel.FK_ilceler_iller">
+            <End Role="iller" EntitySet="iller" />
+            <End Role="ilceler" EntitySet="ilceler" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Abouts">
           <Key>
@@ -781,6 +820,35 @@
           <Property Type="String" Name="Marka" Nullable="true" MaxLength="50" />
           <Property Type="Int32" Name="Column1" Nullable="true" />
         </ComplexType>
+        <EntityType Name="ilceler">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="ilce" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="sehir" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="iller" Relationship="DbTeknikServisModel.FK_ilceler_iller" FromRole="ilceler" ToRole="iller" />
+        </EntityType>
+        <EntityType Name="iller">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sehir" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ilceler" Relationship="DbTeknikServisModel.FK_ilceler_iller" FromRole="iller" ToRole="ilceler" />
+        </EntityType>
+        <Association Name="FK_ilceler_iller">
+          <End Type="DbTeknikServisModel.iller" Role="iller" Multiplicity="1" />
+          <End Type="DbTeknikServisModel.ilceler" Role="ilceler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iller">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ilceler">
+              <PropertyRef Name="sehir" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1011,6 +1079,23 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <EntitySetMapping Name="ilceler">
+            <EntityTypeMapping TypeName="DbTeknikServisModel.ilceler">
+              <MappingFragment StoreEntitySet="ilceler">
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
+                <ScalarProperty Name="ilce" ColumnName="ilce" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="iller">
+            <EntityTypeMapping TypeName="DbTeknikServisModel.iller">
+              <MappingFragment StoreEntitySet="iller">
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
