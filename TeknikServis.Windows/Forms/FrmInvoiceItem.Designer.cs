@@ -43,21 +43,21 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtProduct = new DevExpress.XtraEditors.TextEdit();
             this.GrpCtrlCurrentProcess = new DevExpress.XtraEditors.GroupControl();
-            this.LblTextSeriesNumber = new DevExpress.XtraEditors.LabelControl();
-            this.TxtQuantity = new DevExpress.XtraEditors.TextEdit();
-            this.TxtPrice = new DevExpress.XtraEditors.TextEdit();
-            this.TxtAmount = new DevExpress.XtraEditors.TextEdit();
             this.TxtInvoice = new DevExpress.XtraEditors.TextEdit();
+            this.TxtAmount = new DevExpress.XtraEditors.TextEdit();
+            this.TxtPrice = new DevExpress.XtraEditors.TextEdit();
+            this.TxtQuantity = new DevExpress.XtraEditors.TextEdit();
+            this.LblTextSeriesNumber = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.GrdInvoiceItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtInvoiceItemId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtProduct.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).BeginInit();
             this.GrpCtrlCurrentProcess.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtQuantity.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPrice.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAmount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtInvoice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAmount.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtQuantity.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // GrdInvoiceItems
@@ -200,33 +200,15 @@
             this.GrpCtrlCurrentProcess.TabIndex = 39;
             this.GrpCtrlCurrentProcess.Text = "FATURA KALEM İŞLEMLERİ";
             // 
-            // LblTextSeriesNumber
+            // TxtInvoice
             // 
-            this.LblTextSeriesNumber.Location = new System.Drawing.Point(27, 76);
-            this.LblTextSeriesNumber.Name = "LblTextSeriesNumber";
-            this.LblTextSeriesNumber.Size = new System.Drawing.Size(41, 16);
-            this.LblTextSeriesNumber.TabIndex = 3;
-            this.LblTextSeriesNumber.Text = "ÜRÜN: ";
-            // 
-            // TxtQuantity
-            // 
-            this.TxtQuantity.Location = new System.Drawing.Point(71, 101);
-            this.TxtQuantity.Name = "TxtQuantity";
-            this.TxtQuantity.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtQuantity.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            this.TxtQuantity.Properties.MaskSettings.Set("mask", "(1?[1-9])|([12][0-4])");
-            this.TxtQuantity.Size = new System.Drawing.Size(257, 22);
-            this.TxtQuantity.TabIndex = 2;
-            // 
-            // TxtPrice
-            // 
-            this.TxtPrice.Location = new System.Drawing.Point(71, 129);
-            this.TxtPrice.Name = "TxtPrice";
-            this.TxtPrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtPrice.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            this.TxtPrice.Properties.MaskSettings.Set("mask", "(1?[1-9])|([12][0-4])");
-            this.TxtPrice.Size = new System.Drawing.Size(257, 22);
-            this.TxtPrice.TabIndex = 3;
+            this.TxtInvoice.Location = new System.Drawing.Point(71, 185);
+            this.TxtInvoice.Name = "TxtInvoice";
+            this.TxtInvoice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TxtInvoice.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            this.TxtInvoice.Properties.MaskSettings.Set("mask", "(1?[1-9])|([12][0-4])");
+            this.TxtInvoice.Size = new System.Drawing.Size(257, 22);
+            this.TxtInvoice.TabIndex = 5;
             // 
             // TxtAmount
             // 
@@ -238,15 +220,33 @@
             this.TxtAmount.Size = new System.Drawing.Size(257, 22);
             this.TxtAmount.TabIndex = 4;
             // 
-            // TxtInvoice
+            // TxtPrice
             // 
-            this.TxtInvoice.Location = new System.Drawing.Point(71, 185);
-            this.TxtInvoice.Name = "TxtInvoice";
-            this.TxtInvoice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtInvoice.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            this.TxtInvoice.Properties.MaskSettings.Set("mask", "(1?[1-9])|([12][0-4])");
-            this.TxtInvoice.Size = new System.Drawing.Size(257, 22);
-            this.TxtInvoice.TabIndex = 5;
+            this.TxtPrice.Location = new System.Drawing.Point(71, 129);
+            this.TxtPrice.Name = "TxtPrice";
+            this.TxtPrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TxtPrice.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            this.TxtPrice.Properties.MaskSettings.Set("mask", "(1?[1-9])|([12][0-4])");
+            this.TxtPrice.Size = new System.Drawing.Size(257, 22);
+            this.TxtPrice.TabIndex = 3;
+            // 
+            // TxtQuantity
+            // 
+            this.TxtQuantity.Location = new System.Drawing.Point(71, 101);
+            this.TxtQuantity.Name = "TxtQuantity";
+            this.TxtQuantity.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TxtQuantity.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            this.TxtQuantity.Properties.MaskSettings.Set("mask", "(1?[1-9])|([12][0-4])");
+            this.TxtQuantity.Size = new System.Drawing.Size(257, 22);
+            this.TxtQuantity.TabIndex = 2;
+            // 
+            // LblTextSeriesNumber
+            // 
+            this.LblTextSeriesNumber.Location = new System.Drawing.Point(27, 76);
+            this.LblTextSeriesNumber.Name = "LblTextSeriesNumber";
+            this.LblTextSeriesNumber.Size = new System.Drawing.Size(41, 16);
+            this.LblTextSeriesNumber.TabIndex = 3;
+            this.LblTextSeriesNumber.Text = "ÜRÜN: ";
             // 
             // FrmInvoiceItem
             // 
@@ -256,7 +256,7 @@
             this.Controls.Add(this.GrdInvoiceItems);
             this.Controls.Add(this.GrpCtrlCurrentProcess);
             this.Name = "FrmInvoiceItem";
-            this.Text = "FrmInvoiceItem";
+            this.Text = "Fatura Kalem";
             this.Load += new System.EventHandler(this.FrmInvoiceItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdInvoiceItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
@@ -265,10 +265,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).EndInit();
             this.GrpCtrlCurrentProcess.ResumeLayout(false);
             this.GrpCtrlCurrentProcess.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtQuantity.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPrice.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAmount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtInvoice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAmount.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtQuantity.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

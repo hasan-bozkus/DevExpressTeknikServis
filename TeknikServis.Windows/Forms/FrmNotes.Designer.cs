@@ -255,7 +255,7 @@
             this.Controls.Add(this.GrpCtrlCurrentProcess);
             this.Controls.Add(this.GrdUnreadNotes);
             this.Name = "FrmNotes";
-            this.Text = "FrmNotes";
+            this.Text = "Notlar";
             this.Load += new System.EventHandler(this.FrmNotes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtNoteId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNoteContent.Properties)).EndInit();

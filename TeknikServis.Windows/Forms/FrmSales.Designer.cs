@@ -61,7 +61,7 @@
             this.ClientSize = new System.Drawing.Size(1368, 548);
             this.Controls.Add(this.GrdSalesList);
             this.Name = "FrmSales";
-            this.Text = "FrmSales";
+            this.Text = "Satışlar";
             this.Load += new System.EventHandler(this.FrmSales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdSalesList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();

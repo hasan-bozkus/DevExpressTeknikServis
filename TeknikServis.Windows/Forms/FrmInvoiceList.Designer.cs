@@ -305,7 +305,7 @@
             this.Controls.Add(this.GrpCtrlCurrentProcess);
             this.Controls.Add(this.GrdInvoices);
             this.Name = "FrmInvoiceList";
-            this.Text = "FrmInvoiceList";
+            this.Text = "Fatura Listesi";
             this.Load += new System.EventHandler(this.FrmInvoiceList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).EndInit();
             this.GrpCtrlCurrentProcess.ResumeLayout(false);

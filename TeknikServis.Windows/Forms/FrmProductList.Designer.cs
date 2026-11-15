@@ -282,7 +282,7 @@
             this.Controls.Add(this.GrdProducts);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FrmProductList";
-            this.Text = "FrmProductList";
+            this.Text = "Ürün Listesi";
             this.Load += new System.EventHandler(this.FrmProductList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdProducts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();

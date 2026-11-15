@@ -394,7 +394,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNewProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmNewProduct";
+            this.Text = "Yeni Ürün";
             this.Load += new System.EventHandler(this.FrmNewProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStock.Properties)).EndInit();

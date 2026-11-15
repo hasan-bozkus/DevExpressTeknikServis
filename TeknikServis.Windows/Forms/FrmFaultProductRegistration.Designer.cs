@@ -295,7 +295,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFaultProductRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmFaultProductRegistration";
+            this.Text = "Hatalı Ürün Kabulü";
             this.Load += new System.EventHandler(this.FrmFaultProductRegistration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNumber.Properties)).EndInit();

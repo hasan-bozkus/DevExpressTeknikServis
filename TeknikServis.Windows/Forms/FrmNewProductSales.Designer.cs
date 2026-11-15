@@ -47,12 +47,12 @@
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtSalesDate = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtEmployee = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtCurrent = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtProductId = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.LkUpProduct = new DevExpress.XtraEditors.LookUpEdit();
+            this.LkUpCustomer = new DevExpress.XtraEditors.LookUpEdit();
+            this.LkUpEmployee = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtQuantity.Properties)).BeginInit();
@@ -62,12 +62,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSalesDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployee.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCurrent.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpProduct.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpCustomer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpEmployee.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -276,21 +276,6 @@
             this.pictureEdit4.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit4.TabIndex = 30;
             // 
-            // TxtEmployee
-            // 
-            this.TxtEmployee.EditValue = "Personel";
-            this.TxtEmployee.Location = new System.Drawing.Point(66, 253);
-            this.TxtEmployee.Name = "TxtEmployee";
-            this.TxtEmployee.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.TxtEmployee.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtEmployee.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.TxtEmployee.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtEmployee.Properties.Appearance.Options.UseFont = true;
-            this.TxtEmployee.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtEmployee.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtEmployee.Size = new System.Drawing.Size(177, 32);
-            this.TxtEmployee.TabIndex = 28;
-            // 
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = global::TeknikServis.Windows.Properties.Resources.PartyLeader;
@@ -302,21 +287,6 @@
             this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit3.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit3.TabIndex = 27;
-            // 
-            // TxtCurrent
-            // 
-            this.TxtCurrent.EditValue = "Müşteri";
-            this.TxtCurrent.Location = new System.Drawing.Point(66, 186);
-            this.TxtCurrent.Name = "TxtCurrent";
-            this.TxtCurrent.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.TxtCurrent.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtCurrent.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.TxtCurrent.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtCurrent.Properties.Appearance.Options.UseFont = true;
-            this.TxtCurrent.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtCurrent.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtCurrent.Size = new System.Drawing.Size(177, 32);
-            this.TxtCurrent.TabIndex = 25;
             // 
             // pictureEdit2
             // 
@@ -330,21 +300,6 @@
             this.pictureEdit2.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit2.TabIndex = 24;
             // 
-            // TxtProductId
-            // 
-            this.TxtProductId.EditValue = "Ürün ID";
-            this.TxtProductId.Location = new System.Drawing.Point(66, 117);
-            this.TxtProductId.Name = "TxtProductId";
-            this.TxtProductId.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.TxtProductId.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtProductId.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.TxtProductId.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtProductId.Properties.Appearance.Options.UseFont = true;
-            this.TxtProductId.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtProductId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtProductId.Size = new System.Drawing.Size(177, 32);
-            this.TxtProductId.TabIndex = 22;
-            // 
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::TeknikServis.Windows.Properties.Resources.Identification_Documents;
@@ -357,12 +312,72 @@
             this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit1.TabIndex = 21;
             // 
+            // LkUpProduct
+            // 
+            this.LkUpProduct.Location = new System.Drawing.Point(66, 117);
+            this.LkUpProduct.Name = "LkUpProduct";
+            this.LkUpProduct.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.LkUpProduct.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LkUpProduct.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LkUpProduct.Properties.Appearance.Options.UseBackColor = true;
+            this.LkUpProduct.Properties.Appearance.Options.UseFont = true;
+            this.LkUpProduct.Properties.Appearance.Options.UseForeColor = true;
+            this.LkUpProduct.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.LkUpProduct.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpProduct.Properties.DisplayMember = "ProductName";
+            this.LkUpProduct.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpProduct.Properties.ValueMember = "ProductId";
+            this.LkUpProduct.Size = new System.Drawing.Size(220, 32);
+            this.LkUpProduct.TabIndex = 45;
+            // 
+            // LkUpCustomer
+            // 
+            this.LkUpCustomer.Location = new System.Drawing.Point(66, 186);
+            this.LkUpCustomer.Name = "LkUpCustomer";
+            this.LkUpCustomer.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.LkUpCustomer.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LkUpCustomer.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LkUpCustomer.Properties.Appearance.Options.UseBackColor = true;
+            this.LkUpCustomer.Properties.Appearance.Options.UseFont = true;
+            this.LkUpCustomer.Properties.Appearance.Options.UseForeColor = true;
+            this.LkUpCustomer.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.LkUpCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpCustomer.Properties.DisplayMember = "FullName";
+            this.LkUpCustomer.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpCustomer.Properties.ValueMember = "CurrentId";
+            this.LkUpCustomer.Size = new System.Drawing.Size(220, 32);
+            this.LkUpCustomer.TabIndex = 45;
+            // 
+            // LkUpEmployee
+            // 
+            this.LkUpEmployee.Location = new System.Drawing.Point(66, 258);
+            this.LkUpEmployee.Name = "LkUpEmployee";
+            this.LkUpEmployee.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.LkUpEmployee.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LkUpEmployee.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LkUpEmployee.Properties.Appearance.Options.UseBackColor = true;
+            this.LkUpEmployee.Properties.Appearance.Options.UseFont = true;
+            this.LkUpEmployee.Properties.Appearance.Options.UseForeColor = true;
+            this.LkUpEmployee.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.LkUpEmployee.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LkUpEmployee.Properties.DisplayMember = "FullName";
+            this.LkUpEmployee.Properties.NullText = "--- Lütfen Seçiniz ---";
+            this.LkUpEmployee.Properties.ValueMember = "EmployeeId";
+            this.LkUpEmployee.Size = new System.Drawing.Size(220, 32);
+            this.LkUpEmployee.TabIndex = 45;
+            // 
             // FrmNewProductSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(331, 649);
+            this.Controls.Add(this.LkUpEmployee);
+            this.Controls.Add(this.LkUpCustomer);
+            this.Controls.Add(this.LkUpProduct);
             this.Controls.Add(this.SmpBtnCancel);
             this.Controls.Add(this.SmpSell);
             this.Controls.Add(this.textEdit7);
@@ -379,18 +394,16 @@
             this.Controls.Add(this.TxtSalesDate);
             this.Controls.Add(this.pictureEdit4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.TxtEmployee);
             this.Controls.Add(this.pictureEdit3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.TxtCurrent);
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.TxtProductId);
             this.Controls.Add(this.pictureEdit1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNewProductSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmProductSales";
+            this.Text = "Ürün Satışı";
+            this.Load += new System.EventHandler(this.FrmNewProductSales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtQuantity.Properties)).EndInit();
@@ -400,12 +413,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSalesDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployee.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCurrent.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtProductId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpProduct.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpCustomer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LkUpEmployee.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,16 +438,16 @@
         private DevExpress.XtraEditors.TextEdit TxtSalesDate;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.TextEdit TxtEmployee;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.TextEdit TxtCurrent;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.TextEdit TxtProductId;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.TextEdit TxtSerialNumber;
         private System.Windows.Forms.Panel panel7;
+        private DevExpress.XtraEditors.LookUpEdit LkUpProduct;
+        private DevExpress.XtraEditors.LookUpEdit LkUpCustomer;
+        private DevExpress.XtraEditors.LookUpEdit LkUpEmployee;
     }
 }

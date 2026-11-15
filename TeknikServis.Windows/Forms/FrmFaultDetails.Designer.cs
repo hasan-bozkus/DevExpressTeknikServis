@@ -266,7 +266,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFaultDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmFaultDetails";
+            this.Text = "Hata Detayları";
             this.Load += new System.EventHandler(this.FrmFaultDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();

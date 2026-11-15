@@ -64,7 +64,7 @@
             this.ClientSize = new System.Drawing.Size(1368, 533);
             this.Controls.Add(this.GrdFaultProductList);
             this.Name = "FrmFaultProductDetails";
-            this.Text = "FrmFaultProductDetails";
+            this.Text = "Hatalı Ürün Detayları";
             this.Load += new System.EventHandler(this.FrmFaultProductDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdFaultProductList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();

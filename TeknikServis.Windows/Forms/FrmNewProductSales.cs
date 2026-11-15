@@ -27,9 +27,9 @@ namespace TeknikServis.Windows.Forms
         private void SmpSell_Click(object sender, EventArgs e)
         {
             ProductMovements productMovement = new ProductMovements();
-            productMovement.Product = int.Parse(TxtProductId.Text);
-            productMovement.Current = int.Parse(TxtCurrent.Text);
-            productMovement.Employee = short.Parse(TxtEmployee.Text);
+            productMovement.Product = int.Parse(LkUpProduct.EditValue.ToString());
+            productMovement.Current = int.Parse(LkUpCustomer.EditValue.ToString());
+            productMovement.Employee = short.Parse(LkUpEmployee.EditValue.ToString());
             productMovement.Date = DateTime.Parse(TxtSalesDate.Text);
             productMovement.Quantity = short.Parse(TxtQuantity.Text);
             productMovement.Price = decimal.Parse(TxtSalePrice.Text);
@@ -38,6 +38,27 @@ namespace TeknikServis.Windows.Forms
             db.SaveChanges();
             MessageBox.Show("Ürün Satışı Yapıldı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void FrmNewProductSales_Load(object sender, EventArgs e)
+        {
+            LkUpProduct.Properties.DataSource = db.Products.Select(x => new
+            {
+                x.ProductId,
+                x.ProductName
+            }).ToList();
+
+            LkUpCustomer.Properties.DataSource = db.Currents.Select(x => new
+            {
+                x.CurrentId,
+                FullName = x.CurrentName + " " + x.CurrentSurname
+            }).ToList();
+
+            LkUpEmployee.Properties.DataSource = db.Employees.Select(x => new
+            {
+                x.EmployeeId,
+                FullName = x.EmployeeName + " " + x.EmployeeSurname
+            }).ToList();
         }
     }
 }

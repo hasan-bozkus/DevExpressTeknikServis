@@ -114,7 +114,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNewCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmNewCategory";
+            this.Text = "Yeni Kategori";
             ((System.ComponentModel.ISupportInitialize)(this.TxtCategoryName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcClose.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();

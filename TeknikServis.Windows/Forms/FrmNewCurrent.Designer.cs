@@ -671,7 +671,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNewCurrent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FrmNewCurrent";
+            this.Text = "Yeni Cari";
             this.Load += new System.EventHandler(this.FrmNewCurrent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicEditCloseWindow.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtDescription.Properties)).EndInit();

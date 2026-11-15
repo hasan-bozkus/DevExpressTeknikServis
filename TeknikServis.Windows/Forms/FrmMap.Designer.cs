@@ -52,7 +52,7 @@
             this.ClientSize = new System.Drawing.Size(1368, 533);
             this.Controls.Add(this.mapControl1);
             this.Name = "FrmMap";
-            this.Text = "FrmMap";
+            this.Text = "Harita";
             this.Load += new System.EventHandler(this.FrmMap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
             this.ResumeLayout(false);

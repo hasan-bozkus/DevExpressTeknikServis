@@ -149,7 +149,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.GrdInvoiceItems);
             this.Name = "FrmInvoiceItemsList";
-            this.Text = "FrmInvoiceItemsList";
+            this.Text = "Fatura Kalem Listesi";
             ((System.ComponentModel.ISupportInitialize)(this.GrdInvoiceItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSerialNo.Properties)).EndInit();
