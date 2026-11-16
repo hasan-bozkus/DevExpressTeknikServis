@@ -221,6 +221,12 @@
     <Compile Include="Forms\FrmInvoiceItem.Designer.cs">
       <DependentUpon>FrmInvoiceItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmInvoiceItemPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInvoiceItemPopup.Designer.cs">
+      <DependentUpon>FrmInvoiceItemPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmInvoiceItemsList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -426,6 +432,9 @@
     <EmbeddedResource Include="Forms\FrmInvoiceItem.resx">
       <DependentUpon>FrmInvoiceItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInvoiceItemPopup.resx">
+      <DependentUpon>FrmInvoiceItemPopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmInvoiceItemsList.resx">
       <DependentUpon>FrmInvoiceItemsList.cs</DependentUpon>
     </EmbeddedResource>
@@ -513,6 +522,9 @@
     </Content>
     <Content Include="Requirements\il_ilce.sql" />
     <Content Include="Resources\adam1kesin.png" />
+    <None Include="Resources\PDF1.svg" />
+    <None Include="Resources\PDF.svg" />
+    <None Include="Resources\QuarentinedItems1.svg" />
     <None Include="Resources\wizard_16x16.png" />
     <None Include="Resources\wizard_32x32.png" />
     <None Include="Resources\previous_32x32.png" />
@@ -539,6 +551,9 @@
     <None Include="Resources\Cancel.svg" />
     <None Include="Resources\clear_32x32.png" />
     <None Include="Resources\Cancel1.svg" />
+    <None Include="Resources\exporttoxls.svg" />
+    <None Include="Resources\documentpdf.svg" />
+    <None Include="Resources\Cancel2.svg" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <Content Include="Resources\man5kesin.png" />

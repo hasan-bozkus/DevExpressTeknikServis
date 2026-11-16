@@ -67,5 +67,12 @@ namespace TeknikServis.Windows.Forms
             MessageBox.Show("Fatura Başarıyla Kaydedildi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             InvoiceList();
         }
+
+        private void GrdViewItems_DoubleClick(object sender, EventArgs e)
+        {
+            FrmInvoiceItemPopup fr = new FrmInvoiceItemPopup();
+            fr.id = GrdViewItems.GetFocusedRowCellValue("InvoiceInformationId").ToString();
+            fr.Show();
+        }
     }
 }

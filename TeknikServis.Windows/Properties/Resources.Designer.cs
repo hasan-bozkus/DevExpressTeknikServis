@@ -131,6 +131,16 @@ namespace TeknikServis.Windows.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage Cancel2 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel2", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap casper {
@@ -211,6 +221,16 @@ namespace TeknikServis.Windows.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage documentpdf {
+            get {
+                object obj = ResourceManager.GetObject("documentpdf", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Dollar_Bag {
@@ -227,6 +247,16 @@ namespace TeknikServis.Windows.Properties {
             get {
                 object obj = ResourceManager.GetObject("Expensive Price", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage exporttoxls {
+            get {
+                object obj = ResourceManager.GetObject("exporttoxls", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
         
@@ -363,6 +393,26 @@ namespace TeknikServis.Windows.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage PDF {
+            get {
+                object obj = ResourceManager.GetObject("PDF", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage PDF1 {
+            get {
+                object obj = ResourceManager.GetObject("PDF1", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage PersonalFolder {
             get {
                 object obj = ResourceManager.GetObject("PersonalFolder", resourceCulture);
@@ -466,6 +516,16 @@ namespace TeknikServis.Windows.Properties {
         internal static DevExpress.Utils.Svg.SvgImage QuarentinedItems {
             get {
                 object obj = ResourceManager.GetObject("QuarentinedItems", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage QuarentinedItems1 {
+            get {
+                object obj = ResourceManager.GetObject("QuarentinedItems1", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

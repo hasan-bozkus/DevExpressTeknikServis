@@ -286,6 +286,7 @@
             this.GrdViewItems.GridControl = this.GrdInvoices;
             this.GrdViewItems.Name = "GrdViewItems";
             this.GrdViewItems.OptionsView.ShowGroupPanel = false;
+            this.GrdViewItems.DoubleClick += new System.EventHandler(this.GrdViewItems_DoubleClick);
             // 
             // GrdInvoices
             // 
