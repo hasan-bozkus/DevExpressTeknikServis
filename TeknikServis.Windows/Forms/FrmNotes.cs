@@ -58,6 +58,7 @@ namespace TeknikServis.Windows.Forms
             Notes notes = new Notes();
             notes.Title = TxtNoteTitle.Text;
             notes.Content = TxtNoteContent.Text;
+            notes.Date = DateTime.Parse(DateTime.Now.ToShortDateString());
             notes.Status = false;
             db.Notes.Add(notes);
             db.SaveChanges();

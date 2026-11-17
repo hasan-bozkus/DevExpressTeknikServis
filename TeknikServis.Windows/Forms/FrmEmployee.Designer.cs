@@ -32,22 +32,22 @@
             this.LblTextProductName = new DevExpress.XtraEditors.LabelControl();
             this.GrpCtrlCurrentProcess = new DevExpress.XtraEditors.GroupControl();
             this.LookUpDepartment = new DevExpress.XtraEditors.LookUpEdit();
-            this.TxtDepartmentId = new DevExpress.XtraEditors.TextEdit();
+            this.TxtEmployeeId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.SmpBtnList = new DevExpress.XtraEditors.SimpleButton();
             this.SmpBtnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.SmpBtnRemove = new DevExpress.XtraEditors.SimpleButton();
             this.SmpBtnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtEmployeeImg = new DevExpress.XtraEditors.TextEdit();
             this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtEmail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtPhone = new DevExpress.XtraEditors.TextEdit();
             this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtEmployeeSurname = new DevExpress.XtraEditors.TextEdit();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtDepartmentName = new DevExpress.XtraEditors.TextEdit();
+            this.TxtEmployeeName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
@@ -101,12 +101,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.GrpCtrlCurrentProcess)).BeginInit();
             this.GrpCtrlCurrentProcess.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LookUpDepartment.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDepartmentId.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDepartmentName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeImg.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeSurname.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeName.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItems)).BeginInit();
@@ -131,26 +131,26 @@
             // GrpCtrlCurrentProcess
             // 
             this.GrpCtrlCurrentProcess.Controls.Add(this.LookUpDepartment);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtDepartmentId);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtEmployeeId);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl6);
             this.GrpCtrlCurrentProcess.Controls.Add(this.SmpBtnList);
             this.GrpCtrlCurrentProcess.Controls.Add(this.SmpBtnUpdate);
             this.GrpCtrlCurrentProcess.Controls.Add(this.SmpBtnRemove);
             this.GrpCtrlCurrentProcess.Controls.Add(this.SmpBtnSave);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.textEdit4);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtEmployeeImg);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl36);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.textEdit5);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtEmail);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl37);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.textEdit3);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtPhone);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl35);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl34);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.textEdit1);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtEmployeeSurname);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl33);
-            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtDepartmentName);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtEmployeeName);
             this.GrpCtrlCurrentProcess.Controls.Add(this.LblTextProductName);
-            this.GrpCtrlCurrentProcess.Location = new System.Drawing.Point(991, -9);
+            this.GrpCtrlCurrentProcess.Location = new System.Drawing.Point(987, 3);
             this.GrpCtrlCurrentProcess.Name = "GrpCtrlCurrentProcess";
-            this.GrpCtrlCurrentProcess.Size = new System.Drawing.Size(376, 537);
+            this.GrpCtrlCurrentProcess.Size = new System.Drawing.Size(376, 527);
             this.GrpCtrlCurrentProcess.TabIndex = 37;
             this.GrpCtrlCurrentProcess.Text = "PERSONEL İŞLEMLERİ";
             // 
@@ -161,17 +161,18 @@
             this.LookUpDepartment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.LookUpDepartment.Properties.DisplayMember = "DepartmentName";
+            this.LookUpDepartment.Properties.NullText = "--- Lütfen Seçiniz ---";
             this.LookUpDepartment.Properties.ValueMember = "DepartmentId";
             this.LookUpDepartment.Size = new System.Drawing.Size(199, 22);
             this.LookUpDepartment.TabIndex = 21;
             // 
-            // TxtDepartmentId
+            // TxtEmployeeId
             // 
-            this.TxtDepartmentId.Enabled = false;
-            this.TxtDepartmentId.Location = new System.Drawing.Point(125, 53);
-            this.TxtDepartmentId.Name = "TxtDepartmentId";
-            this.TxtDepartmentId.Size = new System.Drawing.Size(199, 22);
-            this.TxtDepartmentId.TabIndex = 20;
+            this.TxtEmployeeId.Enabled = false;
+            this.TxtEmployeeId.Location = new System.Drawing.Point(125, 53);
+            this.TxtEmployeeId.Name = "TxtEmployeeId";
+            this.TxtEmployeeId.Size = new System.Drawing.Size(199, 22);
+            this.TxtEmployeeId.TabIndex = 20;
             // 
             // labelControl6
             // 
@@ -216,13 +217,14 @@
             this.SmpBtnSave.Size = new System.Drawing.Size(175, 35);
             this.SmpBtnSave.TabIndex = 15;
             this.SmpBtnSave.Text = "KAYDET";
+            this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
             // 
-            // textEdit4
+            // TxtEmployeeImg
             // 
-            this.textEdit4.Location = new System.Drawing.Point(125, 165);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(199, 22);
-            this.textEdit4.TabIndex = 4;
+            this.TxtEmployeeImg.Location = new System.Drawing.Point(125, 165);
+            this.TxtEmployeeImg.Name = "TxtEmployeeImg";
+            this.TxtEmployeeImg.Size = new System.Drawing.Size(199, 22);
+            this.TxtEmployeeImg.TabIndex = 4;
             // 
             // labelControl36
             // 
@@ -232,12 +234,12 @@
             this.labelControl36.TabIndex = 3;
             this.labelControl36.Text = "FOTOĞRAF: ";
             // 
-            // textEdit5
+            // TxtEmail
             // 
-            this.textEdit5.Location = new System.Drawing.Point(125, 196);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(199, 22);
-            this.textEdit5.TabIndex = 4;
+            this.TxtEmail.Location = new System.Drawing.Point(125, 196);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(199, 22);
+            this.TxtEmail.TabIndex = 4;
             // 
             // labelControl37
             // 
@@ -247,15 +249,15 @@
             this.labelControl37.TabIndex = 3;
             this.labelControl37.Text = "E-POSTA: ";
             // 
-            // textEdit3
+            // TxtPhone
             // 
-            this.textEdit3.Location = new System.Drawing.Point(125, 224);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.textEdit3.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.textEdit3.Properties.MaskSettings.Set("mask", "(000) 000 - 00 00");
-            this.textEdit3.Size = new System.Drawing.Size(199, 22);
-            this.textEdit3.TabIndex = 4;
+            this.TxtPhone.Location = new System.Drawing.Point(125, 224);
+            this.TxtPhone.Name = "TxtPhone";
+            this.TxtPhone.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.TxtPhone.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.TxtPhone.Properties.MaskSettings.Set("mask", "(000) 000 - 00 00");
+            this.TxtPhone.Size = new System.Drawing.Size(199, 22);
+            this.TxtPhone.TabIndex = 4;
             // 
             // labelControl35
             // 
@@ -273,12 +275,12 @@
             this.labelControl34.TabIndex = 3;
             this.labelControl34.Text = "DEPARTMAN: ";
             // 
-            // textEdit1
+            // TxtEmployeeSurname
             // 
-            this.textEdit1.Location = new System.Drawing.Point(125, 109);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(199, 22);
-            this.textEdit1.TabIndex = 4;
+            this.TxtEmployeeSurname.Location = new System.Drawing.Point(125, 109);
+            this.TxtEmployeeSurname.Name = "TxtEmployeeSurname";
+            this.TxtEmployeeSurname.Size = new System.Drawing.Size(199, 22);
+            this.TxtEmployeeSurname.TabIndex = 4;
             // 
             // labelControl33
             // 
@@ -288,12 +290,12 @@
             this.labelControl33.TabIndex = 3;
             this.labelControl33.Text = "SOYAD: ";
             // 
-            // TxtDepartmentName
+            // TxtEmployeeName
             // 
-            this.TxtDepartmentName.Location = new System.Drawing.Point(125, 81);
-            this.TxtDepartmentName.Name = "TxtDepartmentName";
-            this.TxtDepartmentName.Size = new System.Drawing.Size(199, 22);
-            this.TxtDepartmentName.TabIndex = 4;
+            this.TxtEmployeeName.Location = new System.Drawing.Point(125, 81);
+            this.TxtEmployeeName.Name = "TxtEmployeeName";
+            this.TxtEmployeeName.Size = new System.Drawing.Size(199, 22);
+            this.TxtEmployeeName.TabIndex = 4;
             // 
             // labelControl10
             // 
@@ -309,7 +311,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(111)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(137)))), ((int)(((byte)(167)))));
             this.panel1.Controls.Add(this.pictureEdit1);
             this.panel1.Controls.Add(this.LblEmail1);
             this.panel1.Controls.Add(this.labelControl5);
@@ -326,7 +328,7 @@
             // 
             this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(42, 11);
+            this.pictureEdit1.Location = new System.Drawing.Point(52, 16);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -410,14 +412,14 @@
             this.GrdDepartments.Location = new System.Drawing.Point(3, 293);
             this.GrdDepartments.MainView = this.GrdViewItems;
             this.GrdDepartments.Name = "GrdDepartments";
-            this.GrdDepartments.Size = new System.Drawing.Size(978, 248);
+            this.GrdDepartments.Size = new System.Drawing.Size(978, 237);
             this.GrdDepartments.TabIndex = 36;
             this.GrdDepartments.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdViewItems});
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(111)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(203)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.LblEmail2);
             this.panel2.Controls.Add(this.pictureEdit3);
             this.panel2.Controls.Add(this.labelControl9);
@@ -446,7 +448,7 @@
             // 
             this.pictureEdit3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(39, 11);
+            this.pictureEdit3.Location = new System.Drawing.Point(52, 16);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -519,7 +521,7 @@
             // 
             this.pictureEdit2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(43, 11);
+            this.pictureEdit2.Location = new System.Drawing.Point(48, 16);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -530,7 +532,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(111)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(90)))), ((int)(((byte)(36)))));
             this.panel3.Controls.Add(this.LblEmail3);
             this.panel3.Controls.Add(this.labelControl2);
             this.panel3.Controls.Add(this.LblDepartment3);
@@ -549,7 +551,7 @@
             this.LblEmail3.Appearance.ForeColor = System.Drawing.Color.White;
             this.LblEmail3.Appearance.Options.UseFont = true;
             this.LblEmail3.Appearance.Options.UseForeColor = true;
-            this.LblEmail3.Location = new System.Drawing.Point(56, 244);
+            this.LblEmail3.Location = new System.Drawing.Point(62, 244);
             this.LblEmail3.Name = "LblEmail3";
             this.LblEmail3.Size = new System.Drawing.Size(69, 23);
             this.LblEmail3.TabIndex = 2;
@@ -561,7 +563,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(0, 247);
+            this.labelControl2.Location = new System.Drawing.Point(6, 247);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(59, 21);
             this.labelControl2.TabIndex = 3;
@@ -573,7 +575,7 @@
             this.LblDepartment3.Appearance.ForeColor = System.Drawing.Color.White;
             this.LblDepartment3.Appearance.Options.UseFont = true;
             this.LblDepartment3.Appearance.Options.UseForeColor = true;
-            this.LblDepartment3.Location = new System.Drawing.Point(82, 216);
+            this.LblDepartment3.Location = new System.Drawing.Point(88, 216);
             this.LblDepartment3.Name = "LblDepartment3";
             this.LblDepartment3.Size = new System.Drawing.Size(101, 23);
             this.LblDepartment3.TabIndex = 4;
@@ -585,7 +587,7 @@
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(0, 218);
+            this.labelControl7.Location = new System.Drawing.Point(6, 218);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(85, 21);
             this.labelControl7.TabIndex = 5;
@@ -597,7 +599,7 @@
             this.LblNameSurname3.Appearance.ForeColor = System.Drawing.Color.White;
             this.LblNameSurname3.Appearance.Options.UseFont = true;
             this.LblNameSurname3.Appearance.Options.UseForeColor = true;
-            this.LblNameSurname3.Location = new System.Drawing.Point(82, 180);
+            this.LblNameSurname3.Location = new System.Drawing.Point(88, 180);
             this.LblNameSurname3.Name = "LblNameSurname3";
             this.LblNameSurname3.Size = new System.Drawing.Size(87, 23);
             this.LblNameSurname3.TabIndex = 6;
@@ -609,7 +611,7 @@
             this.labelControl16.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl16.Appearance.Options.UseFont = true;
             this.labelControl16.Appearance.Options.UseForeColor = true;
-            this.labelControl16.Location = new System.Drawing.Point(0, 182);
+            this.labelControl16.Location = new System.Drawing.Point(6, 182);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(73, 21);
             this.labelControl16.TabIndex = 7;
@@ -777,7 +779,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(96)))), ((int)(((byte)(111)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(18)))));
             this.panel5.Controls.Add(this.LblEmail4);
             this.panel5.Controls.Add(this.labelControl18);
             this.panel5.Controls.Add(this.LblDepartment4);
@@ -866,7 +868,7 @@
             // 
             this.pictureEdit5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(42, 11);
+            this.pictureEdit5.Location = new System.Drawing.Point(51, 16);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
@@ -893,12 +895,12 @@
             this.GrpCtrlCurrentProcess.ResumeLayout(false);
             this.GrpCtrlCurrentProcess.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LookUpDepartment.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDepartmentId.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDepartmentName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeImg.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeSurname.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmployeeName.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
@@ -922,13 +924,13 @@
 
         private DevExpress.XtraEditors.LabelControl LblTextProductName;
         private DevExpress.XtraEditors.GroupControl GrpCtrlCurrentProcess;
-        private DevExpress.XtraEditors.TextEdit TxtDepartmentId;
+        private DevExpress.XtraEditors.TextEdit TxtEmployeeId;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.SimpleButton SmpBtnList;
         private DevExpress.XtraEditors.SimpleButton SmpBtnUpdate;
         private DevExpress.XtraEditors.SimpleButton SmpBtnRemove;
         private DevExpress.XtraEditors.SimpleButton SmpBtnSave;
-        private DevExpress.XtraEditors.TextEdit TxtDepartmentName;
+        private DevExpress.XtraEditors.TextEdit TxtEmployeeName;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraGrid.Views.Grid.GridView GrdViewItems;
@@ -968,14 +970,14 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl34;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtEmployeeSurname;
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.LookUpEdit LookUpDepartment;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit TxtEmployeeImg;
         private DevExpress.XtraEditors.LabelControl labelControl36;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit TxtEmail;
         private DevExpress.XtraEditors.LabelControl labelControl37;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit TxtPhone;
         private DevExpress.XtraEditors.LabelControl labelControl35;
         private DevExpress.XtraEditors.LabelControl LblEmail3;
         private DevExpress.XtraEditors.LabelControl labelControl2;

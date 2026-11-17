@@ -66,5 +66,20 @@ namespace TeknikServis.Windows.Forms
 
             EmployeeList();
         }
+
+        private void SmpBtnSave_Click(object sender, EventArgs e)
+        {
+            Employees employees = new Employees();
+            employees.EmployeeName = TxtEmployeeName.Text;
+            employees.EmployeeSurname = TxtEmployeeSurname.Text;
+            employees.Email = TxtEmail.Text;
+            employees.Phone = TxtPhone.Text;
+            employees.Department = byte.Parse(LookUpDepartment.EditValue.ToString());
+
+            db.Employees.Add(employees);
+            db.SaveChanges();
+            MessageBox.Show("Personel başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            EmployeeList();
+        }
     }
 }

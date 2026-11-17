@@ -39,9 +39,9 @@
             this.LblTotalEmployeeCount = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.LblMaxEmployeeByDepartment = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.LblMinEmployeeByDepartment = new DevExpress.XtraEditors.LabelControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TxtDepartmentId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -161,7 +161,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(185)))), ((int)(((byte)(59)))));
             this.panel3.Controls.Add(this.labelControl13);
-            this.panel3.Controls.Add(this.labelControl14);
+            this.panel3.Controls.Add(this.LblMaxEmployeeByDepartment);
             this.panel3.Location = new System.Drawing.Point(515, 1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(251, 137);
@@ -179,39 +179,39 @@
             this.labelControl13.TabIndex = 0;
             this.labelControl13.Text = "En Fazla Çalışanı Olan Departman";
             // 
-            // labelControl14
+            // LblMaxEmployeeByDepartment
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(32, 48);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(75, 59);
-            this.labelControl14.TabIndex = 0;
-            this.labelControl14.Text = "584";
+            this.LblMaxEmployeeByDepartment.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblMaxEmployeeByDepartment.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblMaxEmployeeByDepartment.Appearance.Options.UseFont = true;
+            this.LblMaxEmployeeByDepartment.Appearance.Options.UseForeColor = true;
+            this.LblMaxEmployeeByDepartment.Location = new System.Drawing.Point(32, 48);
+            this.LblMaxEmployeeByDepartment.Name = "LblMaxEmployeeByDepartment";
+            this.LblMaxEmployeeByDepartment.Size = new System.Drawing.Size(75, 59);
+            this.LblMaxEmployeeByDepartment.TabIndex = 0;
+            this.LblMaxEmployeeByDepartment.Text = "584";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(153)))), ((int)(((byte)(146)))));
             this.panel4.Controls.Add(this.labelControl15);
-            this.panel4.Controls.Add(this.labelControl16);
+            this.panel4.Controls.Add(this.LblMinEmployeeByDepartment);
             this.panel4.Location = new System.Drawing.Point(772, 1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(251, 137);
             this.panel4.TabIndex = 34;
             // 
-            // labelControl16
+            // LblMinEmployeeByDepartment
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl16.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Appearance.Options.UseForeColor = true;
-            this.labelControl16.Location = new System.Drawing.Point(32, 48);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(75, 59);
-            this.labelControl16.TabIndex = 0;
-            this.labelControl16.Text = "584";
+            this.LblMinEmployeeByDepartment.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblMinEmployeeByDepartment.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblMinEmployeeByDepartment.Appearance.Options.UseFont = true;
+            this.LblMinEmployeeByDepartment.Appearance.Options.UseForeColor = true;
+            this.LblMinEmployeeByDepartment.Location = new System.Drawing.Point(32, 48);
+            this.LblMinEmployeeByDepartment.Name = "LblMinEmployeeByDepartment";
+            this.LblMinEmployeeByDepartment.Size = new System.Drawing.Size(75, 59);
+            this.LblMinEmployeeByDepartment.TabIndex = 0;
+            this.LblMinEmployeeByDepartment.Text = "584";
             // 
             // panel2
             // 
@@ -372,9 +372,9 @@
         private DevExpress.XtraEditors.LabelControl LblTotalEmployeeCount;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl LblMaxEmployeeByDepartment;
         private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraEditors.LabelControl LblMinEmployeeByDepartment;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.TextEdit TxtDepartmentId;
         private DevExpress.XtraEditors.LabelControl labelControl6;

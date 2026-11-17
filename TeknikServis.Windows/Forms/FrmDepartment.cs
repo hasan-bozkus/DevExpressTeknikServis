@@ -33,11 +33,11 @@ namespace TeknikServis.Windows.Forms
 
         private void FrmDepartment_Load(object sender, EventArgs e)
         {
-
             DepartmentList();
-
             LblTotalDepartmentCount.Text = db.Departments.Count().ToString();
             LblTotalEmployeeCount.Text = db.Employees.Count().ToString();
+            LblMinEmployeeByDepartment.Text = db.Departments.Min(x => x.Employees.Select(y => y.Departments.DepartmentName).FirstOrDefault()).ToString();
+            LblMaxEmployeeByDepartment.Text = db.Departments.Max(x => x.Employees.Select(y => y.Departments.DepartmentName).FirstOrDefault()).ToString();
         }
 
         private void SmpBtnSave_Click(object sender, EventArgs e)
