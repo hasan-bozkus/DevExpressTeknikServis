@@ -48,6 +48,8 @@
             this.GrdReadNotes = new DevExpress.XtraGrid.GridControl();
             this.GrdViewItemsRead = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtDate = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNoteId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNoteContent.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNoteTitle.Properties)).BeginInit();
@@ -58,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GrdUnreadNotes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdReadNotes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItemsRead)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDate.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtNoteId
@@ -79,7 +82,7 @@
             // SmpBtnList
             // 
             this.SmpBtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnList.ImageOptions.Image")));
-            this.SmpBtnList.Location = new System.Drawing.Point(99, 297);
+            this.SmpBtnList.Location = new System.Drawing.Point(99, 334);
             this.SmpBtnList.Name = "SmpBtnList";
             this.SmpBtnList.Size = new System.Drawing.Size(175, 35);
             this.SmpBtnList.TabIndex = 18;
@@ -89,7 +92,7 @@
             // SmpBtnUpdate
             // 
             this.SmpBtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnUpdate.ImageOptions.Image")));
-            this.SmpBtnUpdate.Location = new System.Drawing.Point(99, 259);
+            this.SmpBtnUpdate.Location = new System.Drawing.Point(99, 296);
             this.SmpBtnUpdate.Name = "SmpBtnUpdate";
             this.SmpBtnUpdate.Size = new System.Drawing.Size(175, 35);
             this.SmpBtnUpdate.TabIndex = 17;
@@ -99,7 +102,7 @@
             // SmpBtnRemove
             // 
             this.SmpBtnRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnRemove.ImageOptions.Image")));
-            this.SmpBtnRemove.Location = new System.Drawing.Point(99, 221);
+            this.SmpBtnRemove.Location = new System.Drawing.Point(99, 258);
             this.SmpBtnRemove.Name = "SmpBtnRemove";
             this.SmpBtnRemove.Size = new System.Drawing.Size(175, 35);
             this.SmpBtnRemove.TabIndex = 16;
@@ -108,7 +111,7 @@
             // SmpBtnSave
             // 
             this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnSave.ImageOptions.Image")));
-            this.SmpBtnSave.Location = new System.Drawing.Point(99, 183);
+            this.SmpBtnSave.Location = new System.Drawing.Point(99, 220);
             this.SmpBtnSave.Name = "SmpBtnSave";
             this.SmpBtnSave.Size = new System.Drawing.Size(175, 35);
             this.SmpBtnSave.TabIndex = 15;
@@ -147,6 +150,8 @@
             this.GrpCtrlCurrentProcess.Controls.Add(this.SmpBtnRemove);
             this.GrpCtrlCurrentProcess.Controls.Add(this.SmpBtnSave);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl34);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.TxtDate);
+            this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl1);
             this.GrpCtrlCurrentProcess.Controls.Add(this.TxtNoteContent);
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl33);
             this.GrpCtrlCurrentProcess.Controls.Add(this.TxtNoteTitle);
@@ -159,7 +164,7 @@
             // 
             // CheckMarkAsRead
             // 
-            this.CheckMarkAsRead.Location = new System.Drawing.Point(90, 137);
+            this.CheckMarkAsRead.Location = new System.Drawing.Point(90, 174);
             this.CheckMarkAsRead.Name = "CheckMarkAsRead";
             this.CheckMarkAsRead.Properties.Caption = "Okundu Olarak İşaretle";
             this.CheckMarkAsRead.Size = new System.Drawing.Size(168, 24);
@@ -167,7 +172,7 @@
             // 
             // labelControl34
             // 
-            this.labelControl34.Location = new System.Drawing.Point(42, 140);
+            this.labelControl34.Location = new System.Drawing.Point(42, 177);
             this.labelControl34.Name = "labelControl34";
             this.labelControl34.Size = new System.Drawing.Size(51, 16);
             this.labelControl34.TabIndex = 3;
@@ -244,6 +249,23 @@
             this.label2.TabIndex = 51;
             this.label2.Text = "Okunan Notlar";
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(46, 140);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(45, 16);
+            this.labelControl1.TabIndex = 3;
+            this.labelControl1.Text = "TARİH: ";
+            // 
+            // TxtDate
+            // 
+            this.TxtDate.Location = new System.Drawing.Point(90, 137);
+            this.TxtDate.Name = "TxtDate";
+            this.TxtDate.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.TxtDate.Properties.MaskSettings.Set("mask", "d");
+            this.TxtDate.Size = new System.Drawing.Size(199, 22);
+            this.TxtDate.TabIndex = 4;
+            // 
             // FrmNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -268,6 +290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GrdUnreadNotes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdReadNotes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdViewItemsRead)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDate.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +316,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView GrdViewItemsRead;
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.CheckEdit CheckMarkAsRead;
+        private DevExpress.XtraEditors.TextEdit TxtDate;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

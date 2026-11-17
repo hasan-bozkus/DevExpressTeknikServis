@@ -675,14 +675,14 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup3.ItemLinks.Add(this.BarBtnCurrentList);
             this.ribbonPageGroup3.ItemLinks.Add(this.BarBtnCityStatistics);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Cari";
             // 
             // ribbonPageGroup11
             // 
             this.ribbonPageGroup11.ItemLinks.Add(this.BarBtnNewProductSales);
             this.ribbonPageGroup11.ItemLinks.Add(this.BarBtnSalesList);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "Satış";
             // 
             // ribbonPage3
             // 
@@ -697,14 +697,14 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup4.ItemLinks.Add(this.BarBtnEmployeeList);
             this.ribbonPageGroup4.ItemLinks.Add(this.BtnBtnNewEmployee);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "Personel";
             // 
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.BarBtnDepartmentList);
             this.ribbonPageGroup10.ItemLinks.Add(this.BarBtnNewDepartment);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "Departman";
             // 
             // ribbonPage4
             // 
@@ -719,7 +719,7 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup5.ItemLinks.Add(this.BarBtnCurrentMovenets);
             this.ribbonPageGroup5.ItemLinks.Add(this.BarBtnEmpoleyeeMovements);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "ribbonPageGroup5";
+            this.ribbonPageGroup5.Text = "Hareketler";
             // 
             // ribbonPageGroup2
             // 
@@ -730,7 +730,7 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnInvoicePdf);
             this.ribbonPageGroup2.ItemLinks.Add(this.BarBtnPassiveInvoices);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Faturalar";
             // 
             // ribbonPage5
             // 
@@ -746,7 +746,7 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup6.ItemLinks.Add(this.BarBtnNewEmail);
             this.ribbonPageGroup6.ItemLinks.Add(this.BarBtnSmsSend);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "İletişim";
             // 
             // ribbonPage6
             // 
@@ -769,7 +769,7 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnMap);
             this.ribbonPageGroup7.ItemLinks.Add(this.BarBtnHelp);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "Araçlar";
             // 
             // ribbonPage7
             // 
@@ -795,7 +795,7 @@ namespace TeknikServis.Windows
             // 
             this.ribbonPageGroup9.ItemLinks.Add(this.BarBtnCards);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "Kartlar";
             // 
             // xtraTabbedMdiManager1
             // 
