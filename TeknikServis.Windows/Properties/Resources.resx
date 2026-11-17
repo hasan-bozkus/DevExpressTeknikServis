@@ -286,4 +286,25 @@
   <data name="Cancel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancel2.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="Send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Send.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Subtitles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subtitles.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Subtitles1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subtitles1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mail.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SendFill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SendFill.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="convert_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

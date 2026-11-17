@@ -80,10 +80,12 @@
             // 
             // GrdDepartments
             // 
-            this.GrdDepartments.Location = new System.Drawing.Point(3, 144);
+            this.GrdDepartments.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GrdDepartments.Location = new System.Drawing.Point(1, 145);
             this.GrdDepartments.MainView = this.GrdViewItems;
+            this.GrdDepartments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GrdDepartments.Name = "GrdDepartments";
-            this.GrdDepartments.Size = new System.Drawing.Size(1020, 397);
+            this.GrdDepartments.Size = new System.Drawing.Size(1022, 496);
             this.GrdDepartments.TabIndex = 30;
             this.GrdDepartments.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdViewItems});
@@ -94,8 +96,10 @@
             this.GrdViewItems.Appearance.Row.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
             this.GrdViewItems.Appearance.Row.Options.UseBackColor = true;
             this.GrdViewItems.Appearance.Row.Options.UseBorderColor = true;
+            this.GrdViewItems.DetailHeight = 437;
             this.GrdViewItems.GridControl = this.GrdDepartments;
             this.GrdViewItems.Name = "GrdViewItems";
+            this.GrdViewItems.OptionsEditForm.PopupEditFormWidth = 1000;
             this.GrdViewItems.OptionsView.ShowGroupPanel = false;
             this.GrdViewItems.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.GrdViewItems_FocusedRowChanged);
             // 
@@ -226,14 +230,16 @@
             // TxtDepartmentId
             // 
             this.TxtDepartmentId.Enabled = false;
-            this.TxtDepartmentId.Location = new System.Drawing.Point(99, 31);
+            this.TxtDepartmentId.Location = new System.Drawing.Point(124, 39);
+            this.TxtDepartmentId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtDepartmentId.Name = "TxtDepartmentId";
-            this.TxtDepartmentId.Size = new System.Drawing.Size(199, 22);
+            this.TxtDepartmentId.Size = new System.Drawing.Size(249, 22);
             this.TxtDepartmentId.TabIndex = 20;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(0, 34);
+            this.labelControl6.Location = new System.Drawing.Point(0, 42);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(97, 16);
             this.labelControl6.TabIndex = 19;
@@ -242,9 +248,10 @@
             // SmpBtnList
             // 
             this.SmpBtnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnList.ImageOptions.Image")));
-            this.SmpBtnList.Location = new System.Drawing.Point(99, 343);
+            this.SmpBtnList.Location = new System.Drawing.Point(124, 429);
+            this.SmpBtnList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmpBtnList.Name = "SmpBtnList";
-            this.SmpBtnList.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnList.Size = new System.Drawing.Size(214, 40);
             this.SmpBtnList.TabIndex = 18;
             this.SmpBtnList.Text = "LİSTELE";
             this.SmpBtnList.Click += new System.EventHandler(this.SmpBtnList_Click);
@@ -252,9 +259,10 @@
             // SmpBtnUpdate
             // 
             this.SmpBtnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnUpdate.ImageOptions.Image")));
-            this.SmpBtnUpdate.Location = new System.Drawing.Point(99, 305);
+            this.SmpBtnUpdate.Location = new System.Drawing.Point(124, 381);
+            this.SmpBtnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmpBtnUpdate.Name = "SmpBtnUpdate";
-            this.SmpBtnUpdate.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnUpdate.Size = new System.Drawing.Size(214, 40);
             this.SmpBtnUpdate.TabIndex = 17;
             this.SmpBtnUpdate.Text = "GÜNCELLE";
             this.SmpBtnUpdate.Click += new System.EventHandler(this.SmpBtnUpdate_Click);
@@ -262,9 +270,10 @@
             // SmpBtnRemove
             // 
             this.SmpBtnRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnRemove.ImageOptions.Image")));
-            this.SmpBtnRemove.Location = new System.Drawing.Point(99, 267);
+            this.SmpBtnRemove.Location = new System.Drawing.Point(124, 334);
+            this.SmpBtnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmpBtnRemove.Name = "SmpBtnRemove";
-            this.SmpBtnRemove.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnRemove.Size = new System.Drawing.Size(214, 40);
             this.SmpBtnRemove.TabIndex = 16;
             this.SmpBtnRemove.Text = "SİL";
             this.SmpBtnRemove.Click += new System.EventHandler(this.SmpBtnRemove_Click);
@@ -272,16 +281,18 @@
             // SmpBtnSave
             // 
             this.SmpBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SmpBtnSave.ImageOptions.Image")));
-            this.SmpBtnSave.Location = new System.Drawing.Point(99, 229);
+            this.SmpBtnSave.Location = new System.Drawing.Point(124, 286);
+            this.SmpBtnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmpBtnSave.Name = "SmpBtnSave";
-            this.SmpBtnSave.Size = new System.Drawing.Size(171, 32);
+            this.SmpBtnSave.Size = new System.Drawing.Size(214, 40);
             this.SmpBtnSave.TabIndex = 15;
             this.SmpBtnSave.Text = "KAYDET";
             this.SmpBtnSave.Click += new System.EventHandler(this.SmpBtnSave_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(33, 90);
+            this.labelControl1.Location = new System.Drawing.Point(41, 112);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(68, 16);
             this.labelControl1.TabIndex = 5;
@@ -289,9 +300,10 @@
             // 
             // TxtDepartmentName
             // 
-            this.TxtDepartmentName.Location = new System.Drawing.Point(99, 59);
+            this.TxtDepartmentName.Location = new System.Drawing.Point(124, 74);
+            this.TxtDepartmentName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtDepartmentName.Name = "TxtDepartmentName";
-            this.TxtDepartmentName.Size = new System.Drawing.Size(199, 22);
+            this.TxtDepartmentName.Size = new System.Drawing.Size(249, 22);
             this.TxtDepartmentName.TabIndex = 4;
             // 
             // GrpCtrlCurrentProcess
@@ -306,23 +318,26 @@
             this.GrpCtrlCurrentProcess.Controls.Add(this.labelControl1);
             this.GrpCtrlCurrentProcess.Controls.Add(this.TxtDepartmentName);
             this.GrpCtrlCurrentProcess.Controls.Add(this.LblTextProductName);
-            this.GrpCtrlCurrentProcess.Location = new System.Drawing.Point(1029, -9);
+            this.GrpCtrlCurrentProcess.Location = new System.Drawing.Point(1030, 1);
+            this.GrpCtrlCurrentProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GrpCtrlCurrentProcess.Name = "GrpCtrlCurrentProcess";
-            this.GrpCtrlCurrentProcess.Size = new System.Drawing.Size(338, 537);
+            this.GrpCtrlCurrentProcess.Size = new System.Drawing.Size(422, 641);
             this.GrpCtrlCurrentProcess.TabIndex = 31;
             this.GrpCtrlCurrentProcess.Text = "DEPARTMAN İŞLEMLERİ";
             // 
             // RchTxtDepartmentDescription
             // 
-            this.RchTxtDepartmentDescription.Location = new System.Drawing.Point(99, 90);
+            this.RchTxtDepartmentDescription.Location = new System.Drawing.Point(124, 112);
+            this.RchTxtDepartmentDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RchTxtDepartmentDescription.Name = "RchTxtDepartmentDescription";
-            this.RchTxtDepartmentDescription.Size = new System.Drawing.Size(199, 104);
+            this.RchTxtDepartmentDescription.Size = new System.Drawing.Size(248, 129);
             this.RchTxtDepartmentDescription.TabIndex = 21;
             this.RchTxtDepartmentDescription.Text = "";
             // 
             // LblTextProductName
             // 
-            this.LblTextProductName.Location = new System.Drawing.Point(72, 62);
+            this.LblTextProductName.Location = new System.Drawing.Point(90, 78);
+            this.LblTextProductName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LblTextProductName.Name = "LblTextProductName";
             this.LblTextProductName.Size = new System.Drawing.Size(25, 16);
             this.LblTextProductName.TabIndex = 3;
@@ -332,7 +347,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 533);
+            this.ClientSize = new System.Drawing.Size(1455, 642);
             this.Controls.Add(this.GrdDepartments);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);

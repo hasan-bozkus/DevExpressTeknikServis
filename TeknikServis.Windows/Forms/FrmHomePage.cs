@@ -48,15 +48,15 @@ namespace TeknikServis.Windows.Forms
             }).ToList();
 
             labelControl1.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl2.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl3.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl4.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl5.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl6.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl7.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl8.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl9.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
-            labelControl10.Text = db.Messages?.First(z => z.MessageId == 1).NameSurname + " - " + db.Messages.First(z => z.MessageId == 1).Subject;
+            labelControl2.Text = db.Messages?.First(z => z.MessageId == 2).NameSurname + " - " + db.Messages.First(z => z.MessageId == 2).Subject;
+            labelControl3.Text = db.Messages?.First(z => z.MessageId == 3).NameSurname + " - " + db.Messages.First(z => z.MessageId == 3).Subject;
+            labelControl4.Text = db.Messages?.First(z => z.MessageId == 4).NameSurname + " - " + db.Messages.First(z => z.MessageId == 4).Subject;
+            labelControl5.Text = db.Messages?.First(z => z.MessageId == 5).NameSurname + " - " + db.Messages.First(z => z.MessageId == 5).Subject;
+            labelControl6.Text = db.Messages?.First(z => z.MessageId == 6).NameSurname + " - " + db.Messages.First(z => z.MessageId == 6).Subject;
+            labelControl7.Text = db.Messages?.First(z => z.MessageId == 7).NameSurname + " - " + db.Messages.First(z => z.MessageId == 7).Subject;
+            labelControl8.Text = db.Messages?.First(z => z.MessageId == 8).NameSurname + " - " + db.Messages.First(z => z.MessageId == 8).Subject;
+            labelControl9.Text = db.Messages?.First(z => z.MessageId == 9).NameSurname + " - " + db.Messages.First(z => z.MessageId == 9).Subject;
+            labelControl10.Text = db.Messages?.First(z => z.MessageId == 10).NameSurname + " - " + db.Messages.First(z => z.MessageId == 10).Subject;
         }
     }
 }

@@ -105,8 +105,6 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -114,7 +112,7 @@ namespace TeknikServis.Windows
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(46);
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(71);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -167,10 +165,10 @@ namespace TeknikServis.Windows
             this.BarBtnReports,
             this.BarBtnHomePage});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8);
             this.ribbonControl1.MaxItemId = 49;
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.OptionsMenuMinWidth = 515;
+            this.ribbonControl1.OptionsMenuMinWidth = 805;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.RbnHomePage,
             this.RbnProducts,
@@ -179,8 +177,7 @@ namespace TeknikServis.Windows
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6,
-            this.ribbonPage7,
-            this.ribbonPage8});
+            this.ribbonPage7});
             this.ribbonControl1.Size = new System.Drawing.Size(1368, 183);
             // 
             // BarBtnCategoryList
@@ -381,6 +378,7 @@ namespace TeknikServis.Windows
             this.BarBtnGuide.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnGuide.ImageOptions.Image")));
             this.BarBtnGuide.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnGuide.ImageOptions.LargeImage")));
             this.BarBtnGuide.Name = "BarBtnGuide";
+            this.BarBtnGuide.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnGuide_ItemClick);
             // 
             // BarBtnEmployeeList
             // 
@@ -488,11 +486,12 @@ namespace TeknikServis.Windows
             // 
             // BarBtnEmailBox
             // 
-            this.BarBtnEmailBox.Caption = "E-Posta Kutusu";
+            this.BarBtnEmailBox.Caption = "Gelen E-Postalar";
             this.BarBtnEmailBox.Id = 36;
             this.BarBtnEmailBox.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnEmailBox.ImageOptions.Image")));
             this.BarBtnEmailBox.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnEmailBox.ImageOptions.LargeImage")));
             this.BarBtnEmailBox.Name = "BarBtnEmailBox";
+            this.BarBtnEmailBox.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnEmailBox_ItemClick);
             // 
             // BarBtnNewEmail
             // 
@@ -501,6 +500,7 @@ namespace TeknikServis.Windows
             this.BarBtnNewEmail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarBtnNewEmail.ImageOptions.Image")));
             this.BarBtnNewEmail.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarBtnNewEmail.ImageOptions.LargeImage")));
             this.BarBtnNewEmail.Name = "BarBtnNewEmail";
+            this.BarBtnNewEmail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarBtnNewEmail_ItemClick);
             // 
             // BarBtnSmsSend
             // 
@@ -784,19 +784,6 @@ namespace TeknikServis.Windows
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "Raporlar";
             // 
-            // ribbonPage8
-            // 
-            this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9});
-            this.ribbonPage8.Name = "ribbonPage8";
-            this.ribbonPage8.Text = "İstatistikler";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.BarBtnCards);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "Kartlar";
-            // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
@@ -841,8 +828,6 @@ namespace TeknikServis.Windows
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage8;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.BarButtonItem BarBtnProductList;
         private DevExpress.XtraBars.BarButtonItem BarBtnNewProduct;
         private DevExpress.XtraBars.BarButtonItem BarBtnSearchProdct;

@@ -320,6 +320,24 @@
     <Compile Include="ilceler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Iletişim\FrmGuide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletişim\FrmGuide.Designer.cs">
+      <DependentUpon>FrmGuide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iletişim\FrmNewEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletişim\FrmNewEmail.Designer.cs">
+      <DependentUpon>FrmNewEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iletişim\FrmReceivedMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletişim\FrmReceivedMail.Designer.cs">
+      <DependentUpon>FrmReceivedMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="iller.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -480,6 +498,15 @@
     <EmbeddedResource Include="Forms\FrmYoutube.resx">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Iletişim\FrmGuide.resx">
+      <DependentUpon>FrmGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletişim\FrmNewEmail.resx">
+      <DependentUpon>FrmNewEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletişim\FrmReceivedMail.resx">
+      <DependentUpon>FrmReceivedMail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -522,6 +549,10 @@
     </Content>
     <Content Include="Requirements\il_ilce.sql" />
     <Content Include="Resources\adam1kesin.png" />
+    <None Include="Resources\SendFill.svg" />
+    <None Include="Resources\Subtitles1.svg" />
+    <None Include="Resources\Subtitles.svg" />
+    <None Include="Resources\Send.svg" />
     <None Include="Resources\PDF1.svg" />
     <None Include="Resources\PDF.svg" />
     <None Include="Resources\QuarentinedItems1.svg" />
@@ -554,8 +585,11 @@
     <None Include="Resources\exporttoxls.svg" />
     <None Include="Resources\documentpdf.svg" />
     <None Include="Resources\Cancel2.svg" />
+    <None Include="Resources\convert_32x32.png" />
+    <None Include="Resources\cancel_32x32.png" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
+    <None Include="Resources\Mail.svg" />
     <Content Include="Resources\man5kesin.png" />
     <None Include="Resources\PartyLeader.svg" />
     <None Include="Resources\PersonalFolder.svg" />

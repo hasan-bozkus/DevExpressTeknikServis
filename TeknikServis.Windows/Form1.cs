@@ -354,5 +354,37 @@ namespace TeknikServis.Windows
                 frHome.Show();
             }
         }
+
+        private void BarBtnGuide_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Iletişim.FrmGuide fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Iletişim.FrmGuide();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
+
+        private void BarBtnEmailBox_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Iletişim.FrmReceivedMail fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Iletişim.FrmReceivedMail();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
+
+        private void BarBtnNewEmail_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Iletişim.FrmNewEmail fr = null;
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Iletişim.FrmNewEmail();
+                fr.Show();
+            }
+        }
     }
 }
