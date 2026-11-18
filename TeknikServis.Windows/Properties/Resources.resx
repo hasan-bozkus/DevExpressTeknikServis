@@ -307,4 +307,10 @@
   <data name="cancel_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ContactSolid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContactSolid.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ContactSolid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContactSolid1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Version=26.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
 </root>

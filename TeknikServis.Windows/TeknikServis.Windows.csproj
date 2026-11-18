@@ -317,6 +317,12 @@
     <Compile Include="Forms\FrmYoutube.Designer.cs">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ilceler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -498,6 +504,9 @@
     <EmbeddedResource Include="Forms\FrmYoutube.resx">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Iletişim\FrmGuide.resx">
       <DependentUpon>FrmGuide.cs</DependentUpon>
     </EmbeddedResource>
@@ -537,6 +546,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\C# ile DevExpress%27de Teknik Servis ve Ürün Takip Sistemi.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -587,6 +597,8 @@
     <None Include="Resources\Cancel2.svg" />
     <None Include="Resources\convert_32x32.png" />
     <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\ContactSolid.svg" />
+    <None Include="Resources\ContactSolid1.svg" />
     <Content Include="Resources\kadin1.png" />
     <Content Include="Resources\kadin2kesin.png" />
     <None Include="Resources\Mail.svg" />
