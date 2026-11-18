@@ -1,7 +1,7 @@
 # DevExpress Teknik Servis
 
 ## Sertifika
-![certifecate]()
+![certifecate](https://github.com/hasan-bozkus/DevExpressTeknikServis/blob/master/TeknikServis.Windows/Images/C%23%20ile%20DevExpress'de%20Teknik%20Servis%20ve%20%C3%9Cr%C3%BCn%20Takip%20Sistemi.jpg)
 
 ## Projenin Temel Maksadı
 
